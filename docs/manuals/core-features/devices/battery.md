@@ -11,7 +11,7 @@ outline: deep
 - **Charge/Discharge Status**：电池充放电状态
 - **SoC**：电池电量百分比
 - **SoH**：电池健康度
-- **Voltage **：电池当前电压
+- **Voltage**：电池当前电压
 - **Current**：电池当前电流
 - **Power**：电池当前功率
 - **Max/Min/Avg Cell Voltage**：电池Cell的最大/最小/平均电压

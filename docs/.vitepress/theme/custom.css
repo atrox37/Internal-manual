@@ -25,6 +25,14 @@
   --vp-home-hero-image-filter: blur(0);
 }
 
+/* Swap brand/accent colors in dark mode */
+.dark {
+  --vp-c-brand-1: #ff6900;
+  --vp-c-brand-2: #ff8a33;
+  --vp-c-accent-1: #15335f;
+  --vp-c-accent-2: #1f427a;
+}
+
 body {
   background-image: radial-gradient(
       1200px 500px at 10% 0%,
@@ -39,9 +47,13 @@ body {
   background-attachment: fixed;
 }
 
+.VPNavBar:not(.home){
+
+}
 .VPNavBarTitle .title {
   font-family: var(--vp-font-family-heading);
   letter-spacing: 0.2px;
+  background-color: #ffffff;
 }
 
 .VPHomeHero {
@@ -146,4 +158,80 @@ body {
 .VPSidebarItem.is-active > .item > .text .title {
   color: var(--vp-c-brand-1);
   font-weight: 600;
+}
+
+/* Scroll in doc content instead of VPContent */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.VPContent {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.VPDoc {
+  height: calc(100vh - var(--vp-nav-height));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Global scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(21, 51, 95, 0.6) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #15335f 0%, #1f427a 60%, #ff6900 100%);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+/* Sidebar scroll starts below VPNav */
+@media (min-width: 960px) {
+  .VPNavBar:not(.home){
+    background-color: var(--vp-sidebar-bg-color) !important;
+    .VPNavBarTitle .title{
+      background-color: var(--vp-sidebar-bg-color) !important;
+    }
+  }
+  .VPSidebar {
+    top: var(--vp-nav-height) !important;
+    height: calc(100vh - var(--vp-nav-height));
+     /* padding-top: calc(var(--vp-nav-height) + 32px); */
+    padding-top:0 !important;
+    padding-bottom:32px !important;
+  }
+
+  .VPSidebar .curtain {
+    display: none;
+  }
+}
+.VPSidebar{
+
+}
+
+/* Stronger active state for top nav */
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink.active .text {
+  font-weight: 700;
+  font-size: 1.04em;
 }
