@@ -7,7 +7,7 @@ outline: deep
 ## Platform Introduction
 
 ![index](../../public/images/common/index.png)
- **monarch cloud** is a comprehensive monitoring and analytics platform for edge energy sites, designed to provide users with a clear, unified, and visual view of site operations. The platform covers key business scenarios such as generation, energy storage, energy usage, and alarms. With standardized interfaces and consistent interactions, it helps users quickly understand device status, operational trends, and abnormal conditions, improving daily O&M efficiency and management quality.
+ **Monarch Edge** is a comprehensive monitoring and analytics platform for edge energy sites, designed to provide users with a clear, unified, and visual view of site operations. The platform covers key business scenarios such as generation, energy storage, energy usage, and alarms. With standardized interfaces and consistent interactions, it helps users quickly understand device status, operational trends, and abnormal conditions, improving daily O&M efficiency and management quality.
   The platform's main capabilities include:
 
 - **Site overview**: Centralized display of energy summary, energy flow, power/energy trends, and site/device highlights to quickly assess operational health.

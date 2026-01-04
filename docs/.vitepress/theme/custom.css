@@ -5,10 +5,10 @@
   --vp-c-brand-soft: rgba(21, 51, 95, 0.16);
   --vp-c-accent-1: #ff6900;
   --vp-c-accent-2: #ff8a33;
-  --vp-font-family-base:  "PingFang SC", "Microsoft YaHei",
+  --vp-font-family-base: "Arimo", "MiSans", "Microsoft YaHei", "Arial",
     sans-serif;
-  --vp-font-family-heading: "PingFang SC",
-    "Microsoft YaHei", sans-serif;
+  --vp-font-family-heading: "Montserrat", "MiSans", "Microsoft YaHei", "Arial",
+    sans-serif;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(
     120deg,
@@ -50,7 +50,7 @@
 }
 
 .dark .VPHome .tagline {
-  color: rgba(255, 105, 0, 0.85);
+  color: rgba(255, 105, 0, 0.8);
 }
 
 body {
@@ -67,9 +67,6 @@ body {
   background-attachment: fixed;
 }
 
-.VPNavBar:not(.home){
-
-}
 .VPNavBarTitle .title {
   font-family: var(--vp-font-family-heading);
   letter-spacing: 0.2px;
@@ -84,6 +81,7 @@ body {
 /* Home Hero title: allow full width (keep gradient via --vp-home-hero-name-background) */
 .VPHomeHero .name {
   max-width: 100% !important;
+  line-height: 1.4 !important;
 }
 
 .VPHomeHero .name .clip {
@@ -110,6 +108,9 @@ body {
 .VPHome .text {
   font-family: var(--vp-font-family-heading);
   letter-spacing: 0.3px;
+}
+.VPHome .name{
+  font-family: var(--vp-font-family-heading);
 }
 
 .VPHome .tagline {
@@ -227,6 +228,9 @@ body {
 }
 /* Sidebar scroll starts below VPNav */
 @media (min-width: 960px) {
+  .VPHomeHero .name {
+    line-height: 1.4 !important;
+  }
   .VPNavBar:not(.home){
     background-color: var(--vp-sidebar-bg-color) !important;
     .VPNavBarTitle .title{

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Monarch Cloud Manual"
+  name: "Monarch Edge Manual"
   text: ""
   tagline: A complete guide for both regular users and administrators, focused on monitoring, alarms, control, and statistics.
   actions: []

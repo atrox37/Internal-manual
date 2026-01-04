@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Monarch Cloud 用户手册"
+  name: "Monarch Edge 用户手册"
   text: ""
   tagline: 覆盖普通用户与系统管理员的完整操作指南，聚焦监控、告警、控制与统计分析。
   actions: []

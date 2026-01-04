@@ -25,7 +25,7 @@ export default defineConfig({
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap",
       },
     ],
   ],
@@ -37,10 +37,10 @@ export default defineConfig({
       label: "简体中文",
       link: "/",
       lang: "zh-CN",
-      title: "Monarch Cloud 用户手册",
-      description: "Monarch Cloud 使用说明与操作指引",
+      title: "Monarch Edge 用户手册",
+      description: "Monarch Edge 使用说明与操作指引",
       themeConfig: {
-        siteTitle: "Monarch Cloud 用户手册",
+        siteTitle: "Monarch Edge 用户手册",
         nav: [
           {
             text: "基础认知",
@@ -201,7 +201,7 @@ export default defineConfig({
         },
         footer: {
           message: "内部资料 · 请勿外传",
-          copyright: "(c) Monarch Cloud",
+          copyright: "(c) Monarch Edge",
         },
       },
     },
@@ -209,10 +209,10 @@ export default defineConfig({
       label: "English",
       link: "/en/",
       lang: "en-US",
-      title: "Monarch Cloud Manual",
-      description: "User guide and operational manual for Monarch Cloud.",
+      title: "Monarch Edge Manual",
+      description: "User guide and operational manual for Monarch Edge.",
       themeConfig: {
-        siteTitle: "Monarch Cloud Manual",
+        siteTitle: "Monarch Edge Manual",
         nav: [
           {
             text: "Basics",
@@ -373,7 +373,7 @@ export default defineConfig({
         },
         footer: {
           message: "Internal Only · Do Not Distribute",
-          copyright: "(c) Monarch Cloud",
+          copyright: "(c) Monarch Edge",
         },
       },
     },
