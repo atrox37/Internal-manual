@@ -36,7 +36,7 @@ export default defineConfig({
   locales: {
     root: {
       label: "简体中文",
-      link: "/index.html",
+      link: "/",
       lang: "zh-CN",
       title: "Monarch Edge 用户手册",
       description: "Monarch Edge 使用说明与操作指引",
@@ -208,7 +208,7 @@ export default defineConfig({
     },
     en: {
       label: "English",
-      link: "/en/index.html",
+      link: "/en/",
       lang: "en-US",
       title: "Monarch Edge Manual",
       description: "User guide and operational manual for Monarch Edge.",
