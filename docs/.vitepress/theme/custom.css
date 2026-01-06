@@ -13,6 +13,8 @@
   --mc-sub-soft-08: rgba(255, 105, 0, 0.08);
   --mc-sub-soft-25: rgba(255, 105, 0, 0.25);
 
+  --vp-header-anchor-symbol: '';
+
   /*
    * Global rule (NON-home included):
    * - Light: use Theme color everywhere
@@ -253,6 +255,17 @@ body {
 ::selection {
   background: var(--vp-c-accent-soft);
   color: var(--vp-c-accent-1);
+}
+
+.VPContent.is-home ::selection {
+  background: var(--mc-sub-soft-25);
+  color: var(--mc-sub-1);
+}
+
+.dark .VPContent.is-home ::selection {
+  /* Home selection should match doc behavior: always use sub-theme color */
+  background: var(--mc-sub-soft-25);
+  color: var(--mc-sub-1);
 }
 
 /* Active nav emphasis */

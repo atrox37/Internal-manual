@@ -1,7 +1,10 @@
 import DefaultTheme from "vitepress/theme";
 import "./custom.css";
 
+import { h } from "vue";
 import { inBrowser, withBase } from "vitepress";
+import ExportDropdown from "./ExportDropdown.vue";
+import ZoomImages from "./ZoomImages.vue";
 
 const STORAGE_KEY = "mc_manual_locale";
 
@@ -61,6 +64,15 @@ function persistLocaleSelection() {
 
 export default {
   ...DefaultTheme,
+  Layout() {
+    // Keep DefaultTheme layout, inject a small client-only component to enable
+    // image zoom after mount + on route changes.
+    return h(DefaultTheme.Layout, null, {
+      "nav-bar-content-after": () => h(ExportDropdown),
+      "nav-screen-content-after": () => h(ExportDropdown),
+      "layout-bottom": () => h(ZoomImages),
+    });
+  },
   enhanceApp(ctx) {
     DefaultTheme.enhanceApp?.(ctx);
 
@@ -71,7 +83,9 @@ export default {
     persistLocaleSelection();
 
     // When user switches language (route changes), remember the selection.
+    const previousAfterRouteChanged = ctx.router.onAfterRouteChanged;
     ctx.router.onAfterRouteChanged = () => {
+      previousAfterRouteChanged?.();
       normalizeHtmlTrailingSlash();
       persistLocaleSelection();
     };
