@@ -38,6 +38,82 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: "/logo.png",
+    /**
+     * 本地搜索（不依赖 Algolia 等外部服务）
+     * - 适合部署到 S3 / 内网环境
+     * - 多语言：根据当前语言切换按钮文案/弹窗文案
+     */
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Search",
+                buttonAriaLabel: "Search documentation",
+              },
+              modal: {
+                displayDetails: "Display detailed list",
+                resetButtonTitle: "Reset search",
+                backButtonTitle: "Close search",
+                noResultsText: "No results for",
+                footer: {
+                  selectText: "Select",
+                  selectKeyAriaLabel: "Enter",
+                  navigateText: "Navigate",
+                  navigateUpKeyAriaLabel: "Arrow up",
+                  navigateDownKeyAriaLabel: "Arrow down",
+                  closeText: "Close",
+                  closeKeyAriaLabel: "Esc",
+                },
+              },
+            },
+          },
+          cn: {
+            translations: {
+              button: {
+                buttonText: "搜索",
+                buttonAriaLabel: "搜索文档",
+              },
+              modal: {
+                displayDetails: "显示详细列表",
+                resetButtonTitle: "重置搜索",
+                backButtonTitle: "关闭搜索",
+                noResultsText: "没有找到",
+                footer: {
+                  selectText: "选择",
+                  selectKeyAriaLabel: "回车",
+                  navigateText: "切换",
+                  navigateUpKeyAriaLabel: "向上箭头",
+                  navigateDownKeyAriaLabel: "向下箭头",
+                  closeText: "关闭",
+                  closeKeyAriaLabel: "Esc",
+                },
+              },
+            },
+          },
+        },
+        /**
+         * MiniSearch 中文优化：
+         * 额外把中文按“单字”切词，避免中文无法命中（英文仍保留按词切分）
+         */
+        miniSearch: {
+          options: {
+            tokenize: (text: string) => {
+              const lower = (text || "").toLowerCase();
+              const wordTokens = lower
+                .split(/[\s\p{P}\p{S}]+/gu)
+                .filter(Boolean);
+              const cjkTokens = Array.from(lower).filter((ch) =>
+                /[\u4e00-\u9fff]/.test(ch)
+              );
+              return [...wordTokens, ...cjkTokens];
+            },
+          },
+        },
+      },
+    },
   },
   locales: {
     root: {

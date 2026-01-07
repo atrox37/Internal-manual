@@ -1,41 +1,62 @@
 {
-  "hash": "6b736854",
-  "configHash": "ee15d24c",
+  "hash": "0f53d4ba",
+  "configHash": "b9542f61",
   "lockfileHash": "e8b3728d",
-  "browserHash": "3f9f7908",
+  "browserHash": "9a13e178",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.5.26/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "e95d73bf",
+      "fileHash": "f1a31fbd",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@8.0.1/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "2e4158f5",
+      "fileHash": "d71e8b68",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@13.9.0_vue@3.5.26/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "82963e05",
+      "fileHash": "8ae403dc",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+integrations@13.9.0_focus-trap@7.6.5_vue@3.5.26/node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "ec00dd81",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "84be80e7",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/.pnpm/minisearch@7.1.2/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "66d6756c",
       "needsInterop": false
     },
     "photoswipe/lightbox": {
       "src": "../../../../node_modules/.pnpm/photoswipe@5.4.4/node_modules/photoswipe/dist/photoswipe-lightbox.esm.js",
       "file": "photoswipe_lightbox.js",
-      "fileHash": "ea18d89f",
+      "fileHash": "d49a441e",
       "needsInterop": false
     },
     "photoswipe": {
       "src": "../../../../node_modules/.pnpm/photoswipe@5.4.4/node_modules/photoswipe/dist/photoswipe.esm.js",
       "file": "photoswipe.js",
-      "fileHash": "e6d19056",
+      "fileHash": "bc38a621",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-JIMDFA5S": {
+      "file": "chunk-JIMDFA5S.js"
+    },
     "chunk-J4CIAYYK": {
       "file": "chunk-J4CIAYYK.js"
     }

@@ -50,11 +50,6 @@ The main home page of the user interface is divided into three parts:
         </ul>
       </div>
 
-      <!-- <img
-        src="/images/common/2.png"
-        alt="2"
-        style="zoom:35%; display:block; max-width:100%;"
-      /> -->
     </div>
   - Users can resize the sidebar width via the zoom icon at the bottom-right of the sidebar.
 
