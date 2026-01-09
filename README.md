@@ -24,7 +24,7 @@ EdgeEMS是一个基于Vue 3 + TypeScript的现代化边缘能源管理系统，�
 
 也就是说：不再依赖“自动跳转/记忆偏好”，语言完全由 URL 决定。
 
-### 导出 PDF（推荐）
+### 导出 PDF（普通用户手册）
 
 本方案会把 **整个 VitePress 站点**打印并合并为 PDF，改了任意 md 后无需手动维护 PDF，只要重新运行一次导出命令即可自动生成新版本。
 
@@ -41,10 +41,23 @@ pnpm docs:pdf
 ```
 
 生成文件位置：
-- `docs/public/downloads/en/monarch-edge-manual.pdf`
-- `docs/public/downloads/zh-cn/monarch-edge-manual.pdf`
+- `docs/public/downloads/en/user-manual.pdf`（由 `docs/manuals/normal-user.md` 生成）
+- `docs/public/downloads/zh-cn/user-manual.pdf`（由 `docs/cn/manuals/normal-user.md` 生成）
 
-站点右上角导出按钮会根据当前语言下载对应 PDF。
+说明：
+- 导出时会使用 `tools/pdf-assets/header-footer-template.pdf` 作为背景（页眉/页脚模板）。
+- 手册页面顶部已提供下载链接，用户点击即可下载对应语言 PDF。
+
+### 导出 Word（英文整本文档）
+
+如果你希望把**英文站点所有文档文本**按“顶部导航 → 左侧导航”顺序整理为 Word，可运行：
+
+```bash
+pnpm docs:word
+```
+
+生成文件位置：
+- `docs/public/downloads/en/monarch-edge-manual.docx`
 
 ## 技术栈
 

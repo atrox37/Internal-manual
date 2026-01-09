@@ -3,12 +3,10 @@ import { computed } from "vue";
 import { useData, withBase } from "vitepress";
 
 /**
- * 右上角「导出」按钮 + 下拉菜单：
- * - 用户文档：下载 普通用户手册.pdf
- * - 管理员文档：下载 系统用户手册.pdf
+ * 顶部导航栏右侧「下载 PDF」按钮：
+ * - 按语言下载“普通用户手册（normal-user）”生成的 PDF
  *
- * 文件实际存放在 VitePress public：docs/public/downloads/*.pdf
- * 这样构建后会暴露为：/downloads/user-manual.pdf /downloads/admin-manual.pdf
+ * 旧策略（整站导出 monarch-edge-manual.pdf）暂时保留注释，便于回滚/对照。
  */
 
 const { lang } = useData();
@@ -32,14 +30,22 @@ function toHref(path: string) {
 }
 
 const pdfHref = computed(() =>
-  isEnglish.value
-    ? toHref("/downloads/en/monarch-edge-manual.pdf")
-    : toHref("/downloads/zh-cn/monarch-edge-manual.pdf")
+  isEnglish.value ? toHref("/downloads/en/user-manual.pdf") : toHref("/downloads/zh-cn/user-manual.pdf")
 );
 
 const pdfDownloadName = computed(() =>
-  isEnglish.value ? "Monarch Edge Manual.pdf" : "Monarch Edge 用户手册.pdf"
+  isEnglish.value ? "User Manual.pdf" : "普通用户手册.pdf"
 );
+
+// 旧策略（暂时注释）：下载整站导出 PDF
+// const pdfHref = computed(() =>
+//   isEnglish.value
+//     ? toHref("/downloads/en/monarch-edge-manual.pdf")
+//     : toHref("/downloads/zh-cn/monarch-edge-manual.pdf")
+// );
+// const pdfDownloadName = computed(() =>
+//   isEnglish.value ? "Monarch Edge Manual.pdf" : "Monarch Edge 用户手册.pdf"
+// );
 </script>
 
 <template>
