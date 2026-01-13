@@ -14,7 +14,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "docs:pdf": "node tools/export-normal-user-pdf.mjs",
-    "docs:word": "node tools/export-site-word.mjs"
+    "docs:word": "node tools/export-site-word.mjs",
+    "docs:deploy:s3": "powershell -ExecutionPolicy Bypass -File tools/deploy-s3.ps1 -Bucket YOUR_BUCKET"
   },
   "dependencies": {
     "photoswipe": "^5.4.4"
