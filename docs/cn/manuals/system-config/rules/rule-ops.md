@@ -6,9 +6,9 @@ outline: deep
 
 ## 新增规则
 
-![2](/images/Setting/Configuration/rule/2.png)
+![2](../../../../images/Setting/Configuration/rule/2.png)
 
-![3](/images/Setting/Configuration/rule/3.png)
+![3](../../../../images/Setting/Configuration/rule/3.png)
 
 1. 点击**New Rule**按钮，打开新增规则弹窗。
 2. 输入规则的名称（必填）和描述信息（选填）。
@@ -17,9 +17,9 @@ outline: deep
 
 ## 修改规则
 
-![4](/images/Setting/Configuration/rule/4.png)
+![4](../../../../images/Setting/Configuration/rule/4.png)
 
-![5](/images/Setting/Configuration/rule/5.png)
+![5](../../../../images/Setting/Configuration/rule/5.png)
 
 1. 点击想要修改的规则行中**Operation**列的**Edit**按钮，打开编辑弹框。
 2. 对想要修改的规则名称以及描述信息进行修改。
@@ -28,9 +28,9 @@ outline: deep
 
 ## 删除规则
 
-![6](/images/Setting/Configuration/rule/6.png)
+![6](../../../../images/Setting/Configuration/rule/6.png)
 
-![7](/images/Setting/Configuration/rule/7.png)
+![7](../../../../images/Setting/Configuration/rule/7.png)
 
 1. 点击想要删除的规则行的**Operation**列的**Delete**按钮打开确认删除的提示弹框。
 2. 点击**Confirm**按钮确认删除。

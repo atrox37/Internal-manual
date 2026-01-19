@@ -6,7 +6,7 @@ outline: deep
 
 ## 查询设备实例
 
-![2](/images/Setting/Configuration/deviceInstance/2.png)
+![2](../../../../images/Setting/Configuration/deviceInstance/2.png)
 
 1. 支持对实例进行筛选。筛选条件有：
 - `Product_Name`：实例所属的产品名称。
@@ -15,9 +15,9 @@ outline: deep
 
 ## 新增设备实例
 
-![3](/images/Setting/Configuration/deviceInstance/3.png)
+![3](../../../../images/Setting/Configuration/deviceInstance/3.png)
 
-![4](/images/Setting/Configuration/deviceInstance/4.png)
+![4](../../../../images/Setting/Configuration/deviceInstance/4.png)
 
 1. 点击New Instance按钮，打开新增实例弹框。
 
@@ -29,17 +29,17 @@ outline: deep
 
 ## 查看设备实例详情
 
-![5](/images/Setting/Configuration/deviceInstance/5.png)
+![5](../../../../images/Setting/Configuration/deviceInstance/5.png)
 
-![6](/images/Setting/Configuration/deviceInstance/6.png)
+![6](../../../../images/Setting/Configuration/deviceInstance/6.png)
 
 1. 点击所要查看的实例Operation列中的Detail按钮，打开实例详情弹框。
 
 ## 编辑设备实例
 
-![7](/images/Setting/Configuration/deviceInstance/7.png)
+![7](../../../../images/Setting/Configuration/deviceInstance/7.png)
 
-![8](/images/Setting/Configuration/deviceInstance/8.png)
+![8](../../../../images/Setting/Configuration/deviceInstance/8.png)
 
 1. 在查看实例详情的弹框中，点击**Edit**按钮进入实例信息的编辑模式。
 
@@ -49,11 +49,11 @@ outline: deep
 
 ## 删除已有的设备实例
 
-![9](/images/common/9.png)
+![9](../../../../images/common/9.png)
 
 
 
-![10](/images/Setting/Configuration/deviceInstance/10.png)
+![10](../../../../images/Setting/Configuration/deviceInstance/10.png)
 
 1. 点击想要删除的设备实例行中**Operation**列的**Delete**按钮进行删除。
 

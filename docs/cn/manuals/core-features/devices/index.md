@@ -4,7 +4,7 @@ outline: deep
 
 # Devices 页面
 
-![1](/images/Devices/pv/1.png)
+![1](../../../../images/Devices/pv/1.png)
 **Devices** 包含多个设备类型，包括：**PV**、**Battery**、**Diesel Generator**、**Meter1**、**Meter2**。
 每个设备的页面中通常有：
 

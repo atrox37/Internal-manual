@@ -6,7 +6,7 @@ outline: deep
 
 The **Home** page mainly displays key data for the site and specific devices, and refreshes in real time with device status.
 
-<img src="/images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../../images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. The first section contains the site's energy overview cards, mainly showing statistics for **PV Energy**, **Diesel Energy**, **Energy Used**, and **Saving Billing**.
 
@@ -33,6 +33,6 @@ The **Home** page mainly displays key data for the site and specific devices, an
 - Alarm device
 - Alarm level (sorted by urgency: **L1>L2>L3**)
 
-<img src="/images/home/3.png" alt="alarm level1" style="max-width:100%; height:auto;" /><img src="/images/home/4.png" alt="alarm level2" style="max-width:100%; height:auto;" /><img src="/images/home/5.png" alt="alarm level3" style="max-width:100%; height:auto;" />
+<img src="../../../images/home/3.png" alt="alarm level1" style="max-width:100%; height:auto;" /><img src="../../../images/home/4.png" alt="alarm level2" style="max-width:100%; height:auto;" /><img src="../../../images/home/5.png" alt="alarm level3" style="max-width:100%; height:auto;" />
 
 * Alarm information

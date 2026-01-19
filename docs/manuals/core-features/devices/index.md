@@ -4,7 +4,7 @@ outline: deep
 
 # Devices Page
 
-<img src="/images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 **Devices** includes multiple device types, such as **PV**, **Battery**, **Diesel Generator**, **Meter1**, and **Meter2**. Each device page typically includes:
 

@@ -4,7 +4,7 @@ outline: deep
 
 # Login Page
 
-<img src="/images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../../images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. Open the system and enter the login page.
 

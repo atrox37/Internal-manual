@@ -5,8 +5,8 @@ outline: deep
 # 通道点位配置
 
 
-![11](/images/Setting/Configuration/channel/11.png)
-![12](/images/Setting/Configuration/channel/12.png)
+![11](../../../../images/Setting/Configuration/channel/11.png)
+![12](../../../../images/Setting/Configuration/channel/12.png)
 
 1. 通过点击想要查看的通道行**Operation**列的**Points**按钮，打开点位弹框。
 
@@ -19,7 +19,7 @@ outline: deep
 8. 点击**Cancel**按钮关闭弹框。
 9. 点位筛选框，可以手动输入进行点位名称的模糊搜索或者通过下拉框对点位名称的选择进行精准搜索。
 
-![13](/images/Setting/Configuration/channel/13.png)
+![13](../../../../images/Setting/Configuration/channel/13.png)
 通过视图切换滑块到**mappings**后，页面解析如下：
 
 10. 点击tab切换点位的类型，对点位映射的查看。
@@ -35,11 +35,11 @@ outline: deep
 
 
 
-![14](/images/Setting/Configuration/channel/14.png)
+![14](../../../../images/Setting/Configuration/channel/14.png)
 
-![15](/images/Setting/Configuration/channel/15.png)
+![15](../../../../images/Setting/Configuration/channel/15.png)
 
-![16](/images/Setting/Configuration/channel/16.png)
+![16](../../../../images/Setting/Configuration/channel/16.png)
 
 1. 点击所要下发值的点位行的**Publish**按钮，打开单点下发值弹框。
 
@@ -50,11 +50,11 @@ outline: deep
 
 ### 批量下发
 
-![17](/images/Setting/Configuration/channel/17.png)
+![17](../../../../images/Setting/Configuration/channel/17.png)
 
-![18](/images/Setting/Configuration/channel/18.png)
+![18](../../../../images/Setting/Configuration/channel/18.png)
 
-![19](/images/Setting/Configuration/channel/19.png)
+![19](../../../../images/Setting/Configuration/channel/19.png)
 
 1. 点击所要批量下发的点位类型页面的**Batch Publish**按钮，进行批量下发操作（只针对当前点位类型）。
 
@@ -65,22 +65,22 @@ outline: deep
 
 ## 批量修改点位
 
-![20](/images/Setting/Configuration/channel/20.png)
+![20](../../../../images/Setting/Configuration/channel/20.png)
 
 1. 点击点位视图中的Edit按钮，进入对所有点位的编辑模式。
 
-![21](/images/Setting/Configuration/channel/21.png)
+![21](../../../../images/Setting/Configuration/channel/21.png)
 
 2. 针对修改过程中的增删改操作，可以通过筛选条件进行筛选（只针对与单个点位类型表格）：
 
 - **modified**：对进行了实际修改的点位进行筛选，修改后的点位记录左侧显示为蓝色，修改后的数据标为蓝色。
-  ![22](/images/Setting/Configuration/channel/22.png)
+  ![22](../../../../images/Setting/Configuration/channel/22.png)
 - **added**：对通过新增操作添加的点位进行筛选，新增的点位记录左侧以及数据显示为绿色。
-  ![23](/images/Setting/Configuration/channel/23.png)
+  ![23](../../../../images/Setting/Configuration/channel/23.png)
 - **deleted**：对通过删除操作删除的点位进行筛选，删除的点位记录的左侧以及数据显示为红色。
-  ![24](/images/Setting/Configuration/channel/24.png)
+  ![24](../../../../images/Setting/Configuration/channel/24.png)
 - **invalid**：对通过增加、修改后存在问题的点位进行筛选，存在问题的点位记录的左侧显示为橙色，背景显示为暗红色。
-  ![25](/images/Setting/Configuration/channel/25.png)
+  ![25](../../../../images/Setting/Configuration/channel/25.png)
   点位配置规则：
 - `point_id`：正整数（必填，不可重复）
 - `signal_name`：字符串，禁止包含空格（必填）
@@ -93,7 +93,7 @@ outline: deep
 
 ### 通过文件导入点位信息
 
-![26](/images/Setting/Configuration/channel/26.png)
+![26](../../../../images/Setting/Configuration/channel/26.png)
 
 1. 点击**Import**按钮，选择**.csv格式**的点位文件进行导入，根据不同的点位类型，对文件格式内容有以下要求：
 
@@ -107,7 +107,7 @@ outline: deep
 
   - 格式截图：
 
-    <img src="/images/Setting/Configuration/channel/27.png" alt="27" style="zoom: 33%;" />
+    <img src="../../../../images/Setting/Configuration/channel/27.png" alt="27" style="zoom: 33%;" />
 
 * signal/control
 
@@ -119,7 +119,7 @@ outline: deep
 
   * 格式截图：
   
-    <img src="/images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="zoom: 33%;" />
+    <img src="../../../../images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="zoom: 33%;" />
 
 >**注意：**
 >
@@ -128,7 +128,7 @@ outline: deep
 
 ### 新增点位
 
-![28](/images/Setting/Configuration/channel/28.png)
+![28](../../../../images/Setting/Configuration/channel/28.png)
 
 1. 点击**新增图标**按钮，在对应点位类型表格中的第一行出现可填写的点位行记录。
 2. 对可填写行进行内容填写，遵循配置规则。
@@ -140,7 +140,7 @@ outline: deep
 
 ### 删除点位
 
-![29](/images/Setting/Configuration/channel/29.png)
+![29](../../../../images/Setting/Configuration/channel/29.png)
 
 1. 点击所要删除行的**删除图标**按钮，实现点位的本地删除。
 2. 本地删除后的点位记录的样式如图所示，可以通过”**delected**“筛选条件进行筛选。
@@ -148,7 +148,7 @@ outline: deep
 
 ### 修改点位
 
-![30](/images/Setting/Configuration/channel/30.png)
+![30](../../../../images/Setting/Configuration/channel/30.png)
 
 1. 点击所要修改的点位的**修改图标**按钮对点位进行修改。
 2. 依照点位的配置规则，对点位进行修改，对已有点位进行修改的时候，不可以修改id。
@@ -159,7 +159,7 @@ outline: deep
 
 ### 提交所有修改
 
-![31](/images/Setting/Configuration/channel/31.png)
+![31](../../../../images/Setting/Configuration/channel/31.png)
 
 1. 在提交时必须保证修改的点位数据没有问题，错误提示会出现在错误数据下方。
 2. 点击**Submit**按钮进行批量修改提交。
@@ -169,6 +169,6 @@ outline: deep
 
 ## 导出点位CSV文件
 
-![32](/images/Setting/Configuration/channel/32.png)
+![32](../../../../images/Setting/Configuration/channel/32.png)
 
 点击**Export**按钮，可以实现对当前tab下面的表格数据进行导出，导出格式为**.csv**，文件名称为：**通道的名称+tab名称（telemetry/signal/control/adjustment）+当前时间戳**。

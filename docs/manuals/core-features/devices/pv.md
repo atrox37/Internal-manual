@@ -6,7 +6,7 @@ outline: deep
 
 ## Overview
 
-<img src="/images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 - The top shows four PV indicator cards:
   - **PV Power**: Current PV power
@@ -20,7 +20,7 @@ outline: deep
 
 ## Value Monitoring
 
-<img src="/images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 - The top right of this section displays Update Time, which is the latest data acquisition time.
 - Below are two tables:

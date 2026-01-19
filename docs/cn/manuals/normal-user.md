@@ -9,7 +9,7 @@ search: false
 
 <h2>平台介绍</h2>
 
-<img src="/images/common/index.png" alt="index" style="max-width:100%; height:auto;" />
+<img src="../../images/common/index.png" alt="index" style="max-width:100%; height:auto;" />
  **Monarch Edge**平台是一套面向边缘能源站点的综合监控与分析平台，旨在为用户提供清晰、统一、可视化的站点运行视图。平台覆盖发电、储能、用能及告警等关键业务场景，通过标准化的界面与一致的交互方式，帮助用户快速掌握设备状态、运行趋势与异常情况，提升日常运维效率与管理质量。
   平台主要能力包括：
 
@@ -21,7 +21,7 @@ search: false
 **本手册面向普通用户。**
 
 <h2>通用界面结构以及功能说明</h2>
-<img src="/images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
 整个用户界面首页主要分为三个部分：
 
 - 左侧：侧边栏菜单
@@ -43,13 +43,13 @@ search: false
       - **Curves**（曲线）
       - **Operation Log**（操作日志）
       - **Running Log**（运行日志）
-      <img src="/images/common/2.png" alt="2" style="zoom:50%;" />
+      <img src="../../images/common/2.png" alt="2" style="zoom:50%;" />
   - 用户可以通过侧边栏右下角的缩放图标按钮，进行菜单栏的宽度缩放。
-  |<img src="/images/common/3.png" alt="3" style="zoom:50%;" />|<img src="/images/common/4.png" alt="4" style="zoom:50%;" />|
+  |<img src="../../images/common/3.png" alt="3" style="zoom:50%;" />|<img src="../../images/common/4.png" alt="4" style="zoom:50%;" />|
   
 - 右上方：顶部栏
 
-  顶部右侧有“铃铛<img src="/images/common/5.png" alt="5" style="max-width:100%; height:auto;" />（Notice)”入口：
+  顶部右侧有“铃铛<img src="../../images/common/5.png" alt="5" style="max-width:100%; height:auto;" />（Notice)”入口：
   
   - 有红色数字角标时表示“当前告警数量”
   - 点击后会跳转到 Alarm > Current Records（当前告警）
@@ -61,7 +61,7 @@ search: false
 <h2>页面使用说明</h2>
 
 <h3>Login 页面</h3>
-<img src="/images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. 打开系统后进入登录页（Log in page）
 
@@ -75,7 +75,7 @@ search: false
 
 <h3>Home 页面</h3>
 **Home**页面主要展示站点以及具体设备的关键数据，并且随着设备状态实时进行数据刷新。
-<img src="/images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 - 第一部分为站点的能量概览卡片，主要有对 **PV Energy**、**Diesel Energy**、**Energy Used**、**Saving Billing**的统计数据。
 - 第二部分为微电网系统的拓扑图，其展示了能量的流动方向（设备充放电情况），同时展示了各个设备的核心数据：
@@ -87,15 +87,15 @@ search: false
 - 第四部分为能量柱状图，针对**Diesel**、**ESS**、**PV**的能量情况进行统计。
 - 第五部分为当前站点信息统计，对**PV**、**Diesel**的当前的功率进行统计，对ESS的充/放电情况进行统计。
 - 第六部分为站点设备信息统计，分布对**PV**、**ESS**、**Diesel Generator**的**P（当前功率）**、**U(当前电压)**进行统计。用户可以通过点击左右的切换按钮进行设备的切换。
-<img src="/images/home/2.png" alt="2" style="zoom:50%;" />
+<img src="../../images/home/2.png" alt="2" style="zoom:50%;" />
 - 第七部分为站点告警信息，展示当前的告警信息，从左向右依次为：
   - 告警设备
   - 告警等级（按照紧急度排序为：**L1>L2>L3**）
-  |<img src="/images/home/3.png" alt="3" />|<img src="/images/home/4.png" alt="4" />|<img src="/images/home/5.png" alt="5" />|
+  |<img src="../../images/home/3.png" alt="3" />|<img src="../../images/home/4.png" alt="4" />|<img src="../../images/home/5.png" alt="5" />|
   - 告警信息
 
 <h3>Devices 页面</h3>
-<img src="/images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
 **Devices** 包含多个设备类型，包括：**PV**、**Battery**、**Diesel Generator**、**Meter1**、**Meter2**。
 每个设备的页面中通常有：
 
@@ -106,7 +106,7 @@ search: false
 
 <h5>Overview</h5>
 
-<img src="/images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 - 顶部为PV的4个指标卡片：
   - **PV Power**：光伏当前功率
@@ -120,7 +120,7 @@ search: false
 
 <h5>Value Monitoring</h5>
 
-<img src="/images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 - 顶部显示 **Update Time**，为最新获取到数据的时间。
 - 下方是两张表：
@@ -129,7 +129,7 @@ search: false
 
 <h4>Battery</h4>
 <h5>Overview</h5>
-<img src="/images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
 该页面以卡片列表形式展示电池关键指标：
 
 - **Charge/Discharge Status**：电池充放电状态
@@ -143,7 +143,7 @@ search: false
 - **Avg Cell Temperature**：电池Cell平均温度
 
 <h5>Value Monitoring</h5>
-<img src="/images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
 该页面包含 Tab：
 
 - **Battery**：电池
@@ -153,7 +153,7 @@ search: false
 每个 Tab 都是“**Update Time + 左右表格**”的形式，同**PV**的**Value Monitoring**页面。
 
 <h5>Battery Management</h5>
-<img src="/images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
 本页面主要监控所有**Battery Cell**的**Voltage**和**Temperature**的情况。
 
 - 左侧：显示所有Cell的电压情况
@@ -166,7 +166,7 @@ search: false
 ---
 <h4>Diesel Generator</h4>
 <h5>Overvie</h5>
-<img src="/images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
 顶部指标卡片：
 
 - **Power（功率）**
@@ -175,18 +175,18 @@ search: false
 - **Coolant Temp（冷却液温度）**
 
 <h5>Value Monitoring</h5>
-<img src="/images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
 结构同 **PV** 的 **Value Monitoring**页面。
 
 <h5>Meter1</h5>
 **Meter1**直接展示**Value Monitoring**信息，其结构同**PV**的 **Value Monitoring**页面。
-<img src="/images/Devices/meter/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/meter/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 <h5>Meter2</h5>
 
 **Meter2**直接展示**Value Monitoring**信息，其结构同**PV**的 **Value Monitoring**页面。
 
-<img src="/images/Devices/meter/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../images/Devices/meter/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 <h3>Alarm 页面</h3>
 **Alarm**页面为告警记录页面，用户可以通过该模块对当前的告警信息以及历史告警信息进行查看。

@@ -6,7 +6,7 @@ outline: deep
 
 ### Overview
 
-![2](/images/Devices/pv/2.png)
+![2](../../../../images/Devices/pv/2.png)
 
 - 顶部为PV的4个指标卡片：
   - **PV Power**：光伏当前功率
@@ -20,7 +20,7 @@ outline: deep
 
 ### Value Monitoring
 
-![3](/images/Devices/pv/3.png)
+![3](../../../../images/Devices/pv/3.png)
 
 - 顶部显示 **Update Time**，为最新获取到数据的时间。
 - 下方是两张表：

@@ -6,21 +6,21 @@ outline: deep
 
 ## Batch Edit Point Mappings
 
-<img src="/images/Setting/Configuration/channel/33.png" alt="33" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/33.png" alt="33" style="max-width:100%; height:auto;" />
 
 1. In the **mappings** view, click **Edit** to enter mapping edit mode.
 
-<img src="/images/Setting/Configuration/channel/34.png" alt="34" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/34.png" alt="34" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter changes by:
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-<img src="/images/Setting/Configuration/channel/35.png" alt="35" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/35.png" alt="35" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-<img src="/images/Setting/Configuration/channel/36.png" alt="36" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/36.png" alt="36" style="max-width:100%; height:auto;" />
 
 Point mapping rules (mapping fields differ by channel type):
 
@@ -55,7 +55,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 ### Import Point Mappings from File
 
-<img src="/images/Setting/Configuration/channel/37.png" alt="37" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/37.png" alt="37" style="max-width:100%; height:auto;" />
 
 1. Click **Import** and select a CSV file to import. Requirements differ by channel type:
 
@@ -69,7 +69,7 @@ Point mapping rules (mapping fields differ by channel type):
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/38.png" alt="38" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/channel/38.png" alt="38" style="max-width:100%; height:auto;" />
 
 - **di_do**
 
@@ -81,7 +81,7 @@ Point mapping rules (mapping fields differ by channel type):
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -90,7 +90,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 ### Manually Edit Point Mappings
 
-<img src="/images/Setting/Configuration/channel/39.png" alt="39" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/39.png" alt="39" style="max-width:100%; height:auto;" />
 
 1. Click the **edit icon** for the target point mapping to modify it.
 2. Modify according to the mapping rules. For existing points, the ID cannot be changed.
@@ -100,7 +100,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 ### Submit All Changes
 
-<img src="/images/Setting/Configuration/channel/40.png" alt="40" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/40.png" alt="40" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure all mapping data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.
@@ -110,6 +110,6 @@ Point mapping rules (mapping fields differ by channel type):
 
 ## Export Point Mapping CSV Files
 
-<img src="/images/Setting/Configuration/channel/41.png" alt="41" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/41.png" alt="41" style="max-width:100%; height:auto;" />
 
 1. Click **Export** to export the table data for the current point type as **.csv**. The filename format is: **channel name + tab name (telemetry/signal/control/adjustment) + "_mapping" + current timestamp**.

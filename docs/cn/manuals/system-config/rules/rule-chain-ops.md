@@ -6,11 +6,11 @@ outline: deep
 
 ## 查看规则链路详情及实时执行链路
 
-![8](/images/Setting/Configuration/rule/8.png)
+![8](../../../../images/Setting/Configuration/rule/8.png)
 
-![9](/images/Setting/Configuration/rule/9.png)
+![9](../../../../images/Setting/Configuration/rule/9.png)
 
-![10](/images/Setting/Configuration/rule/10.png)
+![10](../../../../images/Setting/Configuration/rule/10.png)
 
 1. 点击所要查看规则行的**Operation**列的**Detail**按钮，挑战到规则链详情页面。
 
@@ -392,19 +392,19 @@ outline: deep
 
 ## 修改规则链路
 
-![11](/images/Setting/Configuration/rule/11.png)
+![11](../../../../images/Setting/Configuration/rule/11.png)
 
-![12](/images/Setting/Configuration/rule/12.png)
+![12](../../../../images/Setting/Configuration/rule/12.png)
 
 1. 点击**Edit**按钮进行到规则链的编辑模式。
 
 2. 此处为自定义的功能卡片，可以使用鼠标点击所需要的卡片进行拖拽，从而放置到规则链的画布中。不同的卡片具有不同的功能：
 
      - **Switch Function——数值判断卡片**
-       ![13](/images/Setting/Configuration/rule/13.png)
+       ![13](../../../../images/Setting/Configuration/rule/13.png)
        该卡片主要用于对实例的点位数据的值是否满足某一条件进行判断。
      - **Change Value——数据修改卡片**
-       ![14](/images/Setting/Configuration/rule/14.png)
+       ![14](../../../../images/Setting/Configuration/rule/14.png)
        该卡片主要用来修改某一实例的点位数据。
 
 3. 此处为规则链的画布，可以在此处进行卡片的配置、连线。基础操作如下：
@@ -414,36 +414,36 @@ outline: deep
      - 需要进行删除操作的时候，单击卡片或者线段，再点击键盘中的”Backspace“键进行删除**（start卡片和end卡片是不能够删除的）**。
      - 双击卡片进行卡片内部的参数配置，不同的卡片类型所编辑的数据不同：
        - **Switch Function——数值判断卡片**
-         ![15](/images/Setting/Configuration/rule/15.png)
+         ![15](../../../../images/Setting/Configuration/rule/15.png)
        
          1. 第一部分为基础信息区域，主要是卡片展示的信息：**label**为卡片的标题信息，**description**为卡片的描述信息。
          2. 第二部分为参数定义区域，在此处进行参数的声明：
-             ![16](/images/Setting/Configuration/rule/16.png)
+             ![16](../../../../images/Setting/Configuration/rule/16.png)
              点击添加按钮，可以进行参数定义的新增，每个参数给予的名称为**X+自增序列号**。
              点击每个参数对应的删除图标按钮，可以删除该的参数。
              参数声明有两种类型：**single**和**combined**类型，其规则如下：
 
            * **single**类型为单一参数定义。用户只需要依次选择实例名称、点位类型、点位名称即可。
-             ![17](/images/Setting/Configuration/rule/17.png)
+             ![17](../../../../images/Setting/Configuration/rule/17.png)
        
            * **combined**类型为组合式参数定义。用户可以选择已经定义的参数或者手动输入数字进行组合式计算，支持选择运算符：`+、-、*、/`。用户点击下方的**绿色新增图标**按钮可以增加一行数据运算参数，点击对应运算数据右侧的**红色删除图标**按钮，可以删除这一行数据。
-             ![18](/images/Setting/Configuration/rule/18.png)
+             ![18](../../../../images/Setting/Configuration/rule/18.png)
          3. 第三部分判断规则定义区域，在此处进行规则的声明：
-             ![19](/images/Setting/Configuration/rule/19.png)
+             ![19](../../../../images/Setting/Configuration/rule/19.png)
              点击**橙色新增图标**按钮新增规则，每次新增的规则的给予的名称为**out+自增列号**。
              点击每个规则对应的**删除图标**按钮删除该规则。
-             ![20](/images/Setting/Configuration/rule/20.png)
+             ![20](../../../../images/Setting/Configuration/rule/20.png)
              根据在参数定义中的参数名称，用户在此处可以选择已经定义的参数与其他参数或者数值进行比较。用户可以点击绿色新增按钮，添加额外一行规则判断，并进行组合式判断（目前两个判断之间只允许And判断，及两者都满足)，用户可以点击对应规则后面的红色删除按钮，对这一行规则判断进行删除。
 
            > 注意：每一个完整的**out+xxx**的规则都会在节点卡片上生成一个对应的点位，只有满足判断条件的时候，才会执行这个点位连通的下一节点。
-           > ![21](/images/Setting/Configuration/rule/21.png)
+           > ![21](../../../../images/Setting/Configuration/rule/21.png)
        - **Change Value——数据修改卡片**
-         ![22](/images/Setting/Configuration/rule/22.png)
+         ![22](../../../../images/Setting/Configuration/rule/22.png)
          
          1. 第一部分为基础信息区域，主要是卡片展示的信息：**label**为卡片的标题信息，**description**为卡片的描述信息。
          2. 第二部分为参数定义区域，在此处进行参数的声明，其声明方式同**Switch Function**中的声明方式。
          3. 第三部分为修改规则定义区域，在此处进行实例点位参数的修改。
-             ![23](/images/Setting/Configuration/rule/23.png)
+             ![23](../../../../images/Setting/Configuration/rule/23.png)
              点击**橙色新增图标**按钮，新增参数修改规则。
              点击每个修改规则对应的**删除图标**按钮，删除该规则。
              对于参数的设置分为左右两个参数。整体逻辑是要把左侧的参数修改为右侧的数值或者参数。左侧的选择框只能选择**single**类型的参数；右侧的选择框可以选择任意已经定义的参数或者自定义数值。

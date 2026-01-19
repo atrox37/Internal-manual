@@ -4,7 +4,7 @@ outline: deep
 
 # Login 页面
 
-![1](/images/login/1.png)
+![1](../../../../images/login/1.png)
 
 1. 打开系统后进入登录页（Log in page）
 

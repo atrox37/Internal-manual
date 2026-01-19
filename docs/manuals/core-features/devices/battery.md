@@ -6,7 +6,7 @@ outline: deep
 
 ## Overview
 
-<img src="/images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 This page displays key battery indicators in a card list:
 
@@ -22,7 +22,7 @@ This page displays key battery indicators in a card list:
 
 ## Value Monitoring
 
-<img src="/images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 This page includes tabs:
 
@@ -35,7 +35,7 @@ Each tab uses the "**Update Time + left/right tables**" layout, the same as the 
 
 ## Battery Management
 
-<img src="/images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../../../images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 This page mainly monitors **Voltage** and **Temperature** for all **Battery Cells**.
 

@@ -41,7 +41,7 @@ A product is a standardized model for a device/system type in the platform, used
     >
     >
     >
-    ><img src="/images/Basic/Instance/battery.png" alt="Battery structure diagram">
+    ><img src="../../../images/Basic/Instance/battery.png" alt="Battery structure diagram">
   
   - **dc_dc_converter(DC/DC converter)**
   

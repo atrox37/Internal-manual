@@ -4,11 +4,11 @@ outline: deep
 
 # Channel Point Configuration
 
-<img src="/images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Points** in the **Operation** column of the desired channel row to open the points dialog.
 
-<img src="/images/Setting/Configuration/channel/12.png" alt="12" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/12.png" alt="12" style="max-width:100%; height:auto;" />
 
 2. The point type tabs include **Telemetry**, **Signal**, **Control**, and **Adjustment**, corresponding to the four-remote point categories. Click a tab to view points of that type.
 
@@ -32,62 +32,62 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Single Publish
 
-<img src="/images/Setting/Configuration/channel/14.png" alt="14" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/14.png" alt="14" style="max-width:100%; height:auto;" />
 
 1. Click **Publish** for the target point row to open the single publish dialog.
 
-<img src="/images/Setting/Configuration/channel/15.png" alt="15" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/15.png" alt="15" style="max-width:100%; height:auto;" />
 
 2. Enter the value to publish in the Value input (for **telemetry** and **adjustment**, the value is numeric; for **signal** and **control**, the value is 0 or 1).
 3. Click **Submit** to publish the value.
 
 4. Click **Cancel** to cancel.
 
-<img src="/images/Setting/Configuration/channel/16.png" alt="16" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/16.png" alt="16" style="max-width:100%; height:auto;" />
 
 5. On success, the value changes.
 
 ### Batch Publish
 
-<img src="/images/Setting/Configuration/channel/17.png" alt="17" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/17.png" alt="17" style="max-width:100%; height:auto;" />
 
 1. Click **Batch Publish** on the target point type tab (only affects the current point type).
 
-<img src="/images/Setting/Configuration/channel/18.png" alt="18" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/18.png" alt="18" style="max-width:100%; height:auto;" />
 
 2. Enter values in the **Publish** column (for **telemetry** and **adjustment**, numeric; for **signal** and **control**, 0 or 1).
 3. Click **Submit Publish** to submit the bulk publish.
 4. Click **Cancel Publish** to cancel.
 
-<img src="/images/Setting/Configuration/channel/19.png" alt="19" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/19.png" alt="19" style="max-width:100%; height:auto;" />
 
 1. On success, the values change.
 
 ## Batch Edit Points
 
-<img src="/images/Setting/Configuration/channel/20.png" alt="20" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/20.png" alt="20" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** in the points view to enter batch edit mode for all points.
 
-<img src="/images/Setting/Configuration/channel/21.png" alt="21" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/21.png" alt="21" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter by status (only within the current point-type table):
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-  <img src="/images/Setting/Configuration/channel/22.png" alt="22" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/channel/22.png" alt="22" style="max-width:100%; height:auto;" />
 
 - **added**: Filters points added via the add operation. Added rows and data are shown in green.
 
-  <img src="/images/Setting/Configuration/channel/23.png" alt="23" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/channel/23.png" alt="23" style="max-width:100%; height:auto;" />
 
 - **deleted**: Filters points deleted via the delete operation. Deleted rows and data are shown in red.
 
-  <img src="/images/Setting/Configuration/channel/24.png" alt="24" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/channel/24.png" alt="24" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-  <img src="/images/Setting/Configuration/channel/25.png" alt="25" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/channel/25.png" alt="25" style="max-width:100%; height:auto;" />
 
 
 **Point configuration rules:**
@@ -108,7 +108,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Import Points from a File
 
-<img src="/images/Setting/Configuration/channel/26.png" alt="26" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/26.png" alt="26" style="max-width:100%; height:auto;" />
 
 1. Click **Import**, choose a **.csv** file to import. File requirements differ by point type:
 
@@ -122,7 +122,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/27.png" alt="27" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/channel/27.png" alt="27" style="max-width:100%; height:auto;" />
 
 - signal/control
 
@@ -134,7 +134,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -143,7 +143,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Add Points
 
-<img src="/images/Setting/Configuration/channel/28.png" alt="28" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/28.png" alt="28" style="max-width:100%; height:auto;" />
 
 1. Click the **Add** icon button to create an editable row at the top of the current point-type table.
 2. Fill in the row according to the configuration rules.
@@ -155,7 +155,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Delete Points
 
-<img src="/images/Setting/Configuration/channel/29.png" alt="29" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/29.png" alt="29" style="max-width:100%; height:auto;" />
 
 1. Click the **delete** icon for the target row to delete it locally.
 2. Deleted rows appear as shown and can be filtered by **deleted**.
@@ -163,7 +163,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Modify Points
 
-<img src="/images/Setting/Configuration/channel/30.png" alt="30" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/30.png" alt="30" style="max-width:100%; height:auto;" />
 
 1. Click the **edit** icon for the target point to modify it.
 2. Modify according to the configuration rules. For existing points, the ID cannot be changed.
@@ -174,7 +174,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ### Submit All Changes
 
-<img src="/images/Setting/Configuration/channel/31.png" alt="31" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/31.png" alt="31" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure all modified point data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.
@@ -184,6 +184,6 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 ## Export Point CSV Files
 
-<img src="/images/Setting/Configuration/channel/32.png" alt="32" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/channel/32.png" alt="32" style="max-width:100%; height:auto;" />
 
 Click **Export** to export the table data under the current tab as **.csv**. The filename format is: **channel name + tab name (telemetry/signal/control/adjustment) + current timestamp**.

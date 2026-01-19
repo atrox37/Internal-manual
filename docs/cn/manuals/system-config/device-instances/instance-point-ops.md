@@ -5,9 +5,9 @@ outline: deep
 # 实例点位配置
 
 
-![11](/images/Setting/Configuration/deviceInstance/11.png)
+![11](../../../../images/Setting/Configuration/deviceInstance/11.png)
 
-![12](/images/Setting/Configuration/deviceInstance/12.png)
+![12](../../../../images/Setting/Configuration/deviceInstance/12.png)
 
 1. 通过点击想要查看的设备实例行**Operation**列的**Points**按钮，打开点位弹框。
 
@@ -20,11 +20,11 @@ outline: deep
 
 ## 点位命令下发
 
-![13](/images/Setting/Configuration/deviceInstance/13.png)
+![13](../../../../images/Setting/Configuration/deviceInstance/13.png)
 
-![14](/images/Setting/Configuration/deviceInstance/14.png)
+![14](../../../../images/Setting/Configuration/deviceInstance/14.png)
 
-![15](/images/Setting/Configuration/deviceInstance/15.png)
+![15](../../../../images/Setting/Configuration/deviceInstance/15.png)
 
 2. 点击所要执行某一数值的点位所在行**Operation**列的**Execute**按钮，打开执行弹框。
 3. 输入要执行的值（数字）。
@@ -34,8 +34,8 @@ outline: deep
 
 ## 导出点位CSV文件
 
-![16](/images/Setting/Configuration/deviceInstance/16.png)
+![16](../../../../images/Setting/Configuration/deviceInstance/16.png)
 
 1. 点击**Export**按钮，将当前显示的表格数据进行导出，导出的**.csv文件**的文件名格式为：**实例名称_点位类型（property/measurement/action）_points_当前时间戳.csv**，文件如下图所示：
 
-![17](/images/Setting/Configuration/deviceInstance/17.png)
+![17](../../../../images/Setting/Configuration/deviceInstance/17.png)

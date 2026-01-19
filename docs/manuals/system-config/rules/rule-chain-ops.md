@@ -6,11 +6,11 @@ outline: deep
 
 ## View Rule Flow Details and Real-Time Execution Path
 
-<img src="/images/Setting/Configuration/rule/8.png" alt="8" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/rule/8.png" alt="8" style="max-width:100%; height:auto;" />
 
 1. Click **Detail** in the **Operation** column of the target rule row to navigate to the rule flow details page.
 
-<img src="/images/Setting/Configuration/rule/9.png" alt="9" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/rule/9.png" alt="9" style="max-width:100%; height:auto;" />
 
 2. The highlighted path in the flow is the currently executed path. Node data for the current path is displayed below the node.
 
@@ -238,29 +238,29 @@ outline: deep
 
 5. Click **FullScreen** to enter full-screen mode.
 
-<img src="/images/Setting/Configuration/rule/10.png" alt="10" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/rule/10.png" alt="10" style="max-width:100%; height:auto;" />
 
 6. Click **Exit Fullscreen** to exit.
 
 ## Edit Rule Flow
 
-<img src="/images/Setting/Configuration/rule/11.png" alt="11" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/rule/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** to enter rule flow edit mode.
 
-<img src="/images/Setting/Configuration/rule/12.png" alt="12" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/rule/12.png" alt="12" style="max-width:100%; height:auto;" />
 
 2. The cards below are custom function cards. Drag the required card onto the rule flow canvas. Different cards have different functions:
 
 - **Switch Function - Value condition card**
 
-  <img src="/images/Setting/Configuration/rule/13.png" alt="13" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/rule/13.png" alt="13" style="max-width:100%; height:auto;" />
 
   This card is used to judge whether a point value meets a condition.
 
 - **Change Value - Data modification card**
 
-  <img src="/images/Setting/Configuration/rule/14.png" alt="14" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/rule/14.png" alt="14" style="max-width:100%; height:auto;" />
 
   This card is used to modify a point value for an instance.
 
@@ -276,42 +276,42 @@ outline: deep
 
   - **Switch Function - Value condition card**
 
-    <img src="/images/Setting/Configuration/rule/15.png" alt="15" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/15.png" alt="15" style="max-width:100%; height:auto;" />
 
     ① The first section is basic info: **label** is the card title, and **description** is the card description.
 
     ② The second section is parameter definition, where you declare parameters:
 
-    <img src="/images/Setting/Configuration/rule/16.png" alt="16" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/16.png" alt="16" style="max-width:100%; height:auto;" />
 
     Click the add button to create a parameter. Each parameter is named **X + auto-increment number**. Click the delete icon next to a parameter to remove it. Parameter definitions have two types: **single** and **combined**:
 
     - **single**: a single parameter. Select instance name, point type, and point name.
 
-      <img src="/images/Setting/Configuration/rule/17.png" alt="17" style="max-width:100%; height:auto;" />
+      <img src="../../../images/Setting/Configuration/rule/17.png" alt="17" style="max-width:100%; height:auto;" />
 
   
     - **combined**: a composite parameter. You can select existing parameters or enter numbers and combine them with operators `+`, `-`, `*`, `/`. Click the **green add icon** to add a calculation row, and click the **red delete icon** to remove a row.
   
-      <img src="/images/Setting/Configuration/rule/18.png" alt="18" style="max-width:100%; height:auto;" />
+      <img src="../../../images/Setting/Configuration/rule/18.png" alt="18" style="max-width:100%; height:auto;" />
   
     ③ The third section is rule definition, where you define conditions:
   
-    <img src="/images/Setting/Configuration/rule/19.png" alt="19" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/19.png" alt="19" style="max-width:100%; height:auto;" />
   
     Click the **orange add icon** to add a rule. Each rule is named **out + auto-increment number**. Click the **delete icon** next to a rule to remove it.
   
-    <img src="/images/Setting/Configuration/rule/20.png" alt="20" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/20.png" alt="20" style="max-width:100%; height:auto;" />
   
     Based on parameter names defined above, you can compare parameters to other parameters or values. Click the green add icon to add an extra condition line and combine conditions (currently only **And** is supported, meaning both must be satisfied). Click the red delete button on a condition line to remove it.
   
     > **Note: Each complete `out+xxx` rule generates a corresponding output handle on the node card. Only when the condition is satisfied will the flow proceed to the next node connected to that handle.**
     >
-    > <img src="/images/Setting/Configuration/rule/21.png" alt="21" style="max-width:100%; height:auto;" />
+    > <img src="../../../images/Setting/Configuration/rule/21.png" alt="21" style="max-width:100%; height:auto;" />
   
   - **Change Value - Data modification card**
   
-    <img src="/images/Setting/Configuration/rule/22.png" alt="22" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/22.png" alt="22" style="max-width:100%; height:auto;" />
   
     ① The first section is basic info: **label** is the card title, and **description** is the card description.
   
@@ -319,7 +319,7 @@ outline: deep
   
     ③ The third section is change-rule definition, where you modify instance point parameters.
   
-    <img src="/images/Setting/Configuration/rule/23.png" alt="23" style="max-width:100%; height:auto;" />
+    <img src="../../../images/Setting/Configuration/rule/23.png" alt="23" style="max-width:100%; height:auto;" />
   
     ​	Click the **orange add icon** to add a change rule. Click the **delete icon** next to a rule to remove it. The modification rule uses left and right parameters: the left side is the target parameter to change; the right side is the new value or parameter. The left selector can only choose **single** parameters; the right selector can choose any defined parameter or a custom value.
 

@@ -4,6 +4,11 @@ export default defineConfig({
   // GitHub Pages repo base path
   base: "/",
   cleanUrls: false,
+  vite: {
+    build: {
+      assetsInlineLimit: 0,
+    },
+  },
   markdown: {
     // Native lazy-loading for all markdown images (<img loading="lazy" />)
     image: {

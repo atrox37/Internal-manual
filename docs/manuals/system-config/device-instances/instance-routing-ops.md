@@ -4,7 +4,7 @@ outline: deep
 
 # Instance Point Routing Configuration
 
-<img src="/images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
 
 1. Switch to **Routing** in **View Mode** to open the instance point routing view.
 2. Click **Edit** to enter routing edit mode.
@@ -13,31 +13,31 @@ outline: deep
 
 ## Export Point Routing CSV Files
 
-<img src="/images/Setting/Configuration/deviceInstance/19.png" alt="19" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/19.png" alt="19" style="max-width:100%; height:auto;" />
 
 1. Click **Export** to export the current table data. The CSV filename format is: **instance name_point type (measurement/action)_routing_timestamp.csv**. Example:
 
-   <img src="/images/Setting/Configuration/deviceInstance/20.png" alt="20" style="max-width:100%; height:auto;" />
+   <img src="../../../images/Setting/Configuration/deviceInstance/20.png" alt="20" style="max-width:100%; height:auto;" />
 
    In the exported file, **point_type** uses abbreviations: **T = Telemetry, S = Signal, C = Control, A = Adjustment.**
 
 ## Batch Edit Instance Point Routing
 
-<img src="/images/Setting/Configuration/deviceInstance/21.png" alt="21" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/21.png" alt="21" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** to enter routing edit mode.
 
-<img src="/images/Setting/Configuration/deviceInstance/22.png" alt="22" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/22.png" alt="22" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter by:
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-<img src="/images/Setting/Configuration/deviceInstance/23.png" alt="23" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/23.png" alt="23" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-<img src="/images/Setting/Configuration/deviceInstance/24.png" alt="24" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/24.png" alt="24" style="max-width:100%; height:auto;" />
 
 > **Point routing configuration rules:**
 >
@@ -50,7 +50,7 @@ outline: deep
 
 ### Manually Edit Routing
 
-<img src="/images/Setting/Configuration/deviceInstance/25.png" alt="25" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/25.png" alt="25" style="max-width:100%; height:auto;" />
 
 1. Click the **edit icon** for the target routing row.
 2. Modify according to the routing rules. For existing points, the ID cannot be changed.
@@ -60,7 +60,7 @@ outline: deep
 
 ### Import Routing from File
 
-<img src="/images/Setting/Configuration/deviceInstance/26.png" alt="26" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/26.png" alt="26" style="max-width:100%; height:auto;" />
 
 1. Click **Import** and select a **.csv** file. The file must meet the following requirements:
 
@@ -77,7 +77,7 @@ outline: deep
 
 - Format screenshot:
 
-  <img src="/images/Setting/Configuration/deviceInstance/27.png" alt="27" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/deviceInstance/27.png" alt="27" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -86,7 +86,7 @@ outline: deep
 
 ### Submit All Changes
 
-<img src="/images/Setting/Configuration/deviceInstance/28.png" alt="28" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/deviceInstance/28.png" alt="28" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure the modified data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.

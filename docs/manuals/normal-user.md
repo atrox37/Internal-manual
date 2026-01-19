@@ -6,7 +6,7 @@ search: true
 
 
 
-<img src="/images/common/index.png" alt="index" style="max-width:100%; height:auto;" />
+<img src="../images/common/index.png" alt="index" style="max-width:100%; height:auto;" />
 
  **Monarch Edge** is a comprehensive monitoring and analytics platform for edge energy sites, designed to provide users with a clear, unified, and visual view of site operations. The platform covers key business scenarios such as generation, energy storage, energy usage, and alarms. With standardized interfaces and consistent interactions, the Monarch Edge improves daily O&M efficiency and management quality by helping users quickly understand device status, operational trends, and abnormal conditions.
 
@@ -22,7 +22,7 @@ search: true
 
 <h3>UI Structure and Function Description</h3>
 
-<img src="/images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
 
 The main home page of the user interface is divided into three parts:
 
@@ -72,13 +72,13 @@ The main home page of the user interface is divided into three parts:
   - Users can resize the sidebar width via the zoom icon at the bottom-right of the sidebar.
 
   <span style="display:inline-flex; gap:40px; align-items:center; white-space:nowrap;">
-    <img src="/images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
-    <img src="/images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
+    <img src="../images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
+    <img src="../images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
   </span>
 
 2. **Upper-right: Top bar**
 
-  <img src="/images/common/5.png" alt="5" style="max-width:100%; height:auto;" /> 
+  <img src="../images/common/5.png" alt="5" style="max-width:100%; height:auto;" /> 
 
   On the right side of the top bar there is a bell icon (Notice):
 
@@ -379,7 +379,7 @@ A product is a standardized model for a device/system type in the platform, used
     >
     >
     >
-    ><img src="/images/Basic/Instance/battery.png" alt="Battery structure diagram">
+    ><img src="../images/Basic/Instance/battery.png" alt="Battery structure diagram">
   
   - **dc_dc_converter(DC/DC converter)**
   
@@ -558,7 +558,7 @@ A rule chain is the visual execution flow inside a rule. It uses "nodes + links"
 <h2>Core Features</h2>
 
 <h3>Login Page</h3>
-<img src="/images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. Open the system and enter the login page.
 
@@ -574,7 +574,7 @@ A rule chain is the visual execution flow inside a rule. It uses "nodes + links"
 
 The **Home** page mainly displays key data for the site and specific devices, and refreshes in real time with device status.
 
-<img src="/images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. The first section contains the site's energy overview cards, mainly showing statistics for **PV Energy**, **Diesel Energy**, **Energy Used**, and **Saving Billing**.
 
@@ -601,12 +601,12 @@ The **Home** page mainly displays key data for the site and specific devices, an
 - Alarm device
 - Alarm level (sorted by urgency: **L1>L2>L3**)
 
-<img src="/images/home/3.png" alt="alarm level1" style="max-width:100%; height:auto;" /><img src="/images/home/4.png" alt="alarm level2" style="max-width:100%; height:auto;" /><img src="/images/home/5.png" alt="alarm level3" style="max-width:100%; height:auto;" />
+<img src="../images/home/3.png" alt="alarm level1" style="max-width:100%; height:auto;" /><img src="../images/home/4.png" alt="alarm level2" style="max-width:100%; height:auto;" /><img src="../images/home/5.png" alt="alarm level3" style="max-width:100%; height:auto;" />
 
 * Alarm information
 
 <h3>Devices Page</h3>
-<img src="/images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 **Devices** includes multiple device types, such as **PV**, **Battery**, **Diesel Generator**, **Meter1**, and **Meter2**. Each device page typically includes:
 
@@ -617,7 +617,7 @@ The **Home** page mainly displays key data for the site and specific devices, an
 
 <h5>Overview</h5>
 
-<img src="/images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 - The top shows four PV indicator cards:
   - **PV Power**: Current PV power
@@ -631,7 +631,7 @@ The **Home** page mainly displays key data for the site and specific devices, an
 
 <h5>Value Monitoring</h5>
 
-<img src="/images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 - The top right of this section displays Update Time, which is the latest data acquisition time.
 - Below are two tables:
@@ -642,7 +642,7 @@ The **Home** page mainly displays key data for the site and specific devices, an
 
 <h5>Overview</h5>
 
-<img src="/images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 This page displays key battery indicators in a card list:
 
@@ -658,7 +658,7 @@ This page displays key battery indicators in a card list:
 
 <h5>Value Monitoring</h5>
 
-<img src="/images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 This page includes tabs:
 
@@ -671,7 +671,7 @@ Each tab uses the "**Update Time + left/right tables**" layout, the same as the 
 
 <h3>Battery Management</h3>
 
-<img src="/images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 This page mainly monitors **Voltage** and **Temperature** for all **Battery Cells**.
 
@@ -685,7 +685,7 @@ This page mainly monitors **Voltage** and **Temperature** for all **Battery Cell
 <h4>Diesel Generator</h4>
 <h5>Overview</h5>
 
-<img src="/images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 Top indicator cards:
 
@@ -696,19 +696,19 @@ Top indicator cards:
 
 <h5>Value Monitoring</h5>
 
-<img src="/images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 Layout is the same as the **PV** **Value Monitoring** page.
 
 <h5>Meter1</h5>
 **Meter1** directly displays **Value Monitoring** information, with the same layout as the **PV** **Value Monitoring** page.
-<img src="/images/Devices/meter/1.png" alt="1" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/meter/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 <h5>Meter2</h5>
 
 **Meter2** directly displays **Value Monitoring** information, with the same layout as the **PV** **Value Monitoring** page.
 
-<img src="/images/Devices/meter/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Devices/meter/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 <h3>Alarm Page</h3>
 Alarm is the alarm record page. Users can view current and historical alarm information from this module.
@@ -830,7 +830,7 @@ The top usually has an **Export** button.
 
 <h3>Channels</h3>
 
-<img src="/images/Setting/Configuration/channel/1.png" alt="Channel Configuration" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/1.png" alt="Channel Configuration" style="max-width:100%; height:auto;" />
 
 This chapter includes: channel management, channel point configuration, and channel point mapping configuration.
 
@@ -838,7 +838,7 @@ This chapter includes: channel management, channel point configuration, and chan
 
 <h5>Query Channels</h5>
 
-<img src="/images/Setting/Configuration/channel/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 1. You can filter channels by:
 
@@ -852,15 +852,15 @@ This chapter includes: channel management, channel point configuration, and chan
 
 <h5>View Channel Details and Edit</h5>
 
-<img src="/images/Setting/Configuration/channel/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 1. Click **Detail** in the **Operation** column for the target channel to open the details dialog.
 
-<img src="/images/Setting/Configuration/channel/4.png" alt="4" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/4.png" alt="4" style="max-width:100%; height:auto;" />
 
 2. Click **Edit** to enter edit mode.
 
-<img src="/images/Setting/Configuration/channel/5.png" alt="5" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/5.png" alt="5" style="max-width:100%; height:auto;" />
 
 3. Enter the values to update. Refer to the field definitions in the basic concepts section.
 
@@ -870,11 +870,11 @@ This chapter includes: channel management, channel point configuration, and chan
 
 <h5>Add a New Channel</h5>
 
-<img src="/images/Setting/Configuration/channel/6.png" alt="6" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/6.png" alt="6" style="max-width:100%; height:auto;" />
 
 1. Click **New Channel** to open the add dialog.
 
-<img src="/images/Setting/Configuration/channel/7.png" alt="7" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/7.png" alt="7" style="max-width:100%; height:auto;" />
 
 1. Select the protocol via the **Protocol** dropdown and fill in the required parameters. Refer to the field descriptions in the details page.
 2. Click **Submit** to add the channel.
@@ -882,17 +882,17 @@ This chapter includes: channel management, channel point configuration, and chan
 
 <h5>Toggle Channel Enable Status</h5>
 
-<img src="/images/Setting/Configuration/channel/8.png" alt="8" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/8.png" alt="8" style="max-width:100%; height:auto;" />
 
 1. Use the slider in the **Enable** column to toggle. Slide left to **Enabled**, right to **Disabled**.
 
 <h5>Delete an Existing Channel</h5>
 
-<img src="/images/Setting/Configuration/channel/9.png" alt="9" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/9.png" alt="9" style="max-width:100%; height:auto;" />
 
 1. Click **Delete** in the **Operation** column of the channel row.
 
-<img src="/images/Setting/Configuration/channel/10.png" alt="10" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/10.png" alt="10" style="max-width:100%; height:auto;" />
 
 2. Click **Confirm** to delete.
 
@@ -900,11 +900,11 @@ This chapter includes: channel management, channel point configuration, and chan
 
 <h4>Channel Point Configuration</h4>
 
-<img src="/images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Points** in the **Operation** column of the desired channel row to open the points dialog.
 
-<img src="/images/Setting/Configuration/channel/12.png" alt="12" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/12.png" alt="12" style="max-width:100%; height:auto;" />
 
 2. The point type tabs include **Telemetry**, **Signal**, **Control**, and **Adjustment**, corresponding to the four-remote point categories. Click a tab to view points of that type.
 
@@ -922,7 +922,7 @@ This chapter includes: channel management, channel point configuration, and chan
 
 9. The point filter box supports fuzzy search by name or precise search via dropdown selection.
 
-<img src="/images/Setting/Configuration/channel/13.png" alt="13" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/13.png" alt="13" style="max-width:100%; height:auto;" />
 
 When switching the view toggle to **mappings**, the page is interpreted as follows:
 
@@ -940,62 +940,62 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Single Publish</h6>
 
-<img src="/images/Setting/Configuration/channel/14.png" alt="14" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/14.png" alt="14" style="max-width:100%; height:auto;" />
 
 1. Click **Publish** for the target point row to open the single publish dialog.
 
-<img src="/images/Setting/Configuration/channel/15.png" alt="15" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/15.png" alt="15" style="max-width:100%; height:auto;" />
 
 2. Enter the value to publish in the Value input (for **telemetry** and **adjustment**, the value is numeric; for **signal** and **control**, the value is 0 or 1).
 3. Click **Submit** to publish the value.
 
 4. Click **Cancel** to cancel.
 
-<img src="/images/Setting/Configuration/channel/16.png" alt="16" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/16.png" alt="16" style="max-width:100%; height:auto;" />
 
 5. On success, the value changes.
 
 <h6>Batch Publish</h6>
 
-<img src="/images/Setting/Configuration/channel/17.png" alt="17" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/17.png" alt="17" style="max-width:100%; height:auto;" />
 
 1. Click **Batch Publish** on the target point type tab (only affects the current point type).
 
-<img src="/images/Setting/Configuration/channel/18.png" alt="18" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/18.png" alt="18" style="max-width:100%; height:auto;" />
 
 2. Enter values in the **Publish** column (for **telemetry** and **adjustment**, numeric; for **signal** and **control**, 0 or 1).
 3. Click **Submit Publish** to submit the bulk publish.
 4. Click **Cancel Publish** to cancel.
 
-<img src="/images/Setting/Configuration/channel/19.png" alt="19" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/19.png" alt="19" style="max-width:100%; height:auto;" />
 
 1. On success, the values change.
 
 <h5>Batch Edit Points</h5>
 
-<img src="/images/Setting/Configuration/channel/20.png" alt="20" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/20.png" alt="20" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** in the points view to enter batch edit mode for all points.
 
-<img src="/images/Setting/Configuration/channel/21.png" alt="21" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/21.png" alt="21" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter by status (only within the current point-type table):
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-  <img src="/images/Setting/Configuration/channel/22.png" alt="22" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/channel/22.png" alt="22" style="max-width:100%; height:auto;" />
 
 - **added**: Filters points added via the add operation. Added rows and data are shown in green.
 
-  <img src="/images/Setting/Configuration/channel/23.png" alt="23" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/channel/23.png" alt="23" style="max-width:100%; height:auto;" />
 
 - **deleted**: Filters points deleted via the delete operation. Deleted rows and data are shown in red.
 
-  <img src="/images/Setting/Configuration/channel/24.png" alt="24" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/channel/24.png" alt="24" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-  <img src="/images/Setting/Configuration/channel/25.png" alt="25" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/channel/25.png" alt="25" style="max-width:100%; height:auto;" />
 
 
 **Point configuration rules:**
@@ -1016,7 +1016,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Import Points from a File</h6>
 
-<img src="/images/Setting/Configuration/channel/26.png" alt="26" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/26.png" alt="26" style="max-width:100%; height:auto;" />
 
 1. Click **Import**, choose a **.csv** file to import. File requirements differ by point type:
 
@@ -1030,7 +1030,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/27.png" alt="27" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/channel/27.png" alt="27" style="max-width:100%; height:auto;" />
 
 - signal/control
 
@@ -1042,7 +1042,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/channel/27(1).png" alt="27(1)" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -1051,7 +1051,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Add Points</h6>
 
-<img src="/images/Setting/Configuration/channel/28.png" alt="28" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/28.png" alt="28" style="max-width:100%; height:auto;" />
 
 1. Click the **Add** icon button to create an editable row at the top of the current point-type table.
 2. Fill in the row according to the configuration rules.
@@ -1063,7 +1063,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Delete Points</h6>
 
-<img src="/images/Setting/Configuration/channel/29.png" alt="29" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/29.png" alt="29" style="max-width:100%; height:auto;" />
 
 1. Click the **delete** icon for the target row to delete it locally.
 2. Deleted rows appear as shown and can be filtered by **deleted**.
@@ -1071,7 +1071,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Modify Points</h6>
 
-<img src="/images/Setting/Configuration/channel/30.png" alt="30" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/30.png" alt="30" style="max-width:100%; height:auto;" />
 
 1. Click the **edit** icon for the target point to modify it.
 2. Modify according to the configuration rules. For existing points, the ID cannot be changed.
@@ -1082,7 +1082,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h6>Submit All Changes</h6>
 
-<img src="/images/Setting/Configuration/channel/31.png" alt="31" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/31.png" alt="31" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure all modified point data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.
@@ -1092,7 +1092,7 @@ There are two ways to issue point values: **bulk publish** and **single publish*
 
 <h5>Export Point CSV Files</h5>
 
-<img src="/images/Setting/Configuration/channel/32.png" alt="32" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/32.png" alt="32" style="max-width:100%; height:auto;" />
 
 Click **Export** to export the table data under the current tab as **.csv**. The filename format is: **channel name + tab name (telemetry/signal/control/adjustment) + current timestamp**.
 
@@ -1100,21 +1100,21 @@ Click **Export** to export the table data under the current tab as **.csv**. The
 
 <h5>Batch Edit Point Mappings</h5>
 
-<img src="/images/Setting/Configuration/channel/33.png" alt="33" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/33.png" alt="33" style="max-width:100%; height:auto;" />
 
 1. In the **mappings** view, click **Edit** to enter mapping edit mode.
 
-<img src="/images/Setting/Configuration/channel/34.png" alt="34" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/34.png" alt="34" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter changes by:
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-<img src="/images/Setting/Configuration/channel/35.png" alt="35" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/35.png" alt="35" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-<img src="/images/Setting/Configuration/channel/36.png" alt="36" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/36.png" alt="36" style="max-width:100%; height:auto;" />
 
 Point mapping rules (mapping fields differ by channel type):
 
@@ -1149,7 +1149,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 <h6>Import Point Mappings from File</h6>
 
-<img src="/images/Setting/Configuration/channel/37.png" alt="37" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/37.png" alt="37" style="max-width:100%; height:auto;" />
 
 1. Click **Import** and select a CSV file to import. Requirements differ by channel type:
 
@@ -1163,7 +1163,7 @@ Point mapping rules (mapping fields differ by channel type):
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/38.png" alt="38" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/channel/38.png" alt="38" style="max-width:100%; height:auto;" />
 
 - **di_do**
 
@@ -1175,7 +1175,7 @@ Point mapping rules (mapping fields differ by channel type):
 
   - Format screenshot:
 
-    <img src="/images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -1184,7 +1184,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 <h6>Manually Edit Point Mappings</h6>
 
-<img src="/images/Setting/Configuration/channel/39.png" alt="39" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/39.png" alt="39" style="max-width:100%; height:auto;" />
 
 1. Click the **edit icon** for the target point mapping to modify it.
 2. Modify according to the mapping rules. For existing points, the ID cannot be changed.
@@ -1194,7 +1194,7 @@ Point mapping rules (mapping fields differ by channel type):
 
 <h6>Submit All Changes</h6>
 
-<img src="/images/Setting/Configuration/channel/40.png" alt="40" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/40.png" alt="40" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure all mapping data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.
@@ -1204,13 +1204,13 @@ Point mapping rules (mapping fields differ by channel type):
 
 <h5>Export Point Mapping CSV Files</h5>
 
-<img src="/images/Setting/Configuration/channel/41.png" alt="41" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/channel/41.png" alt="41" style="max-width:100%; height:auto;" />
 
 1. Click **Export** to export the table data for the current point type as **.csv**. The filename format is: **channel name + tab name (telemetry/signal/control/adjustment) + "_mapping" + current timestamp**.
 
 <h3>Device Instance Configuration</h3>
 
-<img src="/images/Setting/Configuration/deviceInstance/1.png" alt="Device Instance Configuration" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/1.png" alt="Device Instance Configuration" style="max-width:100%; height:auto;" />
 
 This chapter includes: instance management, instance point configuration, and instance point routing configuration.
 
@@ -1218,7 +1218,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>Query Device Instances</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 1. You can filter instances by:
 
@@ -1229,11 +1229,11 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>Add a Device Instance</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 1. Click **New Instance** to open the add dialog.
 
-<img src="/images/Setting/Configuration/deviceInstance/4.png" alt="4" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/4.png" alt="4" style="max-width:100%; height:auto;" />
 
 2. Enter the required parameters. Refer to the instance field definitions in the basic concepts.
 
@@ -1247,19 +1247,19 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>View Device Instance Details</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/5.png" alt="5" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/5.png" alt="5" style="max-width:100%; height:auto;" />
 
 1. Click **Detail** in the **Operation** column to open the instance details dialog.
 
-<img src="/images/Setting/Configuration/deviceInstance/6.png" alt="6" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/6.png" alt="6" style="max-width:100%; height:auto;" />
 
 <h5>Edit Device Instances</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/7.png" alt="7" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/7.png" alt="7" style="max-width:100%; height:auto;" />
 
 1. In the instance details dialog, click **Edit** to enter edit mode.
 
-<img src="/images/Setting/Configuration/deviceInstance/8.png" alt="8" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/8.png" alt="8" style="max-width:100%; height:auto;" />
 
 2. During editing, `Product Name` cannot be changed; other fields are the same as in add.
 
@@ -1269,11 +1269,11 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>Delete Device Instances</h5>
 
-<img src="/images/common/9.png" alt="9" style="max-width:100%; height:auto;" />
+<img src="../images/common/9.png" alt="9" style="max-width:100%; height:auto;" />
 
 1. Click **Delete** in the **Operation** column for the target device instance row.
 
-<img src="/images/Setting/Configuration/deviceInstance/10.png" alt="10" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/10.png" alt="10" style="max-width:100%; height:auto;" />
 
 2. Click **Confirm** to delete.
 
@@ -1281,11 +1281,11 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h4>Instance Point Configuration</h4>
 
-<img src="/images/Setting/Configuration/deviceInstance/11.png" alt="11" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Points** in the **Operation** column of the target instance row to open the points dialog.
 
-<img src="/images/Setting/Configuration/deviceInstance/12.png" alt="12" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/12.png" alt="12" style="max-width:100%; height:auto;" />
 
 2. The **View Mode** selector switches between point view and routing view (default is point view).
 
@@ -1301,31 +1301,31 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>Issue Point Commands</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/13.png" alt="13" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/13.png" alt="13" style="max-width:100%; height:auto;" />
 
 1. Click **Execute** in the **Operation** column for the target point to open the execute dialog.
 
-<img src="/images/Setting/Configuration/deviceInstance/14.png" alt="14" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/14.png" alt="14" style="max-width:100%; height:auto;" />
 
 2. Enter the value to execute (numeric).
 3. Click **Submit** to submit.
 4. Click **Cancel** to cancel.
 
-<img src="/images/Setting/Configuration/deviceInstance/15.png" alt="15" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/15.png" alt="15" style="max-width:100%; height:auto;" />
 
 5. After successful submission, the value changes.
 
 <h5>Export Point CSV Files</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/16.png" alt="16" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/16.png" alt="16" style="max-width:100%; height:auto;" />
 
 1. Click **Export** to export the current table data. The CSV filename format is: **instance name_point type (property/measurement/action)_points_timestamp.csv**. The exported file looks like:
 
-<img src="/images/Setting/Configuration/deviceInstance/17.png" alt="17" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/17.png" alt="17" style="max-width:100%; height:auto;" />
 
 <h4>Instance Point Routing Configuration</h4>
 
-<img src="/images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
 
 1. Switch to **Routing** in **View Mode** to open the instance point routing view.
 2. Click **Edit** to enter routing edit mode.
@@ -1334,31 +1334,31 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h5>Export Point Routing CSV Files</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/19.png" alt="19" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/19.png" alt="19" style="max-width:100%; height:auto;" />
 
 1. Click **Export** to export the current table data. The CSV filename format is: **instance name_point type (measurement/action)_routing_timestamp.csv**. Example:
 
-   <img src="/images/Setting/Configuration/deviceInstance/20.png" alt="20" style="max-width:100%; height:auto;" />
+   <img src="../images/Setting/Configuration/deviceInstance/20.png" alt="20" style="max-width:100%; height:auto;" />
 
    In the exported file, **point_type** uses abbreviations: **T = Telemetry, S = Signal, C = Control, A = Adjustment.**
 
 <h5>Batch Edit Instance Point Routing</h5>
 
-<img src="/images/Setting/Configuration/deviceInstance/21.png" alt="21" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/21.png" alt="21" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** to enter routing edit mode.
 
-<img src="/images/Setting/Configuration/deviceInstance/22.png" alt="22" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/22.png" alt="22" style="max-width:100%; height:auto;" />
 
 2. During editing, you can filter by:
 
 - **modified**: Filters points that were actually modified. Modified rows are shown in blue, and modified data is highlighted in blue.
 
-<img src="/images/Setting/Configuration/deviceInstance/23.png" alt="23" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/23.png" alt="23" style="max-width:100%; height:auto;" />
 
 - **invalid**: Filters points with issues after add/modify. Problematic rows show orange markers with a dark red background.
 
-<img src="/images/Setting/Configuration/deviceInstance/24.png" alt="24" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/24.png" alt="24" style="max-width:100%; height:auto;" />
 
 > **Point routing configuration rules:**
 >
@@ -1371,7 +1371,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h6>Manually Edit Routing</h6>
 
-<img src="/images/Setting/Configuration/deviceInstance/25.png" alt="25" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/25.png" alt="25" style="max-width:100%; height:auto;" />
 
 1. Click the **edit icon** for the target routing row.
 2. Modify according to the routing rules. For existing points, the ID cannot be changed.
@@ -1381,7 +1381,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h6>Import Routing from File</h6>
 
-<img src="/images/Setting/Configuration/deviceInstance/26.png" alt="26" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/26.png" alt="26" style="max-width:100%; height:auto;" />
 
 1. Click **Import** and select a **.csv** file. The file must meet the following requirements:
 
@@ -1398,7 +1398,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 - Format screenshot:
 
-  <img src="/images/Setting/Configuration/deviceInstance/27.png" alt="27" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/deviceInstance/27.png" alt="27" style="max-width:100%; height:auto;" />
 
 > **Note:**
 >
@@ -1407,7 +1407,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h6>Submit All Changes</h6>
 
-<img src="/images/Setting/Configuration/deviceInstance/28.png" alt="28" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/deviceInstance/28.png" alt="28" style="max-width:100%; height:auto;" />
 
 1. Before submission, ensure the modified data is valid. Errors appear below invalid data.
 2. Click **Submit** to submit the batch changes.
@@ -1415,7 +1415,7 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h3>Rule Configuration</h3>
 
-<img src="/images/Setting/Configuration/rule/1.png" alt="Rule Configuration" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/1.png" alt="Rule Configuration" style="max-width:100%; height:auto;" />
 
 This chapter includes: basic rule operations and rule flow operations.
 
@@ -1423,11 +1423,11 @@ This chapter includes: basic rule operations and rule flow operations.
 
 <h5>Add a Rule</h5>
 
-<img src="/images/Setting/Configuration/rule/2.png" alt="2" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 1. Click **New Rule** to open the add dialog.
 
-<img src="/images/Setting/Configuration/rule/3.png" alt="3" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/3.png" alt="3" style="max-width:100%; height:auto;" />
 
 2. Enter the rule name (required) and description (optional).
 
@@ -1437,11 +1437,11 @@ This chapter includes: basic rule operations and rule flow operations.
 
 <h5>Edit a Rule</h5>
 
-<img src="/images/Setting/Configuration/rule/4.png" alt="4" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/4.png" alt="4" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** in the **Operation** column for the target rule to open the edit dialog.
 
-<img src="/images/Setting/Configuration/rule/5.png" alt="5" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/5.png" alt="5" style="max-width:100%; height:auto;" />
 
 2. Modify the rule name and description.
 
@@ -1451,11 +1451,11 @@ This chapter includes: basic rule operations and rule flow operations.
 
 <h5>Delete a Rule</h5>
 
-<img src="/images/Setting/Configuration/rule/6.png" alt="6" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/6.png" alt="6" style="max-width:100%; height:auto;" />
 
 1. Click **Delete** in the **Operation** column for the target rule to open the confirmation dialog.
 
-<img src="/images/Setting/Configuration/rule/7.png" alt="7" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/7.png" alt="7" style="max-width:100%; height:auto;" />
 
 2. Click **Confirm** to delete.
 
@@ -1465,11 +1465,11 @@ This chapter includes: basic rule operations and rule flow operations.
 
 <h5>View Rule Flow Details and Real-Time Execution Path</h5>
 
-<img src="/images/Setting/Configuration/rule/8.png" alt="8" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/8.png" alt="8" style="max-width:100%; height:auto;" />
 
 1. Click **Detail** in the **Operation** column of the target rule row to navigate to the rule flow details page.
 
-<img src="/images/Setting/Configuration/rule/9.png" alt="9" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/9.png" alt="9" style="max-width:100%; height:auto;" />
 
 2. The highlighted path in the flow is the currently executed path. Node data for the current path is displayed below the node.
 
@@ -1697,29 +1697,29 @@ This chapter includes: basic rule operations and rule flow operations.
 
 5. Click **FullScreen** to enter full-screen mode.
 
-<img src="/images/Setting/Configuration/rule/10.png" alt="10" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/10.png" alt="10" style="max-width:100%; height:auto;" />
 
 6. Click **Exit Fullscreen** to exit.
 
 <h5>Edit Rule Flow</h5>
 
-<img src="/images/Setting/Configuration/rule/11.png" alt="11" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Edit** to enter rule flow edit mode.
 
-<img src="/images/Setting/Configuration/rule/12.png" alt="12" style="max-width:100%; height:auto;" />
+<img src="../images/Setting/Configuration/rule/12.png" alt="12" style="max-width:100%; height:auto;" />
 
 2. The cards below are custom function cards. Drag the required card onto the rule flow canvas. Different cards have different functions:
 
 - **Switch Function - Value condition card**
 
-  <img src="/images/Setting/Configuration/rule/13.png" alt="13" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/rule/13.png" alt="13" style="max-width:100%; height:auto;" />
 
   This card is used to judge whether a point value meets a condition.
 
 - **Change Value - Data modification card**
 
-  <img src="/images/Setting/Configuration/rule/14.png" alt="14" style="max-width:100%; height:auto;" />
+  <img src="../images/Setting/Configuration/rule/14.png" alt="14" style="max-width:100%; height:auto;" />
 
   This card is used to modify a point value for an instance.
 
@@ -1735,42 +1735,42 @@ This chapter includes: basic rule operations and rule flow operations.
 
   - **Switch Function - Value condition card**
 
-    <img src="/images/Setting/Configuration/rule/15.png" alt="15" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/15.png" alt="15" style="max-width:100%; height:auto;" />
 
     ① The first section is basic info: **label** is the card title, and **description** is the card description.
 
     ② The second section is parameter definition, where you declare parameters:
 
-    <img src="/images/Setting/Configuration/rule/16.png" alt="16" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/16.png" alt="16" style="max-width:100%; height:auto;" />
 
     Click the add button to create a parameter. Each parameter is named **X + auto-increment number**. Click the delete icon next to a parameter to remove it. Parameter definitions have two types: **single** and **combined**:
 
     - **single**: a single parameter. Select instance name, point type, and point name.
 
-      <img src="/images/Setting/Configuration/rule/17.png" alt="17" style="max-width:100%; height:auto;" />
+      <img src="../images/Setting/Configuration/rule/17.png" alt="17" style="max-width:100%; height:auto;" />
 
   
     - **combined**: a composite parameter. You can select existing parameters or enter numbers and combine them with operators `+`, `-`, `*`, `/`. Click the **green add icon** to add a calculation row, and click the **red delete icon** to remove a row.
   
-      <img src="/images/Setting/Configuration/rule/18.png" alt="18" style="max-width:100%; height:auto;" />
+      <img src="../images/Setting/Configuration/rule/18.png" alt="18" style="max-width:100%; height:auto;" />
   
     ③ The third section is rule definition, where you define conditions:
   
-    <img src="/images/Setting/Configuration/rule/19.png" alt="19" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/19.png" alt="19" style="max-width:100%; height:auto;" />
   
     Click the **orange add icon** to add a rule. Each rule is named **out + auto-increment number**. Click the **delete icon** next to a rule to remove it.
   
-    <img src="/images/Setting/Configuration/rule/20.png" alt="20" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/20.png" alt="20" style="max-width:100%; height:auto;" />
   
     Based on parameter names defined above, you can compare parameters to other parameters or values. Click the green add icon to add an extra condition line and combine conditions (currently only **And** is supported, meaning both must be satisfied). Click the red delete button on a condition line to remove it.
   
     > **Note: Each complete `out+xxx` rule generates a corresponding output handle on the node card. Only when the condition is satisfied will the flow proceed to the next node connected to that handle.**
     >
-    > <img src="/images/Setting/Configuration/rule/21.png" alt="21" style="max-width:100%; height:auto;" />
+    > <img src="../images/Setting/Configuration/rule/21.png" alt="21" style="max-width:100%; height:auto;" />
   
   - **Change Value - Data modification card**
   
-    <img src="/images/Setting/Configuration/rule/22.png" alt="22" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/22.png" alt="22" style="max-width:100%; height:auto;" />
   
     ① The first section is basic info: **label** is the card title, and **description** is the card description.
   
@@ -1778,7 +1778,7 @@ This chapter includes: basic rule operations and rule flow operations.
   
     ③ The third section is change-rule definition, where you modify instance point parameters.
   
-    <img src="/images/Setting/Configuration/rule/23.png" alt="23" style="max-width:100%; height:auto;" />
+    <img src="../images/Setting/Configuration/rule/23.png" alt="23" style="max-width:100%; height:auto;" />
   
     ​	Click the **orange add icon** to add a change rule. Click the **delete icon** next to a rule to remove it. The modification rule uses left and right parameters: the left side is the target parameter to change; the right side is the new value or parameter. The left selector can only choose **single** parameters; the right selector can choose any defined parameter or a custom value.
 

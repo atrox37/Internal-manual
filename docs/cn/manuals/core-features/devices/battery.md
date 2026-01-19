@@ -5,7 +5,7 @@ outline: deep
 # Battery
 
 ### Overview
-![1](/images/Devices/battery/1.png)
+![1](../../../../images/Devices/battery/1.png)
 该页面以卡片列表形式展示电池关键指标：
 
 - **Charge/Discharge Status**：电池充放电状态
@@ -19,7 +19,7 @@ outline: deep
 - **Avg Cell Temperature**：电池Cell平均温度
 
 ### Value Monitoring
-![2](/images/Devices/battery/2.png)
+![2](../../../../images/Devices/battery/2.png)
 该页面包含 Tab：
 
 - **Battery**：电池
@@ -29,7 +29,7 @@ outline: deep
 每个 Tab 都是“**Update Time + 左右表格**”的形式，同**PV**的**Value Monitoring**页面。
 
 ### Battery Management
-![3](/images/Devices/battery/3.png)
+![3](../../../../images/Devices/battery/3.png)
 本页面主要监控所有**Battery Cell**的**Voltage**和**Temperature**的情况。
 
 - 左侧：显示所有Cell的电压情况

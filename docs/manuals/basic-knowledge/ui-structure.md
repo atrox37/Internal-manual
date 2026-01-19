@@ -4,7 +4,7 @@ outline: deep
 
 # UI Structure and Function Description
 
-<img src="/images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
+<img src="../../images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
 
 The main home page of the user interface is divided into three parts:
 
@@ -54,13 +54,13 @@ The main home page of the user interface is divided into three parts:
   - Users can resize the sidebar width via the zoom icon at the bottom-right of the sidebar.
 
   <span style="display:inline-flex; gap:40px; align-items:center; white-space:nowrap;">
-    <img src="/images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
-    <img src="/images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
+    <img src="../../images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
+    <img src="../../images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
   </span>
 
 2. **Upper-right: Top bar**
 
-  <img src="/images/common/5.png" alt="5" style="max-width:100%; height:auto;" /> 
+  <img src="../../images/common/5.png" alt="5" style="max-width:100%; height:auto;" /> 
 
   On the right side of the top bar there is a bell icon (Notice):
 

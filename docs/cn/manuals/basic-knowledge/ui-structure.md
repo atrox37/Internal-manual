@@ -4,7 +4,7 @@ outline: deep
 
 # 界面结构以及功能说明
 
-![1](/images/common/1.PNG)
+![1](../../../images/common/1.PNG)
 
 整个用户界面首页主要分为三个部分：
 
@@ -53,13 +53,13 @@ outline: deep
   - 用户可以通过侧边栏右下角的缩放图标按钮，进行菜单栏的宽度缩放。
 
   <span style="display:inline-flex; gap:40px; align-items:center; white-space:nowrap;">
-    <img src="/images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
-    <img src="/images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
+    <img src="../../../images/common/3.png" alt="3" style="zoom:35%; display:inline-block;" />
+    <img src="../../../images/common/4.png" alt="4" style="zoom:35%; display:inline-block;" />
   </span>
   
 - 右上方：顶部栏
 
-  顶部右侧有“铃铛![5](/images/common/5.png)（Notice)”入口：
+  顶部右侧有“铃铛![5](../../../images/common/5.png)（Notice)”入口：
   
   - 有红色数字角标时表示“当前告警数量”
   - 点击后会跳转到 Alarm > Current Records（当前告警）

@@ -7,21 +7,21 @@ outline: deep
 
 ## 批量修改点位的映射
 
-![33](/images/Setting/Configuration/channel/33.png)
+![33](../../../../images/Setting/Configuration/channel/33.png)
 
 1. 在**mappings**视图中，点击**Edit**按钮，进入到点位映射的修改中。
 
-![34](/images/Setting/Configuration/channel/34.png)
+![34](../../../../images/Setting/Configuration/channel/34.png)
 
 1. 针对修改过程中的修改操作，可以通过筛选条件进行筛选：
 
 - **modified**：对进行了实际修改的点位进行筛选，修改后的点位记录左侧显示为蓝色，修改后的数据标为蓝色。
 
-![35](/images/Setting/Configuration/channel/35.png)
+![35](../../../../images/Setting/Configuration/channel/35.png)
 
 - **invalid**：对通过增加、修改后存在问题的点位进行筛选，存在问题的点位记录的左侧显示为橙色，背景显示为暗红色。
 
-![36](/images/Setting/Configuration/channel/36.png)
+![36](../../../../images/Setting/Configuration/channel/36.png)
 
 点位映射配置规则（不同的通道类型其点位的映射信息不同）：
 
@@ -46,7 +46,7 @@ outline: deep
 
 ### 通过文件导入点位映射信息
 
-![37](/images/Setting/Configuration/channel/37.png)
+![37](../../../../images/Setting/Configuration/channel/37.png)
 
 1. 点击**Import**按钮，选择csv格式的点位文件进行导入，根据不同的通道类型，对文件格式内容有不同的要求要求：
 
@@ -60,7 +60,7 @@ outline: deep
 
   - 格式截图：
 
-    <img src="/images/Setting/Configuration/channel/38.png" alt="38" style="zoom:50%;" />
+    <img src="../../../../images/Setting/Configuration/channel/38.png" alt="38" style="zoom:50%;" />
 
 * **di_do**
 
@@ -72,7 +72,7 @@ outline: deep
 
   - 格式截图：
   
-    <img src="/images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="zoom:50%;" />
+    <img src="../../../../images/Setting/Configuration/channel/38(1).png" alt="38(1)" style="zoom:50%;" />
 
 >**注意：**
 >
@@ -81,7 +81,7 @@ outline: deep
 
 ### 手动修改点位映射
 
-![39](/images/Setting/Configuration/channel/39.png)
+![39](../../../../images/Setting/Configuration/channel/39.png)
 
 1. 点击所要修改的点位的**修改图**标按钮对点位进行修改。
 2. 依照点位的配置规则，对点位进行修改，对已有点位进行修改的时候，不可以修改id。
@@ -91,7 +91,7 @@ outline: deep
 
 ### 提交所有修改
 
-![40](/images/Setting/Configuration/channel/40.png)
+![40](../../../../images/Setting/Configuration/channel/40.png)
 
 1. 在提交时必须保证修改的点位映射数据没有问题，错误提示会出现在错误数据下方。
 2. 点击**Submit**按钮进行批量修改提交。
@@ -100,6 +100,6 @@ outline: deep
 
 ## 导出点位映射CSV文件
 
-![41](/images/Setting/Configuration/channel/41.png)
+![41](../../../../images/Setting/Configuration/channel/41.png)
 
 1. 点击**Export**按钮，可以实现对当前点位类型下面的表格数据进行导出，导出格式为**.csv**，文件名称为：**通道的名称 + tab名称（telemetry/signal/control/adjustment） + "_mapping" + 当前时间戳**。
