@@ -4,20 +4,19 @@ outline: deep
 
 # Diesel Generator
 
-### Overview
+## Overview
 
-![1](/images/Devices/diesel/1.png)
+<img src="/images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 Top indicator cards:
 
-- **Power**
-- **Oil** (current fuel level)
-- **Voltage**
-- **Coolant Temp** (coolant temperature)
+- **Power**: Real-time Power,kW
+- **Oil**: Real-time fuel percentage,%
+- **Voltage**: Real-time voltage,V
+- **Coolant Temp**: Real-time coolant temperature,℃
 
-### Value Monitoring
+## Value Monitoring
 
-![2](/images/Devices/diesel/2.png)
+<img src="/images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
 
 Layout is the same as the **PV** **Value Monitoring** page.
-

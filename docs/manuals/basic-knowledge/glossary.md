@@ -11,6 +11,6 @@ outline: deep
 - **Signal**: Status values (usually 0/1 or status codes)
 - **Control**: Action command issued by the platform to change device operating state
 - **Adjustment**: Parameter setpoints issued by the platform for remote tuning
-- **SoC**: State of Charge, battery percentage
-- **SoH**: State of Health
+- **SoC**: battery capacity percentage
+- **SoH**: State of Health, expressed as a percentage
 - **Update Time**: The most recent refresh/push time of page data

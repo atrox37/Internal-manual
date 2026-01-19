@@ -172,7 +172,10 @@ body {
   height: auto;
   border-radius: 10px;
 }
-
+img{
+  margin: 20px auto;
+  cursor: pointer;
+}
 /* ==========================================================================
  * <960px（移动端/窄屏）行为
  * 说明：为“只使用 min-width”，这里用 `not all and (min-width: 960px)` 表达 <960px
@@ -441,5 +444,79 @@ body {
   .VPSidebar .curtain {
     display: none;
   }
+}
+
+/* ==========================================================================
+ * 用户手册页面样式
+ * ========================================================================== */
+
+/* h 系列字体大小调整：确保都大于正文字体，且层级差距缩小 */
+.vp-doc h1 {
+  font-size: 1.6em; /* 约 24px (基于 15px 基准) */
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.vp-doc h2 {
+  font-size: 1.4em; /* 约 21px */
+  font-weight: 600;
+  margin-top: 1.75em;
+  margin-bottom: 0.875em;
+}
+
+.vp-doc h3 {
+  font-size: 1.25em; /* 约 18.75px */
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.vp-doc h4 {
+  font-size: 1.1em; /* 约 16.5px */
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.625em;
+}
+
+.vp-doc h5 {
+  font-size: 1.05em; /* 约 15.75px */
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.vp-doc h6 {
+  font-size: 1.02em; /* 约 15.3px */
+  font-weight: 600;
+  margin-top: 0.875em;
+  margin-bottom: 0.5em;
+}
+
+/* 英文手册页面字体样式 */
+/* 英文手册：标题使用 Montserrat，正文使用 Arimo */
+.vp-doc.en-manual h1,
+.vp-doc.en-manual h2,
+.vp-doc.en-manual h3,
+.vp-doc.en-manual h4,
+.vp-doc.en-manual h5,
+.vp-doc.en-manual h6 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.vp-doc.en-manual {
+  font-family: "Arimo", Arial, sans-serif;
+}
+
+/* 中文手册页面字体样式 */
+/* 中文手册：标题和正文统一使用 MiSans */
+.vp-doc.cn-manual h1,
+.vp-doc.cn-manual h2,
+.vp-doc.cn-manual h3,
+.vp-doc.cn-manual h4,
+.vp-doc.cn-manual h5,
+.vp-doc.cn-manual h6,
+.vp-doc.cn-manual {
+  font-family: "MiSans", "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
  

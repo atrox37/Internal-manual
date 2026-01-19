@@ -4,6 +4,6 @@ outline: deep
 
 # Device Instance Configuration
 
-![Device Instance Configuration](/images/Setting/Configuration/deviceInstance/1.png)
+<img src="/images/Setting/Configuration/deviceInstance/1.png" alt="Device Instance Configuration" style="max-width:100%; height:auto;" />
 
 This chapter includes: instance management, instance point configuration, and instance point routing configuration.

@@ -5,6 +5,7 @@ import { h } from "vue";
 import { inBrowser, withBase } from "vitepress";
 import ExportDropdown from "./ExportDropdown.vue";
 import PhotoSwipeImages from "./PhotoSwipeImages.vue";
+import ManualPageClasses from "./ManualPageClasses.vue";
 
 function normalizeHtmlTrailingSlash() {
   if (!inBrowser) return;
@@ -26,6 +27,7 @@ export default {
       "nav-bar-content-after": () => h(ExportDropdown),
       "nav-screen-content-after": () => h(ExportDropdown),
       "layout-bottom": () => h(PhotoSwipeImages),
+      "layout-top": () => h(ManualPageClasses),
     });
   },
   enhanceApp(ctx) {

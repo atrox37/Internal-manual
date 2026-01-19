@@ -6,20 +6,19 @@ outline: deep
 
 ## Definition
 
-Instance point mapping binds platform "instance points" to on-site "channel points/addresses." It answers the following key questions for each instance point:
-**Which channel and point on-site does it map to? Which of the four remote types does it belong to?**
+Instance point mapping binds platform "instance points" to on-site "channel points/addresses." It answers the following key questions for each instance point: **Which channel and point on-site does it map to? Which of the four remote types does it belong to?**
 
-* For **measurement** points, the channel point type can only be **Telemetry** or **Signal**.
-* For **action** points, the channel point type can only be **Control** or **Adjustment**.
-* **property** points are intrinsic attributes and have no routing info.
+- For **measurement** points, the channel point type can only be **Telemetry** or **Signal**.
+- For **action** points, the channel point type can only be **Control** or **Adjustment**.
+- **Property** points are intrinsic attributes and have no routing info.
 
 ## Field Description
 
-* `point_id`: ID of the instance point.
-* `name`: Name of the point.
-* `channel_id`: ID of the channel used by the route.
-* `channel_type`: Four-remote type of the channel point.
-* `channel_point_id`: Channel point ID used by the route.
+- `point_id`: ID of the instance point
+- `name`: Name of the point
+- `channel_id`: ID of the channel used by the route
+- `channel_type`: Four-remote type of the channel point
+- `channel_point_id`: Channel point ID used by the route
 
 ## Role
 

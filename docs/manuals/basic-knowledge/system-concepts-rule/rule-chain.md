@@ -6,7 +6,8 @@ outline: deep
 
 ## Definition
 
-A rule flow is the visual execution flow inside a rule. It uses "nodes + links" to describe the full execution path of a rule from start to finish. It breaks a rule into steps (such as start, condition, action, end) and uses branching to express different paths under different conditions.
+A rule chain is the visual execution flow inside a rule. It uses "nodes + links" to describe the full execution path of a rule from start to finish. It breaks a rule into steps (such as start, condition, action, end) and uses branching to express different paths under different conditions.
+
 ## Role
 
 - Clearly express complex logic: Present multi-condition, multi-branch, multi-action strategies as flowcharts, reducing understanding and configuration costs.

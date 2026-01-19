@@ -4,7 +4,6 @@ outline: deep
 
 # Operation Log
 
-Page content
 Table columns typically include:
 
 - User
@@ -15,5 +14,3 @@ Table columns typically include:
 - Time
 - IP Address
 Pagination is supported.
-[Screenshot placeholder: Operation Log (table + pagination)]
-

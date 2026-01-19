@@ -3,11 +3,11 @@ outline: deep
 search: false
 ---
 
-# 普通用户手册
+<h1>普通用户手册</h1>
 
 <!-- 下载入口已迁移到顶部导航栏（右上角“下载 PDF”按钮） -->
 
-## 平台介绍
+<h2>平台介绍</h2>
 
 <img src="/images/common/index.png" alt="index" style="max-width:100%; height:auto;" />
  **Monarch Edge**平台是一套面向边缘能源站点的综合监控与分析平台，旨在为用户提供清晰、统一、可视化的站点运行视图。平台覆盖发电、储能、用能及告警等关键业务场景，通过标准化的界面与一致的交互方式，帮助用户快速掌握设备状态、运行趋势与异常情况，提升日常运维效率与管理质量。
@@ -20,7 +20,7 @@ search: false
 - **统一体验**：表格筛选、分页、更新时间提示等交互一致，降低学习成本。
 **本手册面向普通用户。**
 
-## 通用界面结构以及功能说明
+<h2>通用界面结构以及功能说明</h2>
 <img src="/images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
 整个用户界面首页主要分为三个部分：
 
@@ -58,9 +58,9 @@ search: false
 - 右下方：主内容区
   - 展示当前页面数据
 
-## 页面使用说明
+<h2>页面使用说明</h2>
 
-### Login 页面
+<h3>Login 页面</h3>
 <img src="/images/login/1.png" alt="1" style="max-width:100%; height:auto;" />
 
 1. 打开系统后进入登录页（Log in page）
@@ -73,7 +73,7 @@ search: false
 3. 点击 `Log in` 按钮登录
 4. 登录成功后默认会进入**Home**页面。
 
-### Home 页面
+<h3>Home 页面</h3>
 **Home**页面主要展示站点以及具体设备的关键数据，并且随着设备状态实时进行数据刷新。
 <img src="/images/home/1.png" alt="1" style="max-width:100%; height:auto;" />
 
@@ -94,7 +94,7 @@ search: false
   |<img src="/images/home/3.png" alt="3" />|<img src="/images/home/4.png" alt="4" />|<img src="/images/home/5.png" alt="5" />|
   - 告警信息
 
-### Devices 页面
+<h3>Devices 页面</h3>
 <img src="/images/Devices/pv/1.png" alt="1" style="max-width:100%; height:auto;" />
 **Devices** 包含多个设备类型，包括：**PV**、**Battery**、**Diesel Generator**、**Meter1**、**Meter2**。
 每个设备的页面中通常有：
@@ -102,9 +102,9 @@ search: false
 -  **Overview（概览）**：设备关键指标卡片/概览展示
 - **Value Monitoring（值监控）**：实时点位的表格展示，展示的是与真实设备绑定的通道中Telemetry、Signal的相关数据。
 
-#### PV
+<h4>PV</h4>
 
-##### Overview
+<h5>Overview</h5>
 
 <img src="/images/Devices/pv/2.png" alt="2" style="max-width:100%; height:auto;" />
 
@@ -118,7 +118,7 @@ search: false
   - **V**：所选这串光伏板的电压
   - **I**：所选这串光伏板的电流
 
-##### Value Monitoring
+<h5>Value Monitoring</h5>
 
 <img src="/images/Devices/pv/3.png" alt="3" style="max-width:100%; height:auto;" />
 
@@ -127,8 +127,8 @@ search: false
   - 左面的表为通道的**Telemetry**表，包含`Name`、`Value`、`Unit`信息。
   - 右面的表为通道的**Signal**表，包括`Name` 、`Status`信息。
 
-#### Battery
-##### Overview
+<h4>Battery</h4>
+<h5>Overview</h5>
 <img src="/images/Devices/battery/1.png" alt="1" style="max-width:100%; height:auto;" />
 该页面以卡片列表形式展示电池关键指标：
 
@@ -142,7 +142,7 @@ search: false
 - **Cell Voltage Difference**：电池Cell最大电压差
 - **Avg Cell Temperature**：电池Cell平均温度
 
-##### Value Monitoring
+<h5>Value Monitoring</h5>
 <img src="/images/Devices/battery/2.png" alt="2" style="max-width:100%; height:auto;" />
 该页面包含 Tab：
 
@@ -152,7 +152,7 @@ search: false
 
 每个 Tab 都是“**Update Time + 左右表格**”的形式，同**PV**的**Value Monitoring**页面。
 
-##### Battery Management
+<h5>Battery Management</h5>
 <img src="/images/Devices/battery/3.png" alt="3" style="max-width:100%; height:auto;" />
 本页面主要监控所有**Battery Cell**的**Voltage**和**Temperature**的情况。
 
@@ -164,8 +164,8 @@ search: false
   - 模块下方以卡片形式列出 **#1~#N** （Battery Cell）的温度值
 
 ---
-#### Diesel Generator
-##### Overvie
+<h4>Diesel Generator</h4>
+<h5>Overvie</h5>
 <img src="/images/Devices/diesel/1.png" alt="1" style="max-width:100%; height:auto;" />
 顶部指标卡片：
 
@@ -174,24 +174,24 @@ search: false
 - **Voltage（电压）**
 - **Coolant Temp（冷却液温度）**
 
-##### Value Monitoring
+<h5>Value Monitoring</h5>
 <img src="/images/Devices/diesel/2.png" alt="2" style="max-width:100%; height:auto;" />
 结构同 **PV** 的 **Value Monitoring**页面。
 
-##### Meter1
+<h5>Meter1</h5>
 **Meter1**直接展示**Value Monitoring**信息，其结构同**PV**的 **Value Monitoring**页面。
 <img src="/images/Devices/meter/1.png" alt="1" style="max-width:100%; height:auto;" />
 
-##### Meter2
+<h5>Meter2</h5>
 
 **Meter2**直接展示**Value Monitoring**信息，其结构同**PV**的 **Value Monitoring**页面。
 
 <img src="/images/Devices/meter/2.png" alt="2" style="max-width:100%; height:auto;" />
 
-### Alarm 页面
+<h3>Alarm 页面</h3>
 **Alarm**页面为告警记录页面，用户可以通过该模块对当前的告警信息以及历史告警信息进行查看。
 
-##### Current Records
+<h5>Current Records</h5>
 
 
 
@@ -204,7 +204,7 @@ search: false
 筛选操作：
 用户可以对右上角的选择框进行告警等级的选择，以对当前告警记录进行筛选。
 
-##### History Records
+<h5>History Records</h5>
 
 
 
@@ -225,9 +225,9 @@ search: false
 
 
 
-#### Control
+<h4>Control</h4>
 Viewer 通常只具备“查看控制记录”的权限，不具备下发控制的权限。
-##### Control Record
+<h5>Control Record</h5>
 
 
 表格字段介绍：
@@ -238,7 +238,7 @@ Viewer 通常只具备“查看控制记录”的权限，不具备下发控制�
 筛选操作：
 用户可以对右上角的选择框进行告警等级的选择，以对当前告警记录进行筛选。
 
-#### Statistics
+<h4>Statistics</h4>
 Statistics 顶部有 4 个页签：
 
 - Overview（概览）
@@ -249,7 +249,7 @@ Statistics 顶部有 4 个页签：
 
 
 
-##### Overview
+<h5>Overview</h5>
 页面内容
 该页以图表为主，通常包含：
 
@@ -266,7 +266,7 @@ Statistics 顶部有 4 个页签：
 
 
 
-##### Curves
+<h5>Curves</h5>
 Curves 页与 Overview 类似，也以图表为主，操作方式相同：
 
 - 选择筛选条件（Select filter condition）
@@ -276,7 +276,7 @@ Curves 页与 Overview 类似，也以图表为主，操作方式相同：
 
 
 
-##### Operation Log
+<h5>Operation Log</h5>
 页面内容
 表格列通常包含：
 
@@ -292,14 +292,14 @@ Curves 页与 Overview 类似，也以图表为主，操作方式相同：
 
 
 
-##### Running Log
+<h5>Running Log</h5>
 页面内容
 该页以“日志文本流”的方式展示系统运行信息：
 顶部通常有 Export（导出）按钮。
 
 
 
-## 常见问题（FAQ）与排障
+<h2>常见问题（FAQ）与排障</h2>
 
 1. 页面一直没有数据、设备 Update Time 不更新
 请按顺序自查：
@@ -324,7 +324,7 @@ Curves 页与 Overview 类似，也以图表为主，操作方式相同：
 
 
 
-## 术语表
+<h2>术语表</h2>
 
 - Viewer：只读用户，主要查看数据与记录
 - Channel（通道）：采集/通信的逻辑通道（例如 Modbus 通道）

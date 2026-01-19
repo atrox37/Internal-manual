@@ -248,10 +248,43 @@ const EXPORT_ONLY_DOC_CSS = `
     line-height: 1.85 !important;
   }
 
-  .vp-doc h1 { font-size: 34px !important; }
-  .vp-doc h2 { font-size: 26px !important; }
-  .vp-doc h3 { font-size: 20px !important; }
-  .vp-doc h4 { font-size: 16px !important; }
+  /* h 系列字体大小：确保都大于正文字体（15px），且层级差距缩小 */
+  .vp-doc h1 { 
+    font-size: 24px !important; 
+    font-weight: 700 !important; 
+    margin-top: 30px !important;
+    margin-bottom: 15px !important;
+  }
+  .vp-doc h2 { 
+    font-size: 21px !important; 
+    font-weight: 600 !important; 
+    margin-top: 26px !important;
+    margin-bottom: 13px !important;
+  }
+  .vp-doc h3 { 
+    font-size: 19px !important; 
+    font-weight: 600 !important; 
+    margin-top: 23px !important;
+    margin-bottom: 11px !important;
+  }
+  .vp-doc h4 { 
+    font-size: 17px !important; 
+    font-weight: 600 !important; 
+    margin-top: 19px !important;
+    margin-bottom: 9px !important;
+  }
+  .vp-doc h5 { 
+    font-size: 16px !important; 
+    font-weight: 600 !important; 
+    margin-top: 15px !important;
+    margin-bottom: 8px !important;
+  }
+  .vp-doc h6 { 
+    font-size: 15.5px !important; 
+    font-weight: 600 !important; 
+    margin-top: 13px !important;
+    margin-bottom: 8px !important;
+  }
 
   .vp-doc p,
   .vp-doc li {
@@ -380,6 +413,27 @@ async function renderSinglePageToPdf(url, outFile, { backgroundTemplatePath }) {
 
   await page.addStyleTag({ content: EXPORT_ONLY_DOC_CSS });
   await page.addStyleTag({ content: EXPORT_NON_HOME_TRANSPARENT_BG_CSS });
+
+  // 为手册页面添加字体样式（确保 PDF 导出时也能应用）
+  const isChineseManual = url.includes("/cn/manuals/normal-user");
+  const manualFontCSS = isChineseManual
+    ? `
+    /* 中文手册：标题和正文统一使用 MiSans */
+    .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6,
+    .vp-doc {
+      font-family: "MiSans", "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    }
+  `
+    : `
+    /* 英文手册：标题使用 Montserrat，正文使用 Arimo */
+    .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+      font-family: "Montserrat", Arial, sans-serif !important;
+    }
+    .vp-doc {
+      font-family: "Arimo", Arial, sans-serif !important;
+    }
+  `;
+  await page.addStyleTag({ content: manualFontCSS });
 
   const pdfBytes = await page.pdf({
     format: "A4",
