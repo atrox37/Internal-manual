@@ -141,7 +141,7 @@ export default defineConfig({
             activeMatch: "^/manuals/core-features/",
           },
           {
-            text: "System Config",
+            text: "System Configuration",
             link: "/manuals/system-config/channels/index.html",
             activeMatch: "^/manuals/system-config/",
           },
@@ -244,7 +244,7 @@ export default defineConfig({
           ],
           "/manuals/system-config/": [
             {
-              text: "System Config",
+              text: "System Configuration",
               collapsed: false,
               items: [
                 {

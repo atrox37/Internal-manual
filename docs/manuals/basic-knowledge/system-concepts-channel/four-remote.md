@@ -28,7 +28,7 @@ Telemetry refers to continuous, analog, and measurable real-time values reported
 
 - Mostly read operations;
 - Values change in real time with device operation;
-- Collection intervals typically need to be configured. 
+- Collection intervals typically need to be configured.
 
 Usage in the platform Telemetry points are used for trend analysis, reporting, energy monitoring, and operational optimization.
 
@@ -50,7 +50,7 @@ Signals are discrete status information such as device state, switch status, or 
 
 - Mostly read operations;
 - Used for monitoring device status;
-- Change events can trigger alarms. 
+- Change events can trigger alarms.
 
 Usage in the platform Signal points are widely used in alarm management, event monitoring, and status recording.
 
@@ -71,7 +71,7 @@ Control refers to action commands issued by the platform to change device operat
 
 - Requires permission control;
 - Often requires secondary confirmation or safety checks;
-- Mostly switch-type commands (0/1). 
+- Mostly switch-type commands (0/1).
 
 Usage in the platform Control is used for intelligent operations, remote management, and automated control strategy execution.
 
@@ -92,6 +92,6 @@ Adjustment is remote parameter tuning used to set device operating parameters. I
 
 - Parameter-type writes rather than switch actions;
 - Greater impact on device performance;
-- Typically requires range and type validation. 
+- Typically requires range and type validation.
 
 Usage in the platform Adjustment is often combined with automation strategies to regulate environments and improve energy efficiency.

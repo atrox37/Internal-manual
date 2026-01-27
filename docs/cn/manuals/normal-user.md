@@ -24,39 +24,46 @@ search: false
 <img src="../../images/common/1.PNG" alt="1" style="max-width:100%; height:auto;" />
 整个用户界面首页主要分为三个部分：
 
-- 左侧：侧边栏菜单
-  - 用户可以点击想要跳转的功能模块页面进行跳转，其中**Devices**、**Alarm**、**Control**、**Statistic**都具有二级菜单。当前页面所对应的菜单会高亮。其菜单信息如下：
-    - **Home**（首页）
-    - **Devices**（设备）
-      - **PV**（光伏）
-      - **Battery**（电池/储能）
-      - **Diesel Generator**（柴油发电机）
-      - **Meter1**（电表1）
-      - **Meter2**（电表2）
-    - **Alarm**（告警）
-      - **Current Records**（当前告警）
-      - **History Records**（历史告警）
-    - **Control**（控制）
-      - **Control Record**（控制记录）
-    - **Statistics**（统计）
-      - **Overview**（概览）
-      - **Curves**（曲线）
-      - **Operation Log**（操作日志）
-      - **Running Log**（运行日志）
-      <img src="../../images/common/2.png" alt="2" style="zoom:50%;" />
-  - 用户可以通过侧边栏右下角的缩放图标按钮，进行菜单栏的宽度缩放。
-  |<img src="../../images/common/3.png" alt="3" style="zoom:50%;" />|<img src="../../images/common/4.png" alt="4" style="zoom:50%;" />|
-  
-- 右上方：顶部栏
+**左侧：侧边栏菜单**
 
-  顶部右侧有“铃铛<img src="../../images/common/5.png" alt="5" style="max-width:100%; height:auto;" />（Notice)”入口：
-  
-  - 有红色数字角标时表示“当前告警数量”
-  - 点击后会跳转到 Alarm > Current Records（当前告警）
+- 用户可以点击想要跳转的功能模块页面进行跳转，其中**Devices**、**Alarm**、**Control**、**Statistic**都具有二级菜单。当前页面所对应的菜单会高亮。其菜单信息如下：
+  - **Home**（首页）
+  - **Devices**（设备）
+    - **PV**（光伏）
+    - **Battery**（电池/储能）
+    - **Diesel Generator**（柴油发电机）
+    - **Meter1**（电表1）
+    - **Meter2**（电表2）
+  - **Alarm**（告警）
+    - **Current Records**（当前告警）
+    - **History Records**（历史告警）
+  - **Control**（控制）
+    - **Control Record**（控制记录）
+  - **Statistics**（统计）
+    - **Overview**（概览）
+    - **Curves**（曲线）
+    - **Operation Log**（操作日志）
+    - **Running Log**（运行日志）
+    <img src="../../images/common/2.png" alt="2" style="zoom:50%;" />
+- 用户可以通过侧边栏右下角的缩放图标按钮，进行菜单栏的宽度缩放。
+|<img src="../../images/common/3.png" alt="3" style="zoom:50%;" />|<img src="../../images/common/4.png" alt="4" style="zoom:50%;" />|
 
+**右上方：顶部栏**
 
-- 右下方：主内容区
-  - 展示当前页面数据
+<img src="../../images/common/5.png" alt="5" style="max-width:100%; height:auto;" />
+
+* 用户可以在这模块看到全局的基础信息，从左向右依次为：
+
+  - 平台名称
+
+  - 站点当前状态
+  - 站点天气情况
+  - 当前登录用户，点击可以弹出操作弹框，进行退出登录的操作
+  - 告警数量通知，点击跳转到当前告警页面
+
+**右下方：主内容区**
+
+- 展示当前页面数据
 
 <h2>页面使用说明</h2>
 

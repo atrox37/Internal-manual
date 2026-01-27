@@ -10,9 +10,9 @@ A channel point is a real data point of a device under a specific protocol (actu
 
 - Voltage may be at address 40001
 - Current may be at address 40002
-- Device start/stop may be at 00001 (coil) 
+- Device start/stop may be at 00001 (coil)
 
-These registers or flags are channel points.
+  These registers or flags are channel points.
 
 ## Point Classification
 

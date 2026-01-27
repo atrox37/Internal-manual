@@ -14,7 +14,7 @@ Because different device vendors use different register addresses and protocol s
 
 - Multi-register merge, scaling, unit conversion, and more
 
-  The platform converts device-level register data into a unified structure through mapping rules, providing standard input for historical data, alarms, and formula calculations.
+The platform converts device-level register data into a unified structure through mapping rules, providing standard input for historical data, alarms, and formula calculations.
 
 ## Field Description
 

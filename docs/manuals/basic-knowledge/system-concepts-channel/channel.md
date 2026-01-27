@@ -11,7 +11,7 @@ A channel is the **logical link** used to establish communication between a devi
 - which protocol is used to communicate with the device;
 - how to connect to the device;
 - what parameters are used for read/write operations;
-- how to keep the connection alive and retry on errors. 
+- how to keep the connection alive and retry on errors.
 
 A channel is the foundation of device communication and a prerequisite for all point read/write operations.
 
@@ -33,14 +33,14 @@ A channel is the foundation of device communication and a prerequisite for all p
   - `connect_timeout_ms`: Connection timeout (positive integer, milliseconds)
   - `read_timeout_ms`: Read timeout (positive integer, milliseconds)
 - modbus_rtu
-  - `device`: Serial device path (e.g., /dev/ttyS0, COM3)
-  - `baud_rate`: Baud rate (typical values: 9600/19200/38400/115200)
-  - `data_bits`: Data bits (commonly 8)
-  - `stop_bits`: Stop bits (1 or 2)
-  - `parity`: Parity (N=None, E=Even, O=Odd)
-  - `connect_timeout_ms`: Connection timeout (positive integer, milliseconds)
-  - `read_timeout_ms`: Read timeout (positive integer, milliseconds)
-  - `retry_interval_ms`: Retry interval after read/write failure (positive integer, milliseconds)
+    - `device`: Serial device path (e.g., /dev/ttyS0, COM3)
+    - `baud_rate`: Baud rate (typical values: 9600/19200/38400/115200)
+    - `data_bits`: Data bits (commonly 8)
+    - `stop_bits`: Stop bits (1 or 2)
+    - `parity`: Parity (N=None, E=Even, O=Odd)
+    - `connect_timeout_ms`: Connection timeout (positive integer, milliseconds)
+    - `read_timeout_ms`: Read timeout (positive integer, milliseconds)
+    - `retry_interval_ms`: Retry interval after read/write failure (positive integer, milliseconds)
 
 **Running Status:**
 
@@ -64,6 +64,6 @@ The entire communication process depends on channels, including:
 - how the platform or gateway establishes connections (serial / TCP / RTU / Ethernet);
 - how data is read from devices;
 - how data is written or commands are issued to devices;
-- how communication status is monitored and exceptions are handled. 
+- how communication status is monitored and exceptions are handled.
 
 In plain terms: Channel = "link + protocol + parameters" required for device communication.

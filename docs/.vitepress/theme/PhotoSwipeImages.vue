@@ -35,8 +35,20 @@ function buildDataSource(imgs: HTMLImageElement[]) {
       if (!src) return null;
       // PhotoSwipe needs dimensions. Use natural sizes if available; fallback to
       // viewport-ish values (PhotoSwipe will still work, just less perfect).
-      const w = img.naturalWidth || 1600;
-      const h = img.naturalHeight || 900;
+      // 确保获取到正确的图片尺寸，如果图片还未加载完成，使用实际显示尺寸或默认值
+      let w = img.naturalWidth;
+      let h = img.naturalHeight;
+      
+      // 如果图片还未加载完成（naturalWidth/naturalHeight 为 0），尝试使用显示尺寸
+      if (!w || !h) {
+        w = img.width || img.offsetWidth || 1600;
+        h = img.height || img.offsetHeight || 900;
+      }
+      
+      // 确保尺寸至少为 100，避免 PhotoSwipe 判断为无效图片而不显示放大按钮
+      w = Math.max(w, 100);
+      h = Math.max(h, 100);
+      
       return {
         src,
         w,
@@ -63,6 +75,29 @@ async function setup() {
   const imgs = getImgs();
   if (!imgs.length) return;
 
+  // 添加 CSS 样式隐藏放大按钮（在组件初始化时就添加，确保所有页面都生效）
+  if (inBrowser) {
+    const styleId = "pswp-hide-zoom-buttons";
+    if (!document.getElementById(styleId)) {
+      const style = document.createElement("style");
+      style.id = styleId;
+      style.textContent = `
+        .pswp__button--zoom,
+        .pswp__button--zoom-in,
+        .pswp__button--zoom-out {
+          display: none !important;
+        }
+      `;
+      document.head.appendChild(style);
+      cleanup.push(() => {
+        const existingStyle = document.getElementById(styleId);
+        if (existingStyle) {
+          existingStyle.remove();
+        }
+      });
+    }
+  }
+
   // Create a lightbox instance (programmatic open).
   lightbox = new PhotoSwipeLightbox({
     // We don't rely on DOM gallery structure, but Lightbox requires these fields.
@@ -70,7 +105,22 @@ async function setup() {
     children: "img",
     pswpModule: () => import("photoswipe"),
   });
+  
+  // 初始化 lightbox
   lightbox.init();
+  
+  // 监听打开事件，配置滚轮缩放
+  lightbox.on("beforeOpen", () => {
+    // PhotoSwipe 5 默认支持滚轮缩放，我们只需要确保缩放功能已启用
+    // 在打开后通过实例配置
+    if (lightbox && lightbox.pswp) {
+      const pswp = lightbox.pswp;
+      // 设置最大缩放级别（允许放大到原始尺寸的 4 倍）
+      if (pswp.options) {
+        pswp.options.maxZoomLevel = 4;
+      }
+    }
+  });
 
   for (const img of imgs) {
     const onClick = (e: MouseEvent) => {
