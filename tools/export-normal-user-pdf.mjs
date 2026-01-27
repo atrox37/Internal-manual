@@ -18,8 +18,8 @@ const BASE_URL = `http://127.0.0.1:${PORT}`;
 const OUT_EN = path.join(repoRoot, "docs", "public", "downloads", "en", "user-manual.pdf");
 const OUT_ZH = path.join(repoRoot, "docs", "public", "downloads", "zh-cn", "user-manual.pdf");
 
-const HEADER_FOOTER_DOCX_EN = path.join(repoRoot, "tools", "pdf-assets", "header-footer-template.docx");
-const HEADER_FOOTER_DOCX_ZH = path.join(repoRoot, "tools", "pdf-assets", "header-footer-template-cn.docx");
+const HEADER_FOOTER_PDF_EN = path.join(repoRoot, "tools", "pdf-assets", "header-footer-template.pdf");
+const HEADER_FOOTER_PDF_ZH = path.join(repoRoot, "tools", "pdf-assets", "header-footer-template-cn.pdf");
 
 // 模板渲染效果：更“灰 + 半透明”，不抢正文
 // - opacity 越小越淡（0~1）
@@ -361,86 +361,11 @@ async function isServerUp(url) {
   }
 }
 
-/**
- * 加载背景模板（支持 DOCX 和 PDF）
- * 如果提供的是 DOCX 文件，会尝试使用 Playwright 转换为 PDF
- */
-async function loadBackgroundTemplate(templatePath, browser) {
-  if (!fs.existsSync(templatePath)) {
-    throw new Error(`未找到页眉页脚模板文件：${templatePath}`);
-  }
-
-  // 如果是 PDF 文件，直接加载
-  if (templatePath.endsWith(".pdf")) {
-    return fs.readFileSync(templatePath);
-  }
-
-  // 如果是 DOCX 文件，尝试转换为 PDF
-  if (templatePath.endsWith(".docx")) {
-    // 首先检查是否有对应的 PDF 文件（可能已经转换过）
-    const pdfPath = templatePath.replace(/\.docx$/, ".pdf");
-    if (fs.existsSync(pdfPath)) {
-      console.log(`使用现有的 PDF 模板: ${pdfPath}`);
-      return fs.readFileSync(pdfPath);
-    }
-
-    // 如果没有 PDF，尝试使用 Playwright 打开 DOCX 并转换为 PDF
-    console.log(`正在将 DOCX 转换为 PDF: ${templatePath}`);
-    console.log(`提示：如果转换失败，请先手动将 DOCX 转换为 PDF，或安装 LibreOffice 使用命令行转换`);
-    
-    const fileUrl = `file:///${templatePath.replace(/\\/g, "/")}`;
-    
-    const context = await browser.newContext({
-      viewport: { width: 1280, height: 720 },
-      deviceScaleFactor: 1,
-    });
-    
-    const page = await context.newPage();
-    
-    try {
-      // 尝试直接打开 DOCX 文件（某些浏览器可能支持）
-      await page.goto(fileUrl, { waitUntil: "networkidle", timeout: 10_000 });
-      await page.waitForTimeout(2000);
-      
-      // 打印为 PDF
-      const pdfBytes = await page.pdf({
-        format: "A4",
-        printBackground: true,
-      });
-      
-      await page.close();
-      await context.close();
-      
-      // 保存转换后的 PDF，以便下次使用
-      fs.mkdirSync(path.dirname(pdfPath), { recursive: true });
-      fs.writeFileSync(pdfPath, pdfBytes);
-      console.log(`已保存转换后的 PDF: ${pdfPath}`);
-      
-      return pdfBytes;
-    } catch (e) {
-      await page.close();
-      await context.close();
-      
-      // 如果转换失败，提供清晰的错误信息
-      throw new Error(
-        `无法将 DOCX 文件转换为 PDF: ${templatePath}\n` +
-        `错误: ${e.message}\n\n` +
-        `解决方案：\n` +
-        `1. 手动将 DOCX 转换为 PDF，保存为: ${pdfPath}\n` +
-        `2. 或安装 LibreOffice 并使用命令行转换：\n` +
-        `   libreoffice --headless --convert-to pdf "${templatePath}" --outdir "${path.dirname(templatePath)}"`
-      );
-    }
-  }
-
-  throw new Error(`不支持的模板文件格式: ${templatePath}（仅支持 .pdf 或 .docx）`);
-}
-
 async function renderSinglePageToPdf(url, outFile, { backgroundTemplatePath }) {
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
 
   if (!fs.existsSync(backgroundTemplatePath)) {
-    throw new Error(`未找到页眉页脚模板 DOCX：${backgroundTemplatePath}`);
+    throw new Error(`未找到页眉页脚模板 PDF：${backgroundTemplatePath}`);
   }
 
   let browser;
@@ -461,8 +386,8 @@ async function renderSinglePageToPdf(url, outFile, { backgroundTemplatePath }) {
 
   const merged = await PDFDocument.create();
 
-  // 背景模板：加载模板文件（支持 DOCX 和 PDF）
-  const backgroundBytes = await loadBackgroundTemplate(backgroundTemplatePath, browser);
+  // 背景模板（只取第一页，按 A4 cover 方式覆盖）
+  const backgroundBytes = fs.readFileSync(backgroundTemplatePath);
   const backgroundDoc = await PDFDocument.load(backgroundBytes);
   const backgroundPage = backgroundDoc.getPage(0);
   const backgroundTemplate = await merged.embedPage(backgroundPage);
@@ -592,8 +517,8 @@ async function main() {
     const urlZh = `${BASE_URL}/cn/manuals/normal-user.html`;
     const urlEn = `${BASE_URL}/manuals/normal-user.html`;
 
-    await renderSinglePageToPdf(urlZh, OUT_ZH, { backgroundTemplatePath: HEADER_FOOTER_DOCX_ZH });
-    await renderSinglePageToPdf(urlEn, OUT_EN, { backgroundTemplatePath: HEADER_FOOTER_DOCX_EN });
+    await renderSinglePageToPdf(urlZh, OUT_ZH, { backgroundTemplatePath: HEADER_FOOTER_PDF_ZH });
+    await renderSinglePageToPdf(urlEn, OUT_EN, { backgroundTemplatePath: HEADER_FOOTER_PDF_EN });
   } finally {
     if (startedByUs && server) server.kill();
   }
