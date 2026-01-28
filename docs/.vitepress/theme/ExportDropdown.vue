@@ -131,7 +131,7 @@ const pdfDownloadName = computed(() =>
  * - keep everything visually "靠右" (match social-links negative margin)
  * - divider should NOT shift the whole nav group, so draw it as a border
  */
-:global(.VPNavBar) .mc-export {
+/* :global(.VPNavBar) .mc-export {
   margin-right: -8px;
 }
 
@@ -142,10 +142,10 @@ const pdfDownloadName = computed(() =>
 :global(.VPNavBar) .mc-export:hover {
   color: var(--vp-c-brand-1);
   transition: color 0.25s;
-}
+} */
 
 /* Mobile nav screen */
-:global(.VPNavScreen) .mc-export {
+/* :global(.VPNavScreen) .mc-export {
   width: 100%;
   display: flex !important;
   margin: 0 !important;
@@ -167,7 +167,7 @@ const pdfDownloadName = computed(() =>
 
 :global(.VPNavScreen) .mc-export::before {
   display: none;
-}
+} */
 </style>
 
 
