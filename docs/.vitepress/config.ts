@@ -247,6 +247,9 @@ export default defineConfig({
               text: "System Configuration",
               collapsed: false,
               items: [
+                { text: "Login", link: "/manuals/system-config/login.html" },
+                { text: "Application Update", link: "/manuals/system-config/update.html" },
+                { text: "Initialization", link: "/manuals/system-config/initialize.html" },
                 {
                   text: "Channels",
                   link: "/manuals/system-config/channels/index.html",
@@ -274,6 +277,16 @@ export default defineConfig({
                   items: [
                     { text: "Rule Ops", link: "/manuals/system-config/rules/rule-ops.html" },
                     { text: "Rule Chain Ops", link: "/manuals/system-config/rules/rule-chain-ops.html" },
+                  ],
+                },
+                {
+                  text: "System Configuration Interface",
+                  link: "/manuals/system-config/system-config/index.html",
+                  collapsed: true,
+                  items: [
+                    { text: "Configuration Import/Export", link: "/manuals/system-config/system-config/configuration.html" },
+                    { text: "Firmware Upgrade", link: "/manuals/system-config/system-config/firmware-upgrade.html" },
+                    { text: "FAQ", link: "/manuals/system-config/system-config/faq.html" },
                   ],
                 },
               ],
@@ -419,6 +432,10 @@ export default defineConfig({
               text: "系统配置",
               collapsed: false,
               items: [
+                { text: "登录功能", link: "/cn/manuals/system-config/login.html" },
+                { text: "应用更新", link: "/cn/manuals/system-config/update.html" },
+                { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },
+               
                 {
                   text: "通道配置",
                   link: "/cn/manuals/system-config/channels/index.html",
@@ -446,6 +463,16 @@ export default defineConfig({
                   items: [
                     { text: "规则操作", link: "/cn/manuals/system-config/rules/rule-ops.html" },
                     { text: "规则链路操作", link: "/cn/manuals/system-config/rules/rule-chain-ops.html" },
+                  ],
+                },
+                {
+                  text: "系统配置界面",
+                  link: "/cn/manuals/system-config/system-config/index.html",
+                  collapsed: true,
+                  items: [
+                    { text: "配置导入导出", link: "/cn/manuals/system-config/system-config/configuration.html" },
+                    { text: "固件升级", link: "/cn/manuals/system-config/system-config/firmware-upgrade.html" },
+                    { text: "常见问题", link: "/cn/manuals/system-config/system-config/faq.html" },
                   ],
                 },
               ],

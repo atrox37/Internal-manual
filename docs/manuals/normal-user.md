@@ -835,6 +835,130 @@ The top usually has an **Export** button.
 
 <h2>System Configuration</h2>
 
+<h3>Login</h3>
+
+The login interface is the first step to access the system. The system provides a clean and beautiful login interface with username, password input fields, IP address input field, and login button.
+
+<img src="../images/Setting/Login/1.png" alt="Login Interface" style="max-width:100%; height:auto;" />
+
+1. Fill in the user's basic information:
+   * `Username`: User name
+   * `Password`: User password
+   * `Ip Address`: The IP address of the gateway machine to connect to. All subsequent data interactions will be performed with this gateway machine.
+
+2. Click the **Login** button to log in.
+
+<h3>Application Update</h3>
+
+The system supports both automatic update checking and manual updates. When a new version is available, the system will automatically prompt you to update.
+
+**Update Types:**
+
+- Application version updates (through desktop application update mechanism)
+- Firmware upgrades (through system configuration interface)
+
+<h4>Automatic Update Check</h4>
+
+<h5>Automatic Check Mechanism</h5>
+
+The system will automatically check for updates at the following times:
+- 3 seconds after application startup (silent check)
+- Will not affect application startup speed
+
+<h5>Update Process</h5>
+
+When a new version is detected, the system will display an update dialog, as shown:
+
+<img src="../images/Setting/Update/1.png" alt="Update Dialog" style="max-width:100%; height:auto;" />
+
+1. Application's latest version number.
+2. Update dialog, which will display detailed update logs, including:
+   - New features
+   - Bug fixes
+   - Performance improvements
+   - Other changes
+3. Click the **Update Now** button to immediately start the application update. The system will begin downloading the update package and display progress during the download.
+4. Click the **Remind Later** button to temporarily cancel the update.
+
+5. After the download is complete, the system will prompt that the application needs to be restarted.
+6. Select **Restart Now** to immediately restart the application and complete the update.
+7. Or select **Restart Later** to restart later.
+
+>Note:
+>
+>1. Do not close the application during the update process.
+>2. It is recommended to save important data before updating.
+>3. The application needs to be restarted after the update to take effect.
+>4. If the current version is already the latest version, the system will prompt "Current version is already the latest version".
+
+<h3>Initialization Configuration</h3>
+
+The initialization configuration function is used for initial deployment or reconfiguration of backend servers. It automatically deploys and configures backend services by connecting to remote servers via SSH.
+
+**Use Cases:**
+- Initial system installation
+- Server redeployment
+- Server configuration changes
+
+<h4>Open Initialization Dialog</h4>
+
+There are two ways to open the initialization dialog:
+
+**Method 1: From Login Interface**
+
+<img src="../images/Setting/Initialize/1.png" alt="Initialize Button from Login" style="max-width:100%; height:auto;" />
+
+1. Click the **Initialize Project** button in the top right corner of the login interface to open the initialization dialog.
+
+**Method 2: From Error Prompt**
+
+<img src="../images/Setting/Initialize/2.png" alt="Initialize from Error Prompt" style="max-width:100%; height:auto;" />
+
+1. When login fails and a network error is prompted, the system will display "**Unable to connect to server, please initialize project first**", and then automatically open the initialization dialog.
+
+<h4>Initialization Configuration Steps</h4>
+
+<img src="../images/Setting/Initialize/3.png" alt="Initialization Configuration Form" style="max-width:100%; height:auto;" />
+
+1. The initialization configuration form contains the following:
+
+   * `IP Address`: The IP address of the gateway machine, in a format like `192.168.1.100`, must conform to IP address format.
+
+   * `Port`: **SSH** connection port, default value is `22`, range is 1-65535.
+
+   * `Username`: **SSH** login username, usually `root` or other users with permissions.
+
+   * `Auth Mode`: **SSH** authentication method. The system supports two authentication methods: **Password** authentication and **Private Key** authentication.
+
+     * **Password** authentication: Enter the **SSH** password in the **Password** input field.
+
+       <img src="../images/Setting/Initialize/4.png" alt="Password Authentication" style="max-width:100%; height:auto;" />
+
+     * **Private Key** authentication: Click the **Select Private Key File** button to select a private key file (`.pem` or `.key` format).
+
+       <img src="../images/Setting/Initialize/5.png" alt="Private Key Authentication" style="max-width:100%; height:auto;" />
+
+   * `Package`: Gateway machine configuration installation package. Click the **Select Installation Package** button to select the installation package file. The installation package must be in `.run` format.
+
+2. Click the **Submit** button to start initialization. The system will display progress information, and users cannot interrupt the initialization process.
+
+   * When initialization succeeds, the progress bar will turn green, and a success message will be displayed.
+
+     <img src="../images/Setting/Initialize/6.png" alt="Initialization Success" style="max-width:100%; height:auto;" />
+
+   * When initialization fails, the progress bar will turn red, initialization stops, and an error message is displayed.
+
+     <img src="../images/Setting/Initialize/7.png" alt="Initialization Failed" style="max-width:100%; height:auto;" />
+
+>Notes:
+>
+>1. Do not close the dialog during initialization.
+>2. Ensure the server is accessible.
+>3. Ensure SSH service is running normally.
+>4. Installation package files must be valid `.run` format.
+>5. Private key files must be `.pem` or `.key` format.
+>6. After initialization is complete, you can try logging in again.
+
 <h3>Channels</h3>
 
 <img src="../images/Setting/Configuration/channel/1.png" alt="Channel Configuration" style="max-width:100%; height:auto;" />
@@ -1800,6 +1924,77 @@ This chapter includes: basic rule operations and rule flow operations.
 8. **Import** button. Select a .json file to import a rule flow; **the .json format must match the exported format**.
 
 9. **Cancel Edit** button to exit edit mode.
+<h3>System Configuration Interface</h3>
+
+<img src="../images/Setting/Configuration/1.png" alt="System Configuration Interface" style="max-width:100%; height:auto;" />
+
+The system configuration interface provides system-level configuration management functions, including configuration file management and firmware upgrades.
+
+**Access Path:** After logging in, navigate to the **System Config** page through the sidebar navigation.
+
+**Main Features:**
+
+- **Configuration File Management** module: Configuration file import/export
+- **Firmware Upgrade** module: Firmware upgrade
+
+<h4>Configuration File Management</h4>
+
+**Import**: Import system configuration files (.zip format) from local storage to restore system configuration or apply preset configurations.
+
+**Export**: Export the current system configuration as a `.zip` file for backup or configuration migration.
+
+<img src="../images/Setting/Configuration/2.png" alt="Configuration File Management" style="max-width:100%; height:auto;" />
+
+1. Click the **Import Configuration (.zip)** button, and select a `.zip` format configuration file in the file selection dialog to import.
+2. Click the **Export Configuration (.zip)** button, and the system will start exporting the configuration. After the export is complete, the system will automatically download the configuration file with the filename format: `system_config_timestamp.zip`, which will be saved to the browser's default download directory.
+
+<h4>Firmware Upgrade</h4>
+
+The firmware upgrade function is used to upgrade system firmware to improve system performance and fix issues.
+
+<img src="../images/Setting/Upgrade/1.png" alt="Firmware Upgrade Interface" style="max-width:100%; height:auto;" />
+
+1. Click the **Upload Upgrade Package (.run)** button, and select a `.run` format upgrade package in the file selection dialog.
+
+<img src="../images/Setting/Upgrade/2.png" alt="Upgrade Progress" style="max-width:100%; height:auto;" />
+
+2. Display the current upload file progress.
+3. Click the **Abort Upgrade** button to cancel this upgrade.
+
+4. Relevant log information will be displayed during the upgrade process.
+
+5. Currently, it is not possible to confirm the specific upgrade status. You need to judge it yourself through log output.
+
+>Notes:
+>
+>1. **Do not close the window during upgrade**: Closing the window during upgrade may cause upgrade failure or system abnormalities.
+>
+>2.  **Ensure stable network**: Upgrade requires a stable network connection.
+>
+>3. **Backup important data**: It is recommended to backup important configurations and data before upgrading.
+>
+>4. **Confirm upgrade package version**: Ensure the upgrade package version is correct and applicable to the current system.
+>
+>5. **Check upgrade logs**: Pay attention to upgrade logs during the upgrade process to identify issues in time.
+>
+>6. **Upgrade time**: The upgrade may take a long time, please be patient.
+
+<h4>System Configuration FAQ</h4>
+
+**Q: Do I need to restart the application after importing a configuration file?**
+A: Usually, you don't need to restart the application, but some configurations may require restarting related services to take effect.
+
+**Q: Can exported configuration files be used on other systems?**
+A: Yes, but you need to ensure version compatibility with the target system.
+
+**Q: Can I perform other operations during the upgrade process?**
+A: It is recommended not to perform other important operations to avoid affecting the upgrade process.
+
+**Q: How to recover after upgrade failure?**
+A: You can re-execute the upgrade process, or use previously exported configuration files to restore the system.
+
+**Q: Where to get the upgrade package?**
+A: Please contact the system administrator or technical support to obtain the upgrade package.
 
 <h2>FAQ and Troubleshooting</h2>
 
