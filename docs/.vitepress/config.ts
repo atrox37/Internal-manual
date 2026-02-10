@@ -142,7 +142,7 @@ export default defineConfig({
           },
           {
             text: "System Configuration",
-            link: "/manuals/system-config/channels/index.html",
+            link: "/manuals/system-config/login.html",
             activeMatch: "^/manuals/system-config/",
           },
           {
@@ -327,7 +327,7 @@ export default defineConfig({
           },
           {
             text: "系统配置",
-            link: "/cn/manuals/system-config/channels/index.html",
+            link: "/cn/manuals/system-config/login.html",
             activeMatch: "^/cn/manuals/system-config/",
           },
           {
