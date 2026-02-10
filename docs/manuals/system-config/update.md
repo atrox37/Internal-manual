@@ -9,7 +9,7 @@ The system supports both automatic update checking and manual updates. When a ne
 **Update Types:**
 
 - Application version updates (through desktop application update mechanism)
-- Firmware upgrades (through system configuration interface)
+- Firmware upgrades (through System Configuration)
 
 ## Automatic Update Check
 

@@ -2,11 +2,11 @@
 outline: deep
 ---
 
-# System Configuration Interface
+# System Configuration
 
-<img src="../../../images/Setting/Configuration/1.png" alt="System Configuration Interface" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/1.png" alt="System Configuration" style="max-width:100%; height:auto;" />
 
-The system configuration interface provides system-level configuration management functions, including configuration file management and firmware upgrades.
+The System Configuration provides system-level configuration management functions, including configuration file management and firmware upgrades.
 
 **Access Path:** After logging in, navigate to the **System Config** page through the sidebar navigation.
 

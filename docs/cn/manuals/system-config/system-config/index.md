@@ -2,11 +2,11 @@
 outline: deep
 ---
 
-# 系统配置界面
+# 系统配置
 
-<img src="../../../../images/Setting/Configuration/1.png" alt="系统配置界面" style="max-width:100%; height:auto;" />
+<img src="../../../../images/Setting/Configuration/1.png" alt="系统配置" style="max-width:100%; height:auto;" />
 
-系统配置界面提供了系统级别的配置管理功能，包括配置文件管理和固件升级。
+系统配置提供了系统级别的配置管理功能，包括配置文件管理和固件升级。
 
 **访问路径：** 登录后，通过侧边栏导航进入**System Config**页面
 

@@ -141,8 +141,8 @@ export default defineConfig({
             activeMatch: "^/manuals/core-features/",
           },
           {
-            text: "System Configuration",
-            link: "/manuals/system-config/login.html",
+            text: "Configuration",
+            link: "/manuals/system-config/index.html",
             activeMatch: "^/manuals/system-config/",
           },
           {
@@ -247,6 +247,7 @@ export default defineConfig({
               text: "System Configuration",
               collapsed: false,
               items: [
+                { text: "Application Introduction", link: "/manuals/system-config/index.html" },
                 { text: "Login", link: "/manuals/system-config/login.html" },
                 { text: "Application Update", link: "/manuals/system-config/update.html" },
                 { text: "Initialization", link: "/manuals/system-config/initialize.html" },
@@ -280,7 +281,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: "System Configuration Interface",
+                  text: "System Configuration",
                   link: "/manuals/system-config/system-config/index.html",
                   collapsed: true,
                   items: [
@@ -326,8 +327,8 @@ export default defineConfig({
             activeMatch: "^/cn/manuals/core-features/",
           },
           {
-            text: "系统配置",
-            link: "/cn/manuals/system-config/login.html",
+            text: "配置",
+            link: "/cn/manuals/system-config/index.html",
             activeMatch: "^/cn/manuals/system-config/",
           },
           {
@@ -432,6 +433,7 @@ export default defineConfig({
               text: "系统配置",
               collapsed: false,
               items: [
+                { text: "应用介绍", link: "/cn/manuals/system-config/index.html" },
                 { text: "登录功能", link: "/cn/manuals/system-config/login.html" },
                 { text: "应用更新", link: "/cn/manuals/system-config/update.html" },
                 { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },
@@ -466,7 +468,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: "系统配置界面",
+                  text: "系统配置",
                   link: "/cn/manuals/system-config/system-config/index.html",
                   collapsed: true,
                   items: [
