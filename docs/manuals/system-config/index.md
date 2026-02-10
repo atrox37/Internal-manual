@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-#Application Introduction
+# Application Introduction
 
 <img src="../../images/Setting/index/1.png" alt="EMS Edge Configuration Application Introduction" style="max-width:100%; height:auto;" />
 

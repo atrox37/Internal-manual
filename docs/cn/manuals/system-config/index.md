@@ -1,4 +1,4 @@
-# EMS Edge Configuration应用介绍
+# 应用介绍
 
 <img src="../../../images/Setting/index/1.png" alt="EMS Edge Configuration应用介绍" style="max-width:100%; height:auto;" />
 
