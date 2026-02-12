@@ -132,12 +132,12 @@ export default defineConfig({
         nav: [
           {
             text: "Basics",
-            link: "/manuals/basic-knowledge/overview.html",
+            link: "/manuals/basic-knowledge/index.html",
             activeMatch: "^/manuals/basic-knowledge/",
           },
           {
             text: "Core Features",
-            link: "/manuals/core-features/login/index.html",
+            link: "/manuals/core-features/index.html",
             activeMatch: "^/manuals/core-features/",
           },
           {
@@ -157,6 +157,7 @@ export default defineConfig({
               text: "Basics",
               collapsed: false,
               items: [
+                { text: "Table of Contents", link: "/manuals/basic-knowledge/index.html" },
                 { text: "Overview", link: "/manuals/basic-knowledge/overview.html" },
                 { text: "UI Structure", link: "/manuals/basic-knowledge/ui-structure.html" },
                 {
@@ -199,6 +200,7 @@ export default defineConfig({
               text: "Core Features",
               collapsed: false,
               items: [
+                { text: "Table of Contents", link: "/manuals/core-features/index.html" },
                 { text: "Login", link: "/manuals/core-features/login/index.html" },
                 { text: "Home", link: "/manuals/core-features/home/index.html" },
                 {
@@ -247,7 +249,9 @@ export default defineConfig({
               text: "System Configuration",
               collapsed: false,
               items: [
-                { text: "Application Introduction", link: "/manuals/system-config/index.html" },
+                { text: "Table of Contents", link: "/manuals/system-config/index.html" },
+                { text: "Deployment Prerequisites", link: "/manuals/system-config/deployment-prerequisites.html" },
+                { text: "Application Introduction", link: "/manuals/system-config/application-introduction.html" },
                 { text: "Login", link: "/manuals/system-config/login.html" },
                 { text: "Application Update", link: "/manuals/system-config/update.html" },
                 { text: "Initialization", link: "/manuals/system-config/initialize.html" },
@@ -318,12 +322,12 @@ export default defineConfig({
         nav: [
           {
             text: "基础认知",
-            link: "/cn/manuals/basic-knowledge/overview.html",
+            link: "/cn/manuals/basic-knowledge/index.html",
             activeMatch: "^/cn/manuals/basic-knowledge/",
           },
           {
             text: "核心功能",
-            link: "/cn/manuals/core-features/login/index.html",
+            link: "/cn/manuals/core-features/index.html",
             activeMatch: "^/cn/manuals/core-features/",
           },
           {
@@ -343,6 +347,7 @@ export default defineConfig({
               text: "基础认知",
               collapsed: false,
               items: [
+                { text: "目录", link: "/cn/manuals/basic-knowledge/index.html" },
                 { text: "平台概览", link: "/cn/manuals/basic-knowledge/overview.html" },
                 { text: "界面结构", link: "/cn/manuals/basic-knowledge/ui-structure.html" },
                 {
@@ -385,6 +390,7 @@ export default defineConfig({
               text: "核心功能",
               collapsed: false,
               items: [
+                { text: "目录", link: "/cn/manuals/core-features/index.html" },
                 { text: "登录页面", link: "/cn/manuals/core-features/login/index.html" },
                 { text: "首页", link: "/cn/manuals/core-features/home/index.html" },
                 {
@@ -433,7 +439,9 @@ export default defineConfig({
               text: "系统配置",
               collapsed: false,
               items: [
-                { text: "应用介绍", link: "/cn/manuals/system-config/index.html" },
+                { text: "目录", link: "/cn/manuals/system-config/index.html" },
+                { text: "部署前提", link: "/cn/manuals/system-config/deployment-prerequisites.html" },
+                { text: "应用介绍", link: "/cn/manuals/system-config/application-introduction.html" },
                 { text: "登录功能", link: "/cn/manuals/system-config/login.html" },
                 { text: "应用更新", link: "/cn/manuals/system-config/update.html" },
                 { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },

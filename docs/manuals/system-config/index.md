@@ -2,47 +2,66 @@
 outline: deep
 ---
 
-# Application Introduction
+# Configuration
 
-<img src="../../images/Setting/index/1.png" alt="EMS Edge Configuration Application Introduction" style="max-width:100%; height:auto;" />
+This section covers EMS Edge Configuration application setup and operations.
 
-**EMS Edge Configuration** is a desktop platform for edge-side configuration and operation maintenance, primarily targeting operations personnel, field engineers, and configuration administrators.  
-Its core function is to provide a unified configuration entry point, clear operational views, and standardized operational procedures, helping users more efficiently complete device and channel configuration management, rule maintenance, and status monitoring.
+## Table of Contents
 
-## Download Links (V.1.13)
+- [Deployment Prerequisites](/manuals/system-config/deployment-prerequisites.html)
+- [Application Introduction](/manuals/system-config/application-introduction.html)
+  - [Download Links (V.1.13)](/manuals/system-config/application-introduction.html#download-links-v-1-13)
+  - [UI Introduction](/manuals/system-config/application-introduction.html#ui-introduction)
+- [Login](/manuals/system-config/login.html)
+- [Application Update](/manuals/system-config/update.html)
+  - [Automatic Update Check](/manuals/system-config/update.html#automatic-update-check)
+- [Initialization](/manuals/system-config/initialize.html)
+  - [Open Initialization Dialog](/manuals/system-config/initialize.html#open-initialization-dialog)
+  - [Initialization Configuration Steps](/manuals/system-config/initialize.html#initialization-configuration-steps)
 
-- **Windows**
-  - https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi (.msi)
+- ### Channels
 
-- **macOS**
-  * dmg: https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg (.dmg)
-- **Linux**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage (.AppImage)
-- **Linux-arm64**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage (.AppImage)
+  - [Channel Ops](/manuals/system-config/channels/channel-ops.html)
+    - [Query Channels](/manuals/system-config/channels/channel-ops.html#query-channels)
+    - [View Channel Details and Edit](/manuals/system-config/channels/channel-ops.html#view-channel-details-and-edit)
+    - [Add a New Channel](/manuals/system-config/channels/channel-ops.html#add-a-new-channel)
+    - [Toggle Channel Enable Status](/manuals/system-config/channels/channel-ops.html#toggle-channel-enable-status)
+    - [Delete an Existing Channel](/manuals/system-config/channels/channel-ops.html#delete-an-existing-channel)
+  - [Point Ops](/manuals/system-config/channels/point-ops.html)
+    - [Issue Point Values](/manuals/system-config/channels/point-ops.html#issue-point-values)
+    - [Batch Edit Points](/manuals/system-config/channels/point-ops.html#batch-edit-points)
+    - [Export Point CSV Files](/manuals/system-config/channels/point-ops.html#export-point-csv-files)
+  - [Mapping Ops](/manuals/system-config/channels/mapping-ops.html)
+    - [Batch Edit Point Mappings](/manuals/system-config/channels/mapping-ops.html#batch-edit-point-mappings)
+    - [Export Point Mapping CSV Files](/manuals/system-config/channels/mapping-ops.html#export-point-mapping-csv-files)
 
-## UI Introduction
+- ### Device Instances
 
-### Top Title Bar
+  - [Instance Ops](/manuals/system-config/device-instances/instance-ops.html)
+    - [Query Device Instances](/manuals/system-config/device-instances/instance-ops.html#query-device-instances)
+    - [Add a Device Instance](/manuals/system-config/device-instances/instance-ops.html#add-a-device-instance)
+    - [View Device Instance Details](/manuals/system-config/device-instances/instance-ops.html#view-device-instance-details)
+    - [Edit Device Instances](/manuals/system-config/device-instances/instance-ops.html#edit-device-instances)
+    - [Delete Device Instances](/manuals/system-config/device-instances/instance-ops.html#delete-device-instances)
+  - [Instance Point Ops](/manuals/system-config/device-instances/instance-point-ops.html)
+    - [Issue Point Commands](/manuals/system-config/device-instances/instance-point-ops.html#issue-point-commands)
+    - [Export Point CSV Files](/manuals/system-config/device-instances/instance-point-ops.html#export-point-csv-files)
+  - [Instance Routing Ops](/manuals/system-config/device-instances/instance-routing-ops.html)
+    - [Export Point Routing CSV Files](/manuals/system-config/device-instances/instance-routing-ops.html#export-point-routing-csv-files)
+    - [Batch Edit Instance Point Routing](/manuals/system-config/device-instances/instance-routing-ops.html#batch-edit-instance-point-routing)
 
-<img src="../../images/Setting/index/2.png" alt="Top Title Bar" style="max-width:100%; height:auto;" />
+- ### Rules
 
-1. **Application Identity Area**: Displays the application name and basic status prompts.  
-2. **Current Gateway IP**: Set during login, all operations will be performed based on this gateway machine.  
-3. **User Control**: View user name, click to open dropdown menu, can perform logout operation.  
+  - [Rule Ops](/manuals/system-config/rules/rule-ops.html)
+    - [Add a Rule](/manuals/system-config/rules/rule-ops.html#add-a-rule)
+    - [Edit a Rule](/manuals/system-config/rules/rule-ops.html#edit-a-rule)
+    - [Delete a Rule](/manuals/system-config/rules/rule-ops.html#delete-a-rule)
+  - [Rule Chain Ops](/manuals/system-config/rules/rule-chain-ops.html)
+    - [View Rule Flow Details and Real-Time Execution Path](/manuals/system-config/rules/rule-chain-ops.html#view-rule-flow-details-and-real-time-execution-path)
+    - [Edit Rule Flow](/manuals/system-config/rules/rule-chain-ops.html#edit-rule-flow)
 
-### Sidebar
+- ### System Configuration
 
-Users can click sidebar labels to select different modules for operations. The sidebar has two forms that change with the application window size:
-
-* When the application window is wide, module labels are displayed in the form of `icon + module name`.
-
-  <img src="../../images/Setting/index/3.png" alt="Sidebar - Wide Screen Mode" style="max-width:100%; height:400px;" />
-
-* When the application window is narrow, module labels are displayed in icon form only.
-
-  
-
-<img src="../../images/Setting/index/4.png" alt="Sidebar - Narrow Screen Mode" style="max-width:100%; height:400px;" />
-
-
+  - [Configuration Import/Export](/manuals/system-config/system-config/configuration.html)
+  - [Firmware Upgrade](/manuals/system-config/system-config/firmware-upgrade.html)
+  - [FAQ](/manuals/system-config/system-config/faq.html)

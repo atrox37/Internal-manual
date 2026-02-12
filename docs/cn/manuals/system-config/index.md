@@ -1,45 +1,67 @@
-# 应用介绍
+---
+outline: deep
+---
 
-<img src="../../../images/Setting/index/1.png" alt="EMS Edge Configuration应用介绍" style="max-width:100%; height:auto;" />
+# 配置
 
-**EMS Edge Configuration** 是一款用于边缘侧配置与运行维护的桌面平台，主要面向运维人员、现场工程师与配置管理员。  
-它的核心作用是提供统一的配置入口、清晰的运行视图与规范的操作流程，帮助用户更高效地完成设备与通道的配置管理、规则维护与状态监控。
+本节涵盖 EMS Edge Configuration 应用的配置与操作说明。
 
-## 下载地址（V.1.13版本）
+## 目录
 
-- **Windows**
-  - https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi （.msi）
+- [部署前提](/cn/manuals/system-config/deployment-prerequisites.html)
+- [应用介绍](/cn/manuals/system-config/application-introduction.html)
+  - [下载地址（V.1.13版本）](/cn/manuals/system-config/application-introduction.html#下载地址v-1-13版本)
+  - [UI 介绍](/cn/manuals/system-config/application-introduction.html#ui-介绍)
+- [登录功能](/cn/manuals/system-config/login.html)
+- [应用更新](/cn/manuals/system-config/update.html)
+  - [自动更新检查](/cn/manuals/system-config/update.html#自动更新检查)
+- [初始化配置](/cn/manuals/system-config/initialize.html)
+  - [打开初始化对话框](/cn/manuals/system-config/initialize.html#打开初始化对话框)
+  - [初始化配置步骤](/cn/manuals/system-config/initialize.html#初始化配置步骤)
 
-- **macOS**
-  * dmg: https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg (.dmg)
-- **Linux**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage (.AppImage)
-- **Linux-arm64**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage (.AppImage)
+- ### 通道配置
 
-## UI 介绍
+  - [通道管理](/cn/manuals/system-config/channels/channel-ops.html)
+    - [查询通道](/cn/manuals/system-config/channels/channel-ops.html#查询通道)
+    - [查看通道详情及编辑](/cn/manuals/system-config/channels/channel-ops.html#查看通道详情及编辑)
+    - [新增通道](/cn/manuals/system-config/channels/channel-ops.html#新增通道)
+    - [对已有通道的enable状态进行调整](/cn/manuals/system-config/channels/channel-ops.html#对已有通道的enable状态进行调整)
+    - [删除已有的通道](/cn/manuals/system-config/channels/channel-ops.html#删除已有的通道)
+  - [通道点位配置](/cn/manuals/system-config/channels/point-ops.html)
+    - [下发点位的值](/cn/manuals/system-config/channels/point-ops.html#下发点位的值)
+    - [批量修改点位](/cn/manuals/system-config/channels/point-ops.html#批量修改点位)
+    - [导出点位CSV文件](/cn/manuals/system-config/channels/point-ops.html#导出点位csv文件)
+  - [通道点位映射配置](/cn/manuals/system-config/channels/mapping-ops.html)
+    - [批量修改点位的映射](/cn/manuals/system-config/channels/mapping-ops.html#批量修改点位的映射)
+    - [导出点位映射CSV文件](/cn/manuals/system-config/channels/mapping-ops.html#导出点位映射csv文件)
 
-### 顶部标题栏
+- ### 设备实例配置
 
-<img src="../../../images/Setting/index/2.png" alt="顶部标题栏" style="max-width:100%; height:auto;" />
+  - [实例管理](/cn/manuals/system-config/device-instances/instance-ops.html)
+    - [查询设备实例](/cn/manuals/system-config/device-instances/instance-ops.html#查询设备实例)
+    - [新增设备实例](/cn/manuals/system-config/device-instances/instance-ops.html#新增设备实例)
+    - [查看设备实例详情](/cn/manuals/system-config/device-instances/instance-ops.html#查看设备实例详情)
+    - [编辑设备实例](/cn/manuals/system-config/device-instances/instance-ops.html#编辑设备实例)
+    - [删除已有的设备实例](/cn/manuals/system-config/device-instances/instance-ops.html#删除已有的设备实例)
+  - [实例点位配置](/cn/manuals/system-config/device-instances/instance-point-ops.html)
+    - [点位命令下发](/cn/manuals/system-config/device-instances/instance-point-ops.html#点位命令下发)
+    - [导出点位CSV文件](/cn/manuals/system-config/device-instances/instance-point-ops.html#导出点位csv文件)
+  - [实例点位路由配置](/cn/manuals/system-config/device-instances/instance-routing-ops.html)
+    - [导出点位路由CSV文件](/cn/manuals/system-config/device-instances/instance-routing-ops.html#导出点位路由csv文件)
+    - [批量修改实例点位路由](/cn/manuals/system-config/device-instances/instance-routing-ops.html#批量修改实例点位路由)
 
-1. **应用标识区**：显示应用名称与基础状态提示。  
-2. **当前所连网关机的IP**：在登录时进行设定，所有的操作都将基于该网关机进行。  
-3. **用户控件**：查看用户名称，点击弹出下拉框，可进行退出登录的操作。  
+- ### 规则配置
 
-### 侧边栏
+  - [规则操作](/cn/manuals/system-config/rules/rule-ops.html)
+    - [新增规则](/cn/manuals/system-config/rules/rule-ops.html#新增规则)
+    - [修改规则](/cn/manuals/system-config/rules/rule-ops.html#修改规则)
+    - [删除规则](/cn/manuals/system-config/rules/rule-ops.html#删除规则)
+  - [规则链路操作](/cn/manuals/system-config/rules/rule-chain-ops.html)
+    - [查看规则链路详情及实时执行链路](/cn/manuals/system-config/rules/rule-chain-ops.html#查看规则链路详情及实时执行链路)
+    - [修改规则链路](/cn/manuals/system-config/rules/rule-chain-ops.html#修改规则链路)
 
-用户可以点击侧边栏的标签选择不同的模块进行操作。侧边栏有两种形态，其会随着应用窗体的大小发生变化：
+- ### 系统配置
 
-* 在应用窗口较宽时，会以`图标+模块名称`的形式来展示模块标签。
-
-  <img src="../../../images/Setting/index/3.png" alt="侧边栏-宽屏模式" style="max-width:100%; height:400px;" />
-
-* 在应用窗口较窄时，会以图标的形式来展示模块标签。
-
-  
-
-<img src="../../../images/Setting/index/4.png" alt="侧边栏-窄屏模式" style="max-width:100%; height:400px;" />
-
-
-
+  - [配置导入导出](/cn/manuals/system-config/system-config/configuration.html)
+  - [固件升级](/cn/manuals/system-config/system-config/firmware-upgrade.html)
+  - [常见问题](/cn/manuals/system-config/system-config/faq.html)

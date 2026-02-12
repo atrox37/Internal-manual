@@ -835,6 +835,20 @@ The top usually has an **Export** button.
 
 <h2>Configuration</h2>
 
+<h3>Deployment Prerequisites</h3>
+
+Before deploying the EMS system, you need to connect the gateway machine to the network first.
+
+Required tools: network cable, gateway machine, computer
+
+Steps:
+
+1. Connect the network cable to the LAN2 port of the gateway machine, as shown in the figure.
+
+   <img src="../images/Setting/Install/1.png" alt="index" style="max-width:100%; height:auto;" />
+
+2. Under the same LAN, use the EMS Edge Configuration application on your computer to connect to the gateway machine (for details, see the [login page](/manuals/system-config/login.html) introduction).
+
 <h3>Application Introduction</h3>
 
 <img src="../images/Setting/index/1.png" alt="EMS Edge Configuration Application Introduction" style="max-width:100%; height:auto;" />
@@ -849,6 +863,16 @@ Its core function is to provide a unified configuration entry point, clear opera
 
 - **macOS**
   * dmg: https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg (.dmg)
+    
+    >**Note:** Since the application is still in the testing phase and the relevant certificates have not yet been issued, macOS may display a warning that the software is damaged and cannot be opened. In this case, you can temporarily bypass the warning using the following methods:
+    >
+    >- Right-click the application → Select **Open** → Confirm again
+    >- Or run the following command in Terminal:
+    >
+    >```
+    >xattr -dr com.apple.quarantine /Applications/pcmanagement.app
+    >```
+
 - **Linux**
   * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage (.AppImage)
 - **Linux-arm64**

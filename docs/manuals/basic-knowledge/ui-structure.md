@@ -62,11 +62,17 @@ The main home page of the user interface is divided into three parts:
 
   <img src="../../images/common/5.png" alt="5" style="max-width:100%; height:auto;" /> 
 
-  On the right side of the top bar there is a bell icon (Notice):
+  - Users can view the global basic information in this module, which is presented from left to right as follows:
 
-  - A red badge indicates the number of current alarms.
-  - Clicking it jumps to Alarm > Current Records (Current Alarms).
+    - Platform Name
+
+    - Current status of the site
+    - Station weather conditions
+    - The currently logged-in user can click to pop up an operation dialog box, which enables them to perform the logout operation
+    - Alert quantity notification. Click to jump to the current alert page.
+
 
 
 3. **Lower-right: Main content area**
   - Displays data for the current page.
+
