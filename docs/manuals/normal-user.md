@@ -859,10 +859,10 @@ Its core function is to provide a unified configuration entry point, clear opera
 <h4>Download Links (V.1.13)</h4>
 
 - **Windows**
-  - https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi (.msi)
+  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260212.1)
 
 - **macOS**
-  * dmg: https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg (.dmg)
+  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260212.1)
     
     >**Note:** Since the application is still in the testing phase and the relevant certificates have not yet been issued, macOS may display a warning that the software is damaged and cannot be opened. In this case, you can temporarily bypass the warning using the following methods:
     >
@@ -874,9 +874,9 @@ Its core function is to provide a unified configuration entry point, clear opera
     >```
 
 - **Linux**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage (.AppImage)
+  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260212.1)
 - **Linux-arm64**
-  * https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage (.AppImage)
+  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260212.1)
 
 <h4>UI Introduction</h4>
 
@@ -1026,7 +1026,7 @@ There are two ways to open the initialization dialog:
 >5. Private key files must be `.pem` or `.key` format.
 >6. After initialization is complete, you can try logging in again.
 
-<h3>Channels</h3>
+<h3>Channels Configuration</h3>
 
 <img src="../images/Setting/Configuration/channel/1.png" alt="Channel Configuration" style="max-width:100%; height:auto;" />
 
@@ -1991,7 +1991,8 @@ This chapter includes: basic rule operations and rule flow operations.
 8. **Import** button. Select a .json file to import a rule flow; **the .json format must match the exported format**.
 
 9. **Cancel Edit** button to exit edit mode.
-<h3>System Configuration</h3>
+
+<h3>Configuration</h3>
 
 <img src="../images/Setting/Configuration/1.png" alt="System Configuration" style="max-width:100%; height:auto;" />
 

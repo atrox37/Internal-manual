@@ -246,7 +246,7 @@ export default defineConfig({
           ],
           "/manuals/system-config/": [
             {
-              text: "System Configuration",
+              text: "Configuration",
               collapsed: false,
               items: [
                 { text: "Table of Contents", link: "/manuals/system-config/index.html" },
@@ -256,7 +256,7 @@ export default defineConfig({
                 { text: "Application Update", link: "/manuals/system-config/update.html" },
                 { text: "Initialization", link: "/manuals/system-config/initialize.html" },
                 {
-                  text: "Channels",
+                  text: "Channels Configuration",
                   link: "/manuals/system-config/channels/index.html",
                   collapsed: true,
                   items: [
@@ -266,7 +266,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: "Device Instances",
+                  text: "Device Instances Configuration",
                   link: "/manuals/system-config/device-instances/index.html",
                   collapsed: true,
                   items: [
@@ -276,7 +276,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: "Rules",
+                  text: "Rules Configuration",
                   link: "/manuals/system-config/rules/index.html",
                   collapsed: true,
                   items: [

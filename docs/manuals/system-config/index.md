@@ -60,7 +60,7 @@ This section covers EMS Edge Configuration application setup and operations.
     - [View Rule Flow Details and Real-Time Execution Path](/manuals/system-config/rules/rule-chain-ops.html#view-rule-flow-details-and-real-time-execution-path)
     - [Edit Rule Flow](/manuals/system-config/rules/rule-chain-ops.html#edit-rule-flow)
 
-- ### System Configuration
+- ### System
 
   - [Configuration Import/Export](/manuals/system-config/system-config/configuration.html)
   - [Firmware Upgrade](/manuals/system-config/system-config/firmware-upgrade.html)
