@@ -18,6 +18,9 @@ outline: deep
 - [初始化配置](/cn/manuals/system-config/initialize.html)
   - [打开初始化对话框](/cn/manuals/system-config/initialize.html#打开初始化对话框)
   - [初始化配置步骤](/cn/manuals/system-config/initialize.html#初始化配置步骤)
+- [首页配置](/cn/manuals/system-config/home/home-config.html)
+  - [首页点位配置](/cn/manuals/system-config/home/home-config-point-setup.html)
+  - [重置首页点位配置](/cn/manuals/system-config/home/home-config-reset.html)
 
 - ### 通道配置
 

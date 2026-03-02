@@ -19,7 +19,7 @@ This section covers EMS Edge Configuration application setup and operations.
   - [Open Initialization Dialog](/manuals/system-config/initialize.html#open-initialization-dialog)
   - [Initialization Configuration Steps](/manuals/system-config/initialize.html#initialization-configuration-steps)
 
-- ### Channels
+- ### Channels Configuration
 
   - [Channel Ops](/manuals/system-config/channels/channel-ops.html)
     - [Query Channels](/manuals/system-config/channels/channel-ops.html#query-channels)
@@ -35,7 +35,7 @@ This section covers EMS Edge Configuration application setup and operations.
     - [Batch Edit Point Mappings](/manuals/system-config/channels/mapping-ops.html#batch-edit-point-mappings)
     - [Export Point Mapping CSV Files](/manuals/system-config/channels/mapping-ops.html#export-point-mapping-csv-files)
 
-- ### Device Instances
+- ### Device Instances Configuration
 
   - [Instance Ops](/manuals/system-config/device-instances/instance-ops.html)
     - [Query Device Instances](/manuals/system-config/device-instances/instance-ops.html#query-device-instances)
@@ -50,7 +50,7 @@ This section covers EMS Edge Configuration application setup and operations.
     - [Export Point Routing CSV Files](/manuals/system-config/device-instances/instance-routing-ops.html#export-point-routing-csv-files)
     - [Batch Edit Instance Point Routing](/manuals/system-config/device-instances/instance-routing-ops.html#batch-edit-instance-point-routing)
 
-- ### Rules
+- ### Rules Configuration
 
   - [Rule Ops](/manuals/system-config/rules/rule-ops.html)
     - [Add a Rule](/manuals/system-config/rules/rule-ops.html#add-a-rule)
@@ -60,8 +60,13 @@ This section covers EMS Edge Configuration application setup and operations.
     - [View Rule Flow Details and Real-Time Execution Path](/manuals/system-config/rules/rule-chain-ops.html#view-rule-flow-details-and-real-time-execution-path)
     - [Edit Rule Flow](/manuals/system-config/rules/rule-chain-ops.html#edit-rule-flow)
 
-- ### System
+- ### System Configuration
 
   - [Configuration Import/Export](/manuals/system-config/system-config/configuration.html)
   - [Firmware Upgrade](/manuals/system-config/system-config/firmware-upgrade.html)
   - [FAQ](/manuals/system-config/system-config/faq.html)
+
+- ### Home Configuration
+
+  - [Home Point Setup](/manuals/system-config/home/home-config-point-setup.html)
+  - [Reset Home Point Configuration](/manuals/system-config/home/home-config-reset.html)

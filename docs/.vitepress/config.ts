@@ -294,6 +294,15 @@ export default defineConfig({
                     { text: "FAQ", link: "/manuals/system-config/system-config/faq.html" },
                   ],
                 },
+                {
+                  text: "Home Configuration",
+                  link: "/manuals/system-config/home/home-config.html",
+                  collapsed: true,
+                  items: [
+                    { text: "Home Point Setup", link: "/manuals/system-config/home/home-config-point-setup.html" },
+                    { text: "Reset Home Point Configuration", link: "/manuals/system-config/home/home-config-reset.html" },
+                  ],
+                },
               ],
             },
           ],
@@ -445,7 +454,6 @@ export default defineConfig({
                 { text: "登录功能", link: "/cn/manuals/system-config/login.html" },
                 { text: "应用更新", link: "/cn/manuals/system-config/update.html" },
                 { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },
-               
                 {
                   text: "通道配置",
                   link: "/cn/manuals/system-config/channels/index.html",
@@ -483,6 +491,15 @@ export default defineConfig({
                     { text: "配置导入导出", link: "/cn/manuals/system-config/system-config/configuration.html" },
                     { text: "固件升级", link: "/cn/manuals/system-config/system-config/firmware-upgrade.html" },
                     { text: "常见问题", link: "/cn/manuals/system-config/system-config/faq.html" },
+                  ],
+                },
+                {
+                  text: "首页配置",
+                  link: "/cn/manuals/system-config/home/home-config.html",
+                  collapsed: true,
+                  items: [
+                    { text: "首页点位配置", link: "/cn/manuals/system-config/home/home-config-point-setup.html" },
+                    { text: "重置首页点位配置", link: "/cn/manuals/system-config/home/home-config-reset.html" },
                   ],
                 },
               ],
