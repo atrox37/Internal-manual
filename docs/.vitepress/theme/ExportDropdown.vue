@@ -34,7 +34,7 @@ const pdfHref = computed(() =>
 );
 
 const pdfDownloadName = computed(() =>
-  isEnglish.value ? "User Manual.pdf" : "普通用户手册.pdf"
+  isEnglish.value ? "Monarch Edge User Manual.pdf" : "Monarch Edge 用户手册.pdf"
 );
 
 // 旧策略（暂时注释）：下载整站导出 PDF
