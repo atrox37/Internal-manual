@@ -1,8 +1,18 @@
-﻿---
+---
 outline: deep
 ---
 
 # Instance Management
+
+The instance management page maintains the full lifecycle of device instances and is the core master data management page after device onboarding.
+
+On this page, you can:
+
+- **Query instances by product**: Quickly locate device instances under a specific product
+- **Add instances and maintain properties**: Configure instance basic info and extended properties at creation
+- **View instance details**: Verify instance configuration completeness and field correctness
+- **Edit existing instances**: Update instance parameters according to field changes
+- **Delete invalid instances**: Clean up decommissioned or incorrectly created instance records
 
 ## Query Device Instances
 

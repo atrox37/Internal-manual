@@ -4,6 +4,15 @@ outline: deep
 
 # Instance Point Configuration
 
+The instance point configuration page manages property/measurement/action points within device instances. It is the key page for viewing instance runtime parameters and executing operations.
+
+On this page, you can:
+
+- **Switch between point types**: View property, measurement, and action points as needed
+- **Quickly locate target points**: Filter by name to improve point lookup efficiency
+- **Issue action point commands**: Execute action points directly and observe result changes
+- **Export point data**: Export the current view as CSV for analysis, archiving, and delivery
+
 <img src="../../../images/Setting/Configuration/deviceInstance/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Points** in the **Operation** column of the target instance row to open the points dialog.

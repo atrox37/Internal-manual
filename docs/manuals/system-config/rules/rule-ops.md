@@ -1,8 +1,17 @@
-﻿---
+---
 outline: deep
 ---
 
 # Rule Operations
+
+The rule operations page manages rule entries themselves (excluding flow canvas content) and is the basic information maintenance entry for the rule system.
+
+On this page, you can:
+
+- **Add rule entries**: Define rule name and description, create editable rule entities
+- **Edit rule metadata**: Maintain rule name and description as business changes
+- **Delete obsolete rules**: Clean up rules no longer in use to avoid misuse
+- **Prepare for rule flow configuration**: Create rules here first, then configure execution flow in the rule flow page
 
 ## Add a Rule
 

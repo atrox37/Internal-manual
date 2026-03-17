@@ -4,6 +4,15 @@ outline: deep
 
 # 通道点位配置
 
+通道点位配置页面用于管理通道下四遥点位（telemetry/signal/control/adjustment）的定义、下发与批量变更，是通道调试和参数维护最常用的页面。
+通过本页面，您可以：
+
+- **按点位类型精细查看**：支持在不同 tab 间切换，并通过名称快速筛选目标点位
+- **执行单点/批量下发**：既可对单个点位即时下发，也可在当前类型下批量下发
+- **批量编辑点位数据**：支持新增、删除、修改，并通过 modified/added/deleted/invalid 追踪变更状态
+- **通过 CSV 导入导出**：适合批量迁移、离线整理后再回填系统
+- **统一提交并校验**：本地编辑完成后集中提交，减少误操作对线上数据的影响
+
 
 ![11](../../../../images/Setting/Configuration/channel/11.png)
 ![12](../../../../images/Setting/Configuration/channel/12.png)

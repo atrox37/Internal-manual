@@ -1,8 +1,17 @@
-﻿---
+---
 outline: deep
 ---
 
 # Channel Point Mapping Configuration
+
+The channel point mapping configuration page maintains the mapping relationship between "business points" and "underlying protocol addresses/registers", determining whether data collection and control commands are correctly applied to devices.
+
+On this page, you can:
+
+- **Maintain mapping fields by protocol rules**: Configure for modbus_rtu/modbus_tcp/di_do and other protocols
+- **Batch modify with real-time validation**: Adjust function code, data type, byte order, and other key items in edit mode
+- **Overwrite mappings via CSV import**: Suitable for batch migration or project updates
+- **Export mapping results for audit**: Export current mappings for delivery and traceability
 
 ## Batch Edit Point Mappings
 

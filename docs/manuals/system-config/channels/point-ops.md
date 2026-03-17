@@ -1,8 +1,18 @@
-﻿---
+---
 outline: deep
 ---
 
 # Channel Point Configuration
+
+The channel point configuration page manages the definition, issuance, and batch changes of four-remote points (telemetry/signal/control/adjustment) under channels. It is the most frequently used page for channel debugging and parameter maintenance.
+
+On this page, you can:
+
+- **View by point type**: Switch between tabs and quickly filter target points by name
+- **Issue single or batch values**: Issue values for a single point or batch issue for the current type
+- **Batch edit point data**: Add, delete, and modify points; track changes via modified/added/deleted/invalid status
+- **Import/export via CSV**: Suitable for batch migration and offline organization before backfilling into the system
+- **Submit and validate centrally**: Submit all local edits at once to reduce impact of incorrect operations on live data
 
 <img src="../../../images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
 

@@ -261,6 +261,7 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     { text: "Channel Ops", link: "/manuals/system-config/channels/channel-ops.html" },
+                    { text: "Channel Template Management", link: "/manuals/system-config/channels/template-ops.html" },
                     { text: "Point Ops", link: "/manuals/system-config/channels/point-ops.html" },
                     { text: "Mapping Ops", link: "/manuals/system-config/channels/mapping-ops.html" },
                   ],
@@ -460,6 +461,7 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     { text: "通道管理", link: "/cn/manuals/system-config/channels/channel-ops.html" },
+                    { text: "通道模板管理", link: "/cn/manuals/system-config/channels/template-ops.html" },
                     { text: "通道点位配置", link: "/cn/manuals/system-config/channels/point-ops.html" },
                     { text: "通道点位映射配置", link: "/cn/manuals/system-config/channels/mapping-ops.html" },
                   ],

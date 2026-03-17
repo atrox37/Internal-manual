@@ -1,8 +1,18 @@
-﻿---
+---
 outline: deep
 ---
 
 # Instance Point Routing Configuration
+
+The instance point routing configuration page establishes the data path from "instance points" to "channel points", determining how instance data maps to and interacts with underlying channels.
+
+On this page, you can:
+
+- **View current routing relationships**: Check measurement/action point mapping targets in the Routing view
+- **Batch modify routing by rules**: Edit, validate, filter (modified/invalid), and submit in one go
+- **Overwrite routing via CSV import**: Suitable for on-site batch replacement or environment migration
+- **Export routing config for backup**: Facilitate rollback, audit, and cross-project reuse
+- **Reduce wiring error risk**: Use visual validation to detect point type or channel selection issues early
 
 <img src="../../../images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
 

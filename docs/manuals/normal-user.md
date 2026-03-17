@@ -1030,9 +1030,18 @@ There are two ways to open the initialization dialog:
 
 <img src="../images/Setting/Configuration/channel/1.png" alt="Channel Configuration" style="max-width:100%; height:auto;" />
 
-This chapter includes: channel management, channel point configuration, and channel point mapping configuration.
+This chapter includes: channel management, channel template management, channel point configuration, and channel point mapping configuration.
 
 <h4>Channel Management</h4>
+
+The channel management page is used to maintain channel instances in the system and is one of the main entry points for channel configuration. It covers the full workflow from "query and locate" to "maintain and modify", suitable for daily operations and initial deployment.
+
+On this page, you can:
+
+- **Quickly filter and locate target channels**: Filter by protocol type, enabled status, and connection status
+- **Maintain channel basic parameters**: View details, edit parameters, add and delete channels
+- **Adjust channel enable status**: Toggle enable status directly in the list for immediate effect
+- **Access template operations**: Trigger template export and template point replacement from the channel row
 
 <h5>Query Channels</h5>
 
@@ -1096,7 +1105,234 @@ This chapter includes: channel management, channel point configuration, and chan
 
 3. Click **Cancel** to cancel.
 
+<h4>Channel Template Management</h4>
+
+A channel template (Channel Template) is a **reusable configuration snapshot** that saves the channel's point table (Points) and mapping table (Mappings) configuration. With templates, you can:
+
+- **Quickly configure new channels**: Apply an existing template to a new channel without manual configuration
+- **Unify device configuration**: Use the same template for multiple channels of the same type to ensure consistency
+- **Backup and migration**: Save channel configuration as a template for backup or reuse across projects
+
+Each channel template contains the following information:
+
+* ```Name```: Display name of the template
+* ```Description```: Detailed description (optional)
+* ```Protocol```: Supported communication protocol, e.g., modbus_tcp, modbus_rtu, di_do
+* ```points_snapshot```: Definitions of telemetry, signal, control, and adjustment points
+* ```mappings_snapshot```: Mapping relationships between points and protocol parameters
+
+<h5>Template View and Filter</h5>
+
+<img src="../images/Setting/Configuration/channel/2-20.png" style="max-width:100%; height:auto;" />
+
+1. On the template management page toolbar, you can filter templates using the filter dropdowns:
+- ```Protocol```: Protocol type. Select a specific protocol (e.g., modbus_tcp) to show only templates of that protocol
+2. Refresh icon: Click to reload the template list.
+
+<h5>Access Channel Templates</h5>
+
+<img src="../images/Setting/Configuration/channel/2-1.png" alt="Top Title Bar" style="max-width:100%; height:auto;" />
+
+1. On the channel configuration page toolbar, click the **Template** button.
+
+<img src="../images/Setting/Configuration/channel/2-2.png" alt="Top Title Bar" style="max-width:100%; height:auto;" />
+
+2. Enter the **Template Management** page.
+
+<h5>Create Channel Template</h5>
+
+<img src="../images/Setting/Configuration/channel/2-3.png" style="max-width:100%; height:auto;" />
+
+1. On the template management page, click the **New** button in the top-right corner of the table to open the "Add Template" dialog.
+
+<img src="../images/Setting/Configuration/channel/2-4.png" style="max-width:100%; height:auto;" />
+
+There are two ways to create a channel template: **Create via JSON** and **Create from Existing Channel**.
+
+<h6>Method 1: Create via JSON</h6>
+
+Suitable for **batch import** or **existing JSON template files**.
+
+<img src="../images/Setting/Configuration/channel/2-5.png" style="max-width:100%; height:auto;" />
+
+1. Switch to the **By JSON** tab in the dialog.
+2. Write or paste JSON content in the **JSON Content** text area. JSON format requirements:
+
+```json
+{
+  "name": "Modbus Sample Template",
+  "description": "Sample configuration for Modbus TCP channels",
+  "protocol": "modbus_tcp",
+  "points_snapshot": {
+    "telemetry": [
+      {
+        "point_id": 1,
+        "signal_name": "Temperature",
+        "data_type": "float32",
+        "scale": 1,
+        "offset": 0,
+        "unit": "℃"
+      }
+    ],
+    "signal": [],
+    "control": [],
+    "adjustment": []
+  },
+  "mappings_snapshot": {
+    "telemetry": [
+      {
+        "point_id": 1,
+        "signal_name": "Temperature",
+        "protocol_data": {
+          "slave_id": 1,
+          "function_code": 3,
+          "register_address": 0,
+          "data_type": "float32",
+          "byte_order": "AB"
+        }
+      }
+    ],
+    "signal": [],
+    "control": [],
+    "adjustment": []
+  }
+}
+```
+
+3. Click the **select a file** button to choose a JSON file with the same format; its content will appear in the **JSON Content** text area.
+4. Click **Submit** to submit.
+5. Click **Cancel** to cancel.
+
+> **Note**: The JSON format must be valid; otherwise you will see "JSON format is invalid".
+
+<h6>Method 2: Create from Existing Channel</h6>
+
+Suitable for **saving an already configured channel as a template**.
+
+<img src="../images/Setting/Configuration/channel/2-6.png" style="max-width:100%; height:auto;" />
+
+1. Switch to the **From Channel** tab in the dialog.
+2. Fill in the form:
+   - ```Name```: Template name (required)
+   - ```Source Channel```: Select the channel to use as source (required)
+   - ```Protocol```: Auto-filled from the selected channel, read-only
+   - ```Description```: Template description (optional)
+3. Click **Submit** to submit.
+4. Click **Cancel** to cancel.
+
+The system will save the channel's **point snapshot** and **mapping snapshot** as a template.
+
+> You can also create a template quickly from the channel configuration page. On the channel configuration page, each channel row has a **More** dropdown (⋮) in the Operation column:
+>
+><img src="../images/Setting/Configuration/channel/2-7.png" style="max-width:100%; height:auto;" />
+>
+>1. Click the **More** icon for a channel to open the **More** dropdown.
+>2. Click the **As Template** button to open the operation panel.
+>
+><img src="../images/Setting/Configuration/channel/2-8.png" style="max-width:100%; height:auto;" />
+>
+>3. In the "As Template" dialog:
+>   - Channel name and protocol are auto-filled
+>   - Enter template name (default: `ChannelName-Template`)
+>   - Enter description (optional)
+>4. Click **Submit** to submit.
+>5. Click **Cancel** to cancel.
+
+<h5>Apply Template to Channel</h5>
+
+<h6>Method 1: Apply from Template Management Page</h6>
+
+<img src="../images/Setting/Configuration/channel/2-9.png" style="max-width:100%; height:auto;" />
+
+1. In the template list, find the template to apply and click **Apply** in that row.
+
+<img src="../images/Setting/Configuration/channel/2-10.png" style="max-width:100%; height:auto;" />
+
+2. In the "Apply Template" dialog:
+   - ```Template```: Select the template to apply (can be pre-selected)
+   - ```Target Channel```: Select the target channel
+3. Click **Apply** to execute.
+4. Click **Cancel** to cancel.
+
+> **Tip**: The target channel list is filtered by the selected template's protocol; only channels with matching protocol are shown.
+
+<h6>Method 2: Apply from Channel Configuration Page</h6>
+
+<img src="../images/Setting/Configuration/channel/2-11.png" style="max-width:100%; height:auto;" />
+
+1. Click the **More** icon for a channel to open the **More** dropdown.
+2. Click the **Assign Template** button to open the operation panel.
+
+<img src="../images/Setting/Configuration/channel/2-12.png" style="max-width:100%; height:auto;" />
+
+3. In the "Assign Template" dialog:
+   - ```Channel```: Channel name is displayed automatically
+   - ```Template```: Select the template to apply (only templates with matching protocol are shown)
+4. Click **Submit** to submit.
+5. Click **Cancel** to cancel.
+
+>**Apply Behavior**
+>
+>**Overwrite mode**: When applying a template, the target channel's existing points and mappings are **cleared** by default, then the template content is imported.
+>**Use case**: Suitable for initializing new channels or fully resetting channel configuration.
+
+<h5>Edit Template</h5>
+
+<img src="../images/Setting/Configuration/channel/2-13.png" style="max-width:100%; height:auto;" />
+
+1. On the template management page table, click **Edit** for the template to edit.
+
+<img src="../images/Setting/Configuration/channel/2-14.png" style="max-width:100%; height:auto;" />
+
+2. In the "Edit Template" dialog, editable fields are:
+
+  - ```Name```: Template name (required)
+  - ```Description```: Template description (optional)
+
+3. Click **Submit** to submit.
+4. Click **Cancel** to cancel.
+
+> **Note**: Point and mapping content **cannot be edited**. To modify, delete the old template and create a new one, or regenerate a template from the modified channel.
+
+<h5>Delete Template</h5>
+
+<img src="../images/Setting/Configuration/channel/2-18.png" style="max-width:100%; height:auto;" />
+
+1. On the template management page table, click **Delete** for the template to delete.
+
+<img src="../images/Setting/Configuration/channel/2-19.png" style="max-width:100%; height:auto;" />
+
+2. Click **Delete** to confirm.
+3. Click **Cancel** to abort deletion.
+
+<h5>View Template Details</h5>
+
+<img src="../images/Setting/Configuration/channel/2-15.png" style="max-width:100%; height:auto;" />
+
+1. On the template management page, click **Points/Mappings** for a template to open the template detail page.
+
+<img src="../images/Setting/Configuration/channel/2-16.png" style="max-width:100%; height:auto;" />
+
+<img src="../images/Setting/Configuration/channel/2-17.png" style="max-width:100%; height:auto;" />
+
+2. **View toggle** button: Click to open a dropdown and choose **Point Table** or **Mapping Table** to show template points or point routing respectively. **Point Table** is shown by default.
+3. **Point type toggle** button: Four types—**Telemetry**, **Signal**, **Control**, **Adjustment**—corresponding to the four-remote classification of channel points. Click to show points of the selected type.
+4. Point filter: Enter text for fuzzy search by point name, or use the dropdown for exact selection.
+5. Point/Mapping data table: For field descriptions, refer to [Channel Points](/manuals/basic-knowledge/system-concepts-channel/channel-points.html) and [Channel Mappings](/manuals/basic-knowledge/system-concepts-channel/channel-mappings.html) in Basics.
+
+> **Note**: The di_do protocol does not include Telemetry and Adjustment tabs.
+
 <h4>Channel Point Configuration</h4>
+
+The channel point configuration page manages the definition, issuance, and batch changes of four-remote points (telemetry/signal/control/adjustment) under channels. It is the most frequently used page for channel debugging and parameter maintenance.
+
+On this page, you can:
+
+- **View by point type**: Switch between tabs and quickly filter target points by name
+- **Issue single or batch values**: Issue values for a single point or batch issue for the current type
+- **Batch edit point data**: Add, delete, and modify points; track changes via modified/added/deleted/invalid status
+- **Import/export via CSV**: Suitable for batch migration and offline organization before backfilling into the system
+- **Submit and validate centrally**: Submit all local edits at once to reduce impact of incorrect operations on live data
 
 <img src="../images/Setting/Configuration/channel/11.png" alt="11" style="max-width:100%; height:auto;" />
 
@@ -1296,6 +1532,15 @@ Click **Export** to export the table data under the current tab as **.csv**. The
 
 <h4>Channel Point Mapping Configuration</h4>
 
+The channel point mapping configuration page maintains the mapping relationship between "business points" and "underlying protocol addresses/registers", determining whether data collection and control commands are correctly applied to devices.
+
+On this page, you can:
+
+- **Maintain mapping fields by protocol rules**: Configure for modbus_rtu/modbus_tcp/di_do and other protocols
+- **Batch modify with real-time validation**: Adjust function code, data type, byte order, and other key items in edit mode
+- **Overwrite mappings via CSV import**: Suitable for batch migration or project updates
+- **Export mapping results for audit**: Export current mappings for delivery and traceability
+
 <h5>Batch Edit Point Mappings</h5>
 
 <img src="../images/Setting/Configuration/channel/33.png" alt="33" style="max-width:100%; height:auto;" />
@@ -1414,6 +1659,16 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h4>Instance Management</h4>
 
+The instance management page maintains the full lifecycle of device instances and is the core master data management page after device onboarding.
+
+On this page, you can:
+
+- **Query instances by product**: Quickly locate device instances under a specific product
+- **Add instances and maintain properties**: Configure instance basic info and extended properties at creation
+- **View instance details**: Verify instance configuration completeness and field correctness
+- **Edit existing instances**: Update instance parameters according to field changes
+- **Delete invalid instances**: Clean up decommissioned or incorrectly created instance records
+
 <h5>Query Device Instances</h5>
 
 <img src="../images/Setting/Configuration/deviceInstance/2.png" alt="2" style="max-width:100%; height:auto;" />
@@ -1479,6 +1734,15 @@ This chapter includes: instance management, instance point configuration, and in
 
 <h4>Instance Point Configuration</h4>
 
+The instance point configuration page manages property/measurement/action points within device instances. It is the key page for viewing instance runtime parameters and executing operations.
+
+On this page, you can:
+
+- **Switch between point types**: View property, measurement, and action points as needed
+- **Quickly locate target points**: Filter by name to improve point lookup efficiency
+- **Issue action point commands**: Execute action points directly and observe result changes
+- **Export point data**: Export the current view as CSV for analysis, archiving, and delivery
+
 <img src="../images/Setting/Configuration/deviceInstance/11.png" alt="11" style="max-width:100%; height:auto;" />
 
 1. Click **Points** in the **Operation** column of the target instance row to open the points dialog.
@@ -1522,6 +1786,16 @@ This chapter includes: instance management, instance point configuration, and in
 <img src="../images/Setting/Configuration/deviceInstance/17.png" alt="17" style="max-width:100%; height:auto;" />
 
 <h4>Instance Point Routing Configuration</h4>
+
+The instance point routing configuration page establishes the data path from "instance points" to "channel points", determining how instance data maps to and interacts with underlying channels.
+
+On this page, you can:
+
+- **View current routing relationships**: Check measurement/action point mapping targets in the Routing view
+- **Batch modify routing by rules**: Edit, validate, filter (modified/invalid), and submit in one go
+- **Overwrite routing via CSV import**: Suitable for on-site batch replacement or environment migration
+- **Export routing config for backup**: Facilitate rollback, audit, and cross-project reuse
+- **Reduce wiring error risk**: Use visual validation to detect point type or channel selection issues early
 
 <img src="../images/Setting/Configuration/deviceInstance/18.png" alt="18" style="max-width:100%; height:auto;" />
 
@@ -1619,6 +1893,15 @@ This chapter includes: basic rule operations and rule flow operations.
 
 <h4>Rule Operations</h4>
 
+The rule operations page manages rule entries themselves (excluding flow canvas content) and is the basic information maintenance entry for the rule system.
+
+On this page, you can:
+
+- **Add rule entries**: Define rule name and description, create editable rule entities
+- **Edit rule metadata**: Maintain rule name and description as business changes
+- **Delete obsolete rules**: Clean up rules no longer in use to avoid misuse
+- **Prepare for rule flow configuration**: Create rules here first, then configure execution flow in the rule flow page
+
 <h5>Add a Rule</h5>
 
 <img src="../images/Setting/Configuration/rule/2.png" alt="2" style="max-width:100%; height:auto;" />
@@ -1660,6 +1943,16 @@ This chapter includes: basic rule operations and rule flow operations.
 3. Click **Cancel** to cancel.
 
 <h4>Rule Flow Operations</h4>
+
+The rule flow operations page orchestrates rule execution flow and node logic. It is the core page for implementing automation strategies and covers both "view execution status" and "edit flow canvas" scenarios.
+
+On this page, you can:
+
+- **View flow details and real-time path**: Quickly confirm current rule execution branches and node status
+- **Edit rule flow visually**: Build complete execution flow by dragging cards and connecting edges
+- **Configure node parameters and logic**: Support Switch Function, Change Value, and other function cards
+- **Import/export JSON flow**: Facilitate cross-environment migration, version management, and backup/restore
+- **Fullscreen mode for editing**: Get a clearer canvas experience when working with complex flows
 
 <h5>View Rule Flow Details and Real-Time Execution Path</h5>
 

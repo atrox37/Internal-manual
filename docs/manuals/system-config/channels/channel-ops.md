@@ -1,8 +1,17 @@
-﻿---
+---
 outline: deep
 ---
 
 # Channel Management
+
+The channel management page is used to maintain channel instances in the system and is one of the main entry points for channel configuration. It covers the full workflow from "query and locate" to "maintain and modify", suitable for daily operations and initial deployment.
+
+On this page, you can:
+
+- **Quickly filter and locate target channels**: Filter by protocol type, enabled status, and connection status
+- **Maintain channel basic parameters**: View details, edit parameters, add and delete channels
+- **Adjust channel enable status**: Toggle enable status directly in the list for immediate effect
+- **Access template operations**: Trigger template export and template point replacement from the channel row
 
 ## Query Channels
 

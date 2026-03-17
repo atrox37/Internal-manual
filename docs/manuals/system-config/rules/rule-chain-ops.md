@@ -1,8 +1,18 @@
-﻿---
+---
 outline: deep
 ---
 
 # Rule Flow Operations
+
+The rule flow operations page orchestrates rule execution flow and node logic. It is the core page for implementing automation strategies and covers both "view execution status" and "edit flow canvas" scenarios.
+
+On this page, you can:
+
+- **View flow details and real-time path**: Quickly confirm current rule execution branches and node status
+- **Edit rule flow visually**: Build complete execution flow by dragging cards and connecting edges
+- **Configure node parameters and logic**: Support Switch Function, Change Value, and other function cards
+- **Import/export JSON flow**: Facilitate cross-environment migration, version management, and backup/restore
+- **Fullscreen mode for editing**: Get a clearer canvas experience when working with complex flows
 
 ## View Rule Flow Details and Real-Time Execution Path
 
