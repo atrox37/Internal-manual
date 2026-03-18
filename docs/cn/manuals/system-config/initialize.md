@@ -56,7 +56,7 @@ outline: deep
    > - **Port**: ```22```
    > - **Username**: ```root```
    > - **Auth Mode**: ```Password```，```Password``` **无需填写**
-   > - **Package** 选择 ```.run 文件```，[点击下载.run文件](https://github.com/EvanL1/VoltageEMS/releases/download/v0.1.11/MonarchEdge-arm64-0.1.11.run) 
+   > - **Package** 选择 ```.run 文件```，[点击下载.run文件](https://github.com/EvanL1/VoltageEMS/releases/download/v0.2.0/MonarchEdge-arm64-0.2.0.run) 
 
 2. 点击**Submit**按钮开始初始化，系统会显示进度信息，此时用户不能中断初始化的进行。
 

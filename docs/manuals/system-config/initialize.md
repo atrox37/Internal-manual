@@ -56,7 +56,7 @@ There are two ways to open the initialization dialog:
    > - **Port**: `22`
    > - **Username**: `root`
    > - **Auth Mode**: `Password` (no need to enter the password, leave it empty)
-   > - **Package**: Select `.run` file, [Download .run file](https://github.com/EvanL1/VoltageEMS/releases/download/v0.1.11/MonarchEdge-arm64-0.1.11.run)
+   > - **Package**: Select `.run` file, [Download .run file](https://github.com/EvanL1/VoltageEMS/releases/download/v0.2.0/MonarchEdge-arm64-0.2.0.run)
 2. Click the **Submit** button to start initialization. The system will display progress information, and users cannot interrupt the initialization process.
 
    * When initialization succeeds, the progress bar will turn green, and a success message will be displayed.
