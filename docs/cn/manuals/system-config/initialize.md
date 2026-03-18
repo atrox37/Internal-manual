@@ -51,6 +51,13 @@ outline: deep
 
    * `Package`：网关机配置安装包，点击**Select Installation Package**按钮进行安装包文件的选择，安装包必须是`.run`格式
 
+   > **针对内部测试：**
+   > - **IP Address**: ```102.168.39.62```
+   > - **Port**: ```22```
+   > - **Username**: ```root```
+   > - **Auth Mode**: ```Password```，```Password``` **无需填写**
+   > - **Package** 选择 ```.run 文件```，[点击下载.run文件](https://github.com/EvanL1/VoltageEMS/releases/download/v0.1.11/MonarchEdge-arm64-0.1.11.run) 
+
 2. 点击**Submit**按钮开始初始化，系统会显示进度信息，此时用户不能中断初始化的进行。
 
    * 当初始化成功的时候，进度条会变为绿色，初始化成功，今天提示。

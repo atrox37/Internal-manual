@@ -12,10 +12,10 @@ outline: deep
 ## 下载地址（V.1.13版本）
 
 - **Windows**
-  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260212.1)
+  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260318.1)
 
 - **macOS**
-  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260212.1)
+  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260318.1)
   
     >注意：因为目前仍在测试阶段，应用相关证书还未下发，在MacOS系统中可能提示软件已损害，无法正常打开，此时可以暂时绕过这个警告，方法如下：
     >
@@ -25,10 +25,10 @@ outline: deep
     >```xattr -dr com.apple.quarantine /Applications/pcmanagement.app```
   
 - **Linux**
-  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260212.1)
+  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260318.1)
 
 - **Linux-arm64**
-  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260212.1)
+  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260318.1)
 
 ## UI 介绍
 

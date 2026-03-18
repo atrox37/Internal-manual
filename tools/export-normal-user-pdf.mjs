@@ -1020,28 +1020,79 @@ function cleanupGeneratedManualFiles() {
   }
 }
 
-function run(cmd, args, opts = {}) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(cmd, args, {
+function spawnPnpm(args, opts = {}) {
+  if (process.platform === "win32") {
+    return spawn("cmd.exe", ["/d", "/s", "/c", pnpmCmd(), ...args], {
       stdio: "inherit",
-      shell: process.platform === "win32",
+      windowsHide: true,
       ...opts,
     });
+  }
+  return spawn(pnpmCmd(), args, {
+    stdio: "inherit",
+    ...opts,
+  });
+}
+function run(cmd, args, opts = {}) {
+  return new Promise((resolve, reject) => {
+    const child = cmd === pnpmCmd()
+      ? spawnPnpm(args, opts)
+      : spawn(cmd, args, {
+          stdio: "inherit",
+          shell: false,
+          ...opts,
+        });
+    child.on("error", reject);
     child.on("exit", (code) => {
       if (code === 0) resolve();
       else reject(new Error(`${cmd} ${args.join(" ")} failed with code ${code}`));
     });
   });
 }
-
 function startPreviewServer() {
-  const cmd = pnpmCmd();
   const args = ["-s", "docs:preview", "--", "--port", String(PORT), "--strictPort"];
-  const child = spawn(cmd, args, {
-    stdio: "inherit",
-    shell: process.platform === "win32",
+  const child = spawnPnpm(args);
+  child.on("error", (error) => {
+    console.error("[preview] failed to start", error);
   });
   return child;
+}
+function stopPreviewServer(child) {
+  if (!child || child.exitCode !== null || child.killed) {
+    return Promise.resolve();
+  }
+
+  if (process.platform === "win32") {
+    return new Promise((resolve) => {
+      const killer = spawn("taskkill.exe", ["/pid", String(child.pid), "/t", "/f"], {
+        stdio: "ignore",
+        windowsHide: true,
+      });
+      killer.on("error", () => resolve());
+      killer.on("exit", () => resolve());
+    });
+  }
+
+  return new Promise((resolve) => {
+    const finish = () => resolve();
+    child.once("exit", finish);
+    child.once("error", finish);
+
+    try {
+      child.kill("SIGTERM");
+    } catch {
+      resolve();
+      return;
+    }
+
+    setTimeout(() => {
+      if (child.exitCode === null && !child.killed) {
+        try {
+          child.kill("SIGKILL");
+        } catch {}
+      }
+    }, 2000);
+  });
 }
 
 async function waitForServer(url, timeoutMs = 30_000) {
@@ -1324,7 +1375,7 @@ async function main() {
       await run(pnpmCmd(), ['-s', 'docs:build']);
 
       if (server) {
-        server.kill();
+        await stopPreviewServer(server);
         server = null;
       }
 
@@ -1358,7 +1409,7 @@ async function main() {
     }
   } finally {
     if (server) {
-      server.kill();
+      await stopPreviewServer(server);
     }
     cleanupGeneratedManualFiles();
   }
