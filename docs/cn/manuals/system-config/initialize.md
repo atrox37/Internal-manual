@@ -52,7 +52,7 @@ outline: deep
    * `Package`：网关机配置安装包，点击**Select Installation Package**按钮进行安装包文件的选择，安装包必须是`.run`格式
 
    > **针对内部测试：**
-   > - **IP Address**: ```102.168.39.62```
+   > - **IP Address**: ```192.168.1.233```
    > - **Port**: ```22```
    > - **Username**: ```root```
    > - **Auth Mode**: ```Password```，```Password``` **无需填写**

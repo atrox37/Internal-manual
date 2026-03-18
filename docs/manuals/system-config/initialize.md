@@ -52,7 +52,7 @@ There are two ways to open the initialization dialog:
    * `Package`: Gateway machine configuration installation package. Click the **Select Installation Package** button to select the installation package file. The installation package must be in `.run` format.
 
    > **For Internal Testing:**
-   > - **IP Address**: `102.168.39.62`
+   > - **IP Address**: `192.168.1.233`
    > - **Port**: `22`
    > - **Username**: `root`
    > - **Auth Mode**: `Password` (no need to enter the password, leave it empty)
