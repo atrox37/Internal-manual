@@ -36,26 +36,41 @@ This method is suitable when no router is available on site and a direct connect
 2. Configure a static IP address on the laptop within the same subnet as the gateway (e.g., 192.168.1.100), with a subnet mask of 255.255.255.0.
 3. Open the EMS Edge Configuration application and connect to the gateway using its IP address (192.168.1.233).
 
----
-
-> **Notes:**
->
-> 1. **Static IP is required**: In direct connection mode, the laptop must be manually configured with a static IP in the same subnet as the gateway. **Do not use DHCP (automatic IP assignment)**. Since there is no DHCP server in direct mode, automatic configuration will fail and prevent communication with the gateway.
->
-> <img src="../../images/Setting/Install/2.png" style="max-width:100%; height:auto;" />
->
-> 2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**, then right-click **Ethernet**.
-> 3. Click **Properties**.
->
-> <img src="../../images/Setting/Install/3.png" style="max-width:100%; height:auto;" />
->
-> 4. Select **Internet Protocol Version 4 (TCP/IPv4)**.
-> 5. Click **Properties**.
->
-> <img src="../../images/Setting/Install/4.png" style="max-width:100%; height:auto;" />
->
-> 6. Configure the settings as shown (IP address can be adjusted as needed), then click **OK**.
->
-> 2. **IP Address Conflict**: If the laptop is connected to another network via WiFi, ensure that the configured static IP (e.g., 192.168.1.100) does not conflict with the existing network. If necessary, temporarily disable WiFi and use only the wired connection for debugging.
->
-> 3. **Pre-connection Check**: Ensure that both ends of the Ethernet cable are securely connected and that the port indicator lights are functioning properly before attempting to connect.
+    > **Notes:**
+    >
+    > 1. **Static IP is required**: In direct connection mode, the laptop must be manually configured with a static IP in the same subnet as the gateway. **Do not use DHCP (automatic IP assignment)**. Since there is no DHCP server in direct mode, automatic configuration will fail and prevent communication with the gateway.The following will take the Windows 11 system as an example.
+    >
+    >       <img src="../../images/Setting/Install/5.png" style="max-width:100%; height:auto;" />
+    >
+    >       1. In the taskbar search box, search for **Control Panel**.  
+    >       2. Click **Open** to launch **Control Panel**.
+    >
+    >       <img src="../../images/Setting/Install/6.png" style="max-width:100%; height:auto;" />
+    >
+    >       3. Click **Network and Internet**.
+    >
+    >       <img src="../../images/Setting/Install/7.png" style="max-width:100%; height:auto;" />
+    >
+    >       4. Click **Network and Sharing Center**.
+    >   
+    >       <img src="../../images/Setting/Install/8.png" style="max-width:100%; height:auto;" />
+    >
+    >       5. Click **Change adapter settings**.
+    >
+    >       <img src="../../images/Setting/Install/9.png" style="max-width:100%; height:auto;" />
+    >
+    >       6. Select **Ethernet 3**, right-click it, and then click **Properties**.
+    >
+    >       <img src="../../images/Setting/Install/10.png" style="max-width:100%; height:auto;" />
+    >
+    >       7. Select **Internet Protocol Version 4 (TCP/IPv4)**.  
+    >       8. Click the **Properties** button.
+    >
+    >       <img src="../../images/Setting/Install/11.png" style="max-width:100%; height:auto;" />
+    >
+    >       9. Fill in the fields as shown in the image.  
+    >       10. Click **OK** to apply the changes.
+    >
+    > 2. **IP Address Conflict**: If the laptop is connected to another network via WiFi, ensure that the configured static IP (e.g., 192.168.1.100) does not conflict with the existing network. If necessary, temporarily disable WiFi and use only the wired connection for debugging.
+    >
+    > 3. **Pre-connection Check**: Ensure that both ends of the Ethernet cable are securely connected and that the port indicator lights are functioning properly before attempting to connect.
