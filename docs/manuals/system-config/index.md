@@ -12,12 +12,12 @@ This section covers EMS Edge Configuration application setup and operations.
 - [Application Introduction](/manuals/system-config/application-introduction.html)
   - [Download Links (V.1.13)](/manuals/system-config/application-introduction.html#download-links-v-1-13)
   - [UI Introduction](/manuals/system-config/application-introduction.html#ui-introduction)
-- [Login](/manuals/system-config/login.html)
-- [Application Update](/manuals/system-config/update.html)
-  - [Automatic Update Check](/manuals/system-config/update.html#automatic-update-check)
 - [Initialization](/manuals/system-config/initialize.html)
   - [Open Initialization Dialog](/manuals/system-config/initialize.html#open-initialization-dialog)
   - [Initialization Configuration Steps](/manuals/system-config/initialize.html#initialization-configuration-steps)
+- [Login](/manuals/system-config/login.html)
+- [Application Update](/manuals/system-config/update.html)
+  - [Automatic Update Check](/manuals/system-config/update.html#automatic-update-check)
 
 - ### Channels Configuration
 

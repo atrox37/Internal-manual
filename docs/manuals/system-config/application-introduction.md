@@ -12,10 +12,10 @@ Its core function is to provide a unified configuration entry point, clear opera
 ## Download Links (V.1.13)
 
 - **Windows**
-  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260318.1)
+  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260320.1)
 
 - **macOS**
-  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260318.1)
+  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260320.1)
   
     >**Note:** Since the application is still in the testing phase and the relevant certificates have not yet been issued, macOS may display a warning that the software is damaged and cannot be opened. In this case, you can temporarily bypass the warning using the following methods:
     >
@@ -27,10 +27,10 @@ Its core function is to provide a unified configuration entry point, clear opera
     >```
   
 - **Linux**
-  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260318.1)
+  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260320.1)
 
 - **Linux-arm64**
-  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260318.1)
+  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260320.1)
 
 ## UI Introduction
 

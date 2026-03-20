@@ -13,4 +13,6 @@ The login interface is the first step to access the system. The system provides 
    * `Password`: User password
    * `Ip Address`: The IP address of the gateway machine to connect to. All subsequent data interactions will be performed with this gateway machine.
 
+   > **Note**: For internal testing, fill in `Username` as `admin`, `Password` as `admin123`, and `Ip Address` as `192.168.1.233`.
+
 2. Click the **Login** button to log in.

@@ -252,9 +252,9 @@ export default defineConfig({
                 { text: "Table of Contents", link: "/manuals/system-config/index.html" },
                 { text: "Deployment Prerequisites", link: "/manuals/system-config/deployment-prerequisites.html" },
                 { text: "Application Introduction", link: "/manuals/system-config/application-introduction.html" },
+                { text: "Initialization", link: "/manuals/system-config/initialize.html" },
                 { text: "Login", link: "/manuals/system-config/login.html" },
                 { text: "Application Update", link: "/manuals/system-config/update.html" },
-                { text: "Initialization", link: "/manuals/system-config/initialize.html" },
                 {
                   text: "Channels Configuration",
                   link: "/manuals/system-config/channels/index.html",
@@ -452,9 +452,9 @@ export default defineConfig({
                 { text: "目录", link: "/cn/manuals/system-config/index.html" },
                 { text: "部署前提", link: "/cn/manuals/system-config/deployment-prerequisites.html" },
                 { text: "应用介绍", link: "/cn/manuals/system-config/application-introduction.html" },
+                { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },
                 { text: "登录功能", link: "/cn/manuals/system-config/login.html" },
                 { text: "应用更新", link: "/cn/manuals/system-config/update.html" },
-                { text: "初始化配置", link: "/cn/manuals/system-config/initialize.html" },
                 {
                   text: "通道配置",
                   link: "/cn/manuals/system-config/channels/index.html",

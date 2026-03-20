@@ -12,4 +12,5 @@ outline: deep
    * `Username`：用户名
    * `Password`：用户密码
    * `Ip Address`：所要连接的网关机的IP地址，后续所有的数据交互都与该网关机进行
+   >```注意```: 内部测试时，```Username```填写```admin```，```Password``` 填写```admin123```,```Ip Address``` 填写```192.168.1.233```。
 2. 点击**Login**按钮，进行登录。
