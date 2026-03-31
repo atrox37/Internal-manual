@@ -9,26 +9,26 @@ outline: deep
 **EMS Edge Configuration** 是一款用于边缘侧配置与运行维护的桌面平台，主要面向运维人员、现场工程师与配置管理员。  
 它的核心作用是提供统一的配置入口、清晰的运行视图与规范的操作流程，帮助用户更高效地完成设备与通道的配置管理、规则维护与状态监控。
 
-## 下载地址（V.1.13版本）
+## 下载地址（V.1.14版本）
 
 - **Windows**
-  - [pcmanagement_0.1.13_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/windows/pcmanagement_0.1.13_x64_en-US.msi?v=20260320.1)
+  - [Monarch Edge Console_0.1.14_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.14/windows/Monarch%20Edge%20Console_0.1.14_x64_en-US.msi)
 
 - **macOS**
-  - [pcmanagement_0.1.13_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/macos/pcmanagement_0.1.13_aarch64.dmg?v=20260320.1)
+  - [Monarch Edge Console_0.1.14_aarch64.dmg](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.14/macos/Monarch%20Edge%20Console_0.1.14_aarch64.dmg?v=20260320.1)
   
     >注意：因为目前仍在测试阶段，应用相关证书还未下发，在MacOS系统中可能提示软件已损害，无法正常打开，此时可以暂时绕过这个警告，方法如下：
     >
     >- 右键应用 → 打开 → 再确认
     >- 或在终端执行：
     >
-    >```xattr -dr com.apple.quarantine /Applications/pcmanagement.app```
+    >```xattr -dr com.apple.quarantine /Applications/Monarch%20Edge%20Console.app```
   
 - **Linux**
-  - [pcmanagement_0.1.13_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux/pcmanagement_0.1.13_amd64.AppImage?v=20260320.1)
+  - [Monarch Edge Console_0.1.14_amd64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.14/linux/Monarch%20Edge%20Console_0.1.14_amd64.AppImage?v=20260320.1)
 
 - **Linux-arm64**
-  - [pcmanagement_0.1.13_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.13/linux-arm64/pcmanagement_0.1.13_aarch64.AppImage?v=20260320.1)
+  - [Monarch Edge Console_0.1.14_aarch64.AppImage](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.14/linux-arm64/Monarch%20Edge%20Console_0.1.14_aarch64.AppImage?v=20260320.1)
 
 ## UI 介绍
 
