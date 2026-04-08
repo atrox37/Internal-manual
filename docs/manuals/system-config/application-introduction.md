@@ -9,7 +9,7 @@ outline: deep
 **EMS Edge Configuration** is a desktop platform for edge-side configuration and operation maintenance, primarily targeting operations personnel, field engineers, and configuration administrators.  
 Its core function is to provide a unified configuration entry point, clear operational views, and standardized operational procedures, helping users more efficiently complete device and channel configuration management, rule maintenance, and status monitoring.
 
-## Download Links (V.1.13)
+## Download Links (V0.1.14)
 
 - **Windows**
   -  [Monarch Edge Console_0.1.14_x64_en-US.msi](https://edge-desktop-configuration-application.s3.us-east-2.amazonaws.com/releases/v0.1.14/windows/Monarch%20Edge%20Console_0.1.14_x64_en-US.msi)
