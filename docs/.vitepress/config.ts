@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   // GitHub Pages repo base path
-  base: "/",
+  base: "/edge-ems/",
   cleanUrls: false,
   vite: {
     build: {

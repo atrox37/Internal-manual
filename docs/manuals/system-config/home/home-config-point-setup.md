@@ -4,7 +4,7 @@ outline: deep
 
 # Home Point Setup
 
-<img src="/images/Setting/Configuration/home/1.png" alt="home configuration" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/home/1.png" alt="home configuration" style="max-width:100%; height:auto;" />
 
 In the configuration area below, the home dashboard preview is displayed with proportional scaling. Click the **orange highlighted area** to configure points:
 
@@ -13,11 +13,11 @@ In the configuration area below, the home dashboard preview is displayed with pr
 3. **Station Information (top-right)**: **3** configurable points. Usually used for key station indicators such as PV power and diesel power.
 4. **Device Information (middle-right)**: **6** configurable points. Displayed in a carousel for PV, Diesel, and ESS. Users can switch devices and configure 2 points for each.
 
-<img src="/images/Setting/Configuration/home/2.png" alt="point setup area" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/home/2.png" alt="point setup area" style="max-width:100%; height:auto;" />
 
 1. Click a target point in the orange highlighted area to open the point setup dialog.
 
-<img src="/images/Setting/Configuration/home/3.png" alt="point setup dialog" style="max-width:100%; height:auto;" />
+<img src="../../../images/Setting/Configuration/home/3.png" alt="point setup dialog" style="max-width:100%; height:auto;" />
 
 2. The setup dialog has two sections: **Basic Setting** and **Formula Setting**.
 
@@ -34,7 +34,7 @@ In the configuration area below, the home dashboard preview is displayed with pr
 
   You can add multiple source rows and combine them with operators `+`, `-`, `×`, `÷`.
 
-  <img src="/images/Setting/Configuration/home/4.png" alt="formula setting" style="max-width:100%; height:auto;" />
+  <img src="../../../images/Setting/Configuration/home/4.png" alt="formula setting" style="max-width:100%; height:auto;" />
 
 3. Click **Submit** to save changes.
 4. Click **Cancel** to discard changes.
